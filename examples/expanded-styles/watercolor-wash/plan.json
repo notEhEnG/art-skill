@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0",
+  "pack_id": "watercolor-wash-example",
+  "status": "planned",
+  "generation_performed": false,
+  "backend": null,
+  "model": null,
+  "style_lock": {
+    "id": "watercolor-wash",
+    "version": "1.0.0",
+    "sha256": "4922f80a6dcd08c73c322ae49df03823e5a0ea671d2763032e9d177f26fa4e82",
+    "recipe": {
+      "schema_version": "1.0",
+      "id": "watercolor-wash",
+      "version": "1.0.0",
+      "label": "Watercolor Wash",
+      "traits": {
+        "medium": "transparent watercolor landscape with loose layered pigment washes",
+        "palette": [
+          "#F7F0DF",
+          "#DF9269",
+          "#CC6573",
+          "#706C96",
+          "#3C5768"
+        ],
+        "texture": "visible cold-pressed paper, delicate pigment blooms and feathered wash edges",
+        "composition": "keep the low horizon and broad cloud bands; leave small light areas as unpainted paper",
+        "lighting": "luminous warm sunset washes against cool island silhouettes"
+      },
+      "avoid": [
+        "real people",
+        "copyrighted characters",
+        "logos and brand marks",
+        "copied artworks",
+        "unrequested lettering"
+      ],
+      "review_checks": [
+        "paper is visibly part of the image",
+        "cloud layers remain distinct",
+        "translucent washes instead of opaque impasto"
+      ],
+      "limitations": [
+        "Paper and pigment behavior are visual approximations, not a physical watercolor simulation.",
+        "Palette and fine geometry are prompt guidance and require visual review across a series."
+      ]
+    }
+  },
+  "anchor_asset_id": "artwork",
+  "base_calls": 1,
+  "max_calls": 2,
+  "repair_allowance": 1,
+  "calls_used": 0,
+  "actual_cost_usd": null,
+  "assets": [
+    {
+      "id": "artwork",
+      "role": "README style reference",
+      "status": "planned",
+      "reference": null,
+      "requested_size": "1536x1024",
+      "requested_background": "opaque",
+      "requested_format": "png",
+      "planned_path": "images/artwork.png",
+      "prompt": "Use case: stylized-concept\nAsset type: README style reference; intended use: One reviewed Watercolor Wash example for the Art Skill style catalog\nPrimary request: A wide view across dark gently rippling water toward low island silhouettes beneath an expansive sunset sky. The horizon sits low, with a larger dark headland at the left edge, layered orange, coral, gold and purple clouds and a tiny distant boat near the right horizon.\nStyle/medium: transparent watercolor landscape with loose layered pigment washes\nColor palette: #F7F0DF, #DF9269, #CC6573, #706C96, #3C5768\nMaterials/textures: visible cold-pressed paper, delicate pigment blooms and feathered wash edges\nComposition/framing: keep the low horizon and broad cloud bands; leave small light areas as unpainted paper; Keep landscape orientation and the original broad framing; one image, no frame or panels\nLighting/mood: luminous warm sunset washes against cool island silhouettes\nRequested output target: 1536x1024, opaque background, png; use only supported tool controls\nAvoid: real people; copyrighted characters; logos and brand marks; copied artworks; unrequested lettering\nConstraints: Keep the original low horizon, open water, dark left headland, low islands and sweeping layered sunset clouds. The sky dominates. Do not add a garden, terrace, trees or a towering central cloud.; No added people, brands, characters, captions or signatures; Use only this source photograph as the composition reference; never mix motifs from the other photos"
+    }
+  ]
+}

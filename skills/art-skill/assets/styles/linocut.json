@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0",
+  "id": "linocut",
+  "version": "1.0.0",
+  "label": "Linocut",
+  "traits": {
+    "medium": "two-tone relief-print-looking landscape with carved silhouettes and directional hatching",
+    "palette": [
+      "#F2EBDD",
+      "#253B32"
+    ],
+    "texture": "uneven ink edges, carved white channels and restrained paper grain",
+    "composition": "use coherent hatch directions and strong negative space to separate trunks, foliage and the path",
+    "lighting": "light expressed through unprinted paper rather than gradients"
+  },
+  "avoid": [
+    "real people",
+    "copyrighted characters",
+    "logos and brand marks",
+    "copied artworks",
+    "unrequested lettering"
+  ],
+  "review_checks": [
+    "two-tone tonal hierarchy",
+    "directional carved-looking marks",
+    "negative space separates the path from foliage"
+  ],
+  "limitations": [
+    "Raster art only; no cutting template, separated plates or carve-ready geometry is supplied.",
+    "Palette and fine geometry are prompt guidance and require visual review across a series."
+  ]
+}

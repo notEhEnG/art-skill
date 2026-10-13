@@ -1,5 +1,7 @@
 # Codex build prompt — Art Skill
 
+The current repository includes 18 recipes and 36 reviewed example images. Preserve that catalog when continuing the build; the video inspiration below describes the original six families. See [the current catalog](../skills/art-skill/references/styles.md).
+
 Paste the instructions below into Codex with the starter folder open. They also describe the repository well enough to scaffold it from scratch.
 
 ---
@@ -153,6 +155,6 @@ Run the skill-creator validator; if its YAML dependency is missing, use a worksp
 
 Manually confirm host discovery and command routing when each host is available. Report unsupported smoke tests as pending. Structural tests do not prove image quality or native command registration.
 
-Acceptance: the skill loads on Codex; `styles` shows six recipes; `brief` emits a plan without generation; `pack` preserves the shared anchor and call cap; `inspect` records observed outcomes; `export` packages reviewed native files and their manifest. Four reviewed demo assets are the release target, not a result to fabricate when generation fails.
+Acceptance: the skill loads on Codex; `styles` shows all 18 bundled recipes; `brief` emits a plan without generation; `pack` preserves the shared anchor and call cap; `inspect` records observed outcomes; `export` packages reviewed native files and their manifest. Four reviewed demo assets are the release target, not a result to fabricate when generation fails.
 
 Finish with saved artifact paths, tests run, image calls used, demo outcomes and any pending host checks. Keep GitHub creation, publishing and plugin-directory submission outside this build task. The repo should be ready for the user to review and publish.

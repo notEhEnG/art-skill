@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0",
+  "pack_id": "ceramic-mosaic-example",
+  "status": "planned",
+  "generation_performed": false,
+  "backend": null,
+  "model": null,
+  "style_lock": {
+    "id": "ceramic-mosaic",
+    "version": "1.0.0",
+    "sha256": "1d8320bd4ca0ff924436cbe2830359df48a86da739c083a5160bc7d5d4d922d7",
+    "recipe": {
+      "schema_version": "1.0",
+      "id": "ceramic-mosaic",
+      "version": "1.0.0",
+      "label": "Ceramic Mosaic",
+      "traits": {
+        "medium": "hand-set ceramic-mosaic-looking interpretation of a sunset seascape",
+        "palette": [
+          "#E6C76B",
+          "#CA7557",
+          "#956D85",
+          "#38515A",
+          "#E9DFCC"
+        ],
+        "texture": "small irregular glazed tile-like shapes separated by fine matte grout",
+        "composition": "tile groups follow the large cloud bands, dark island horizon and rippling-water rhythm",
+        "lighting": "subtle glints on tiles while retaining the original sunset light structure"
+      },
+      "avoid": [
+        "real people",
+        "copyrighted characters",
+        "logos and brand marks",
+        "copied artworks",
+        "unrequested lettering"
+      ],
+      "review_checks": [
+        "cloud and reflection bands remain readable",
+        "grout separates coherent tile groups",
+        "surface has tile-like material cues"
+      ],
+      "limitations": [
+        "No tile schedule, fabrication pattern, seamless texture or exact tessellation is supplied.",
+        "Palette and fine geometry are prompt guidance and require visual review across a series."
+      ]
+    }
+  },
+  "anchor_asset_id": "artwork",
+  "base_calls": 1,
+  "max_calls": 2,
+  "repair_allowance": 1,
+  "calls_used": 0,
+  "actual_cost_usd": null,
+  "assets": [
+    {
+      "id": "artwork",
+      "role": "README style reference",
+      "status": "planned",
+      "reference": null,
+      "requested_size": "1536x1024",
+      "requested_background": "opaque",
+      "requested_format": "png",
+      "planned_path": "images/artwork.png",
+      "prompt": "Use case: stylized-concept\nAsset type: README style reference; intended use: One reviewed Ceramic Mosaic example for the Art Skill style catalog\nPrimary request: A wide view across dark gently rippling water toward low island silhouettes beneath an expansive sunset sky. The horizon sits low, with a larger dark headland at the left edge, layered orange, coral, gold and purple clouds and a tiny distant boat near the right horizon.\nStyle/medium: hand-set ceramic-mosaic-looking interpretation of a sunset seascape\nColor palette: #E6C76B, #CA7557, #956D85, #38515A, #E9DFCC\nMaterials/textures: small irregular glazed tile-like shapes separated by fine matte grout\nComposition/framing: tile groups follow the large cloud bands, dark island horizon and rippling-water rhythm; Keep landscape orientation and the original broad framing; one image, no frame or panels\nLighting/mood: subtle glints on tiles while retaining the original sunset light structure\nRequested output target: 1536x1024, opaque background, png; use only supported tool controls\nAvoid: real people; copyrighted characters; logos and brand marks; copied artworks; unrequested lettering\nConstraints: Keep the original low horizon, open water, dark left headland, low islands and sweeping layered sunset clouds. The sky dominates. Do not add a garden, terrace, trees or a towering central cloud.; No added people, brands, characters, captions or signatures; Use only this source photograph as the composition reference; never mix motifs from the other photos"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema_version": "1.0",
+  "pack_id": "linocut-example",
+  "status": "planned",
+  "generation_performed": false,
+  "backend": null,
+  "model": null,
+  "style_lock": {
+    "id": "linocut",
+    "version": "1.0.0",
+    "sha256": "c402b846d758f6dab7e357b640de5486904a0f6e8b72a99fc5f54d06c3e76b49",
+    "recipe": {
+      "schema_version": "1.0",
+      "id": "linocut",
+      "version": "1.0.0",
+      "label": "Linocut",
+      "traits": {
+        "medium": "two-tone relief-print-looking landscape with carved silhouettes and directional hatching",
+        "palette": [
+          "#F2EBDD",
+          "#253B32"
+        ],
+        "texture": "uneven ink edges, carved white channels and restrained paper grain",
+        "composition": "use coherent hatch directions and strong negative space to separate trunks, foliage and the path",
+        "lighting": "light expressed through unprinted paper rather than gradients"
+      },
+      "avoid": [
+        "real people",
+        "copyrighted characters",
+        "logos and brand marks",
+        "copied artworks",
+        "unrequested lettering"
+      ],
+      "review_checks": [
+        "two-tone tonal hierarchy",
+        "directional carved-looking marks",
+        "negative space separates the path from foliage"
+      ],
+      "limitations": [
+        "Raster art only; no cutting template, separated plates or carve-ready geometry is supplied.",
+        "Palette and fine geometry are prompt guidance and require visual review across a series."
+      ]
+    }
+  },
+  "anchor_asset_id": "artwork",
+  "base_calls": 1,
+  "max_calls": 2,
+  "repair_allowance": 1,
+  "calls_used": 0,
+  "actual_cost_usd": null,
+  "assets": [
+    {
+      "id": "artwork",
+      "role": "README style reference",
+      "status": "planned",
+      "reference": null,
+      "requested_size": "1536x1024",
+      "requested_background": "opaque",
+      "requested_format": "png",
+      "planned_path": "images/artwork.png",
+      "prompt": "Use case: stylized-concept\nAsset type: README style reference; intended use: One reviewed Linocut example for the Art Skill style catalog\nPrimary request: A lush sloping hillside garden with a thick foreground tree trunk on the left, tall slender conifers across the center-right, dense layered foliage, distant bluish hills, a small blue roof lower-center, external stairs at far left and a curving path on the right beneath a bright cloudy sky.\nStyle/medium: two-tone relief-print-looking landscape with carved silhouettes and directional hatching\nColor palette: #F2EBDD, #253B32\nMaterials/textures: uneven ink edges, carved white channels and restrained paper grain\nComposition/framing: use coherent hatch directions and strong negative space to separate trunks, foliage and the path; Keep landscape orientation and the original broad framing; one image, no frame or panels\nLighting/mood: light expressed through unprinted paper rather than gradients\nRequested output target: 1536x1024, opaque background, png; use only supported tool controls\nAvoid: real people; copyrighted characters; logos and brand marks; copied artworks; unrequested lettering\nConstraints: Keep the original layered garden viewpoint, left tree trunk, tall conifer rhythm, slope, distant hills and curving path. Simplify minor details only to suit the medium. Do not add a sea, island bay, rainbow or sunset.; No added people, brands, characters, captions or signatures; Use only this source photograph as the composition reference; never mix motifs from the other photos"
+    }
+  ]
+}

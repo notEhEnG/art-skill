@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "id": "ceramic-mosaic",
+  "version": "1.0.0",
+  "label": "Ceramic Mosaic",
+  "traits": {
+    "medium": "hand-set ceramic-mosaic-looking interpretation of a sunset seascape",
+    "palette": [
+      "#E6C76B",
+      "#CA7557",
+      "#956D85",
+      "#38515A",
+      "#E9DFCC"
+    ],
+    "texture": "small irregular glazed tile-like shapes separated by fine matte grout",
+    "composition": "tile groups follow the large cloud bands, dark island horizon and rippling-water rhythm",
+    "lighting": "subtle glints on tiles while retaining the original sunset light structure"
+  },
+  "avoid": [
+    "real people",
+    "copyrighted characters",
+    "logos and brand marks",
+    "copied artworks",
+    "unrequested lettering"
+  ],
+  "review_checks": [
+    "cloud and reflection bands remain readable",
+    "grout separates coherent tile groups",
+    "surface has tile-like material cues"
+  ],
+  "limitations": [
+    "No tile schedule, fabrication pattern, seamless texture or exact tessellation is supplied.",
+    "Palette and fine geometry are prompt guidance and require visual review across a series."
+  ]
+}

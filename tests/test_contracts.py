@@ -82,7 +82,10 @@ class ContractTests(unittest.TestCase):
             for dirname in installer.ROOTS.values():
                 target = Path(folder) / dirname / "skills/art-skill"
                 self.assertTrue((target / "SKILL.md").is_file())
-                self.assertEqual(len(list((target / "assets/styles").glob("*.json"))), 6)
+                self.assertEqual(
+                    {path.name for path in (target / "assets/styles").glob("*.json")},
+                    {path.name for path in planner.STYLE_ROOT.glob("*.json")},
+                )
             self.assertEqual(installer.main(["--project", folder, "--agent", "codex"]), 2)
 
 

@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0",
+  "id": "cyanotype",
+  "version": "1.0.0",
+  "label": "Cyanotype",
+  "traits": {
+    "medium": "monochrome cyanotype-looking botanical landscape print",
+    "palette": [
+      "#F1F0E7",
+      "#164B78",
+      "#2D6B98"
+    ],
+    "texture": "quiet paper texture, pale botanical forms and subtly uneven blue print density",
+    "composition": "preserve garden depth and the tall conifer rhythm with a coherent blue/white hierarchy",
+    "lighting": "light appears as pale silhouettes and softly graded blue values"
+  },
+  "avoid": [
+    "real people",
+    "copyrighted characters",
+    "logos and brand marks",
+    "copied artworks",
+    "unrequested lettering"
+  ],
+  "review_checks": [
+    "blue and pale-paper tonal family",
+    "garden depth is readable",
+    "foliage is structured rather than random silhouettes"
+  ],
+  "limitations": [
+    "This is an image aesthetic, not a real photographic exposure or calibrated cyanotype process.",
+    "Palette and fine geometry are prompt guidance and require visual review across a series."
+  ]
+}

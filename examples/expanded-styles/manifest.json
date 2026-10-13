@@ -1,0 +1,108 @@
+{
+  "schema_version": "1.0",
+  "id": "expanded-styles",
+  "status": "complete",
+  "requested_asset_count": 12,
+  "max_calls": 15,
+  "calls_used": 12,
+  "repair_allowance": 3,
+  "model": null,
+  "actual_cost_usd": null,
+  "examples": [
+    {
+      "id": "watercolor-wash",
+      "label": "Watercolor Wash",
+      "source_photo": "sunset-bay.jpg",
+      "manifest": "watercolor-wash/manifest.json",
+      "status": "reviewed"
+    },
+    {
+      "id": "gouache-poster",
+      "label": "Gouache Poster",
+      "source_photo": "hillside-garden.jpg",
+      "manifest": "gouache-poster/manifest.json",
+      "status": "reviewed"
+    },
+    {
+      "id": "linocut",
+      "label": "Linocut",
+      "source_photo": "hillside-garden.jpg",
+      "manifest": "linocut/manifest.json",
+      "status": "reviewed"
+    },
+    {
+      "id": "risograph",
+      "label": "Risograph",
+      "source_photo": "building-rainbow.jpg",
+      "manifest": "risograph/manifest.json",
+      "status": "reviewed"
+    },
+    {
+      "id": "stained-glass",
+      "label": "Stained Glass",
+      "source_photo": "cumulus-clouds.jpg",
+      "manifest": "stained-glass/manifest.json",
+      "status": "reviewed"
+    },
+    {
+      "id": "cyanotype",
+      "label": "Cyanotype",
+      "source_photo": "hillside-garden.jpg",
+      "manifest": "cyanotype/manifest.json",
+      "status": "reviewed"
+    },
+    {
+      "id": "clay-diorama",
+      "label": "Clay Diorama",
+      "source_photo": "building-rainbow.jpg",
+      "manifest": "clay-diorama/manifest.json",
+      "status": "reviewed"
+    },
+    {
+      "id": "felt-collage",
+      "label": "Felt Collage",
+      "source_photo": "hillside-garden.jpg",
+      "manifest": "felt-collage/manifest.json",
+      "status": "reviewed"
+    },
+    {
+      "id": "embroidery",
+      "label": "Embroidery",
+      "source_photo": "cumulus-clouds.jpg",
+      "manifest": "embroidery/manifest.json",
+      "status": "reviewed"
+    },
+    {
+      "id": "ink-wash",
+      "label": "Ink Wash",
+      "source_photo": "cumulus-clouds.jpg",
+      "manifest": "ink-wash/manifest.json",
+      "status": "reviewed"
+    },
+    {
+      "id": "geometric-facets",
+      "label": "Geometric Facets",
+      "source_photo": "sunset-bay.jpg",
+      "manifest": "geometric-facets/manifest.json",
+      "status": "reviewed"
+    },
+    {
+      "id": "ceramic-mosaic",
+      "label": "Ceramic Mosaic",
+      "source_photo": "sunset-bay.jpg",
+      "manifest": "ceramic-mosaic/manifest.json",
+      "status": "reviewed"
+    }
+  ],
+  "generation_performed": true,
+  "final_asset_count": 12,
+  "repair_calls": 0,
+  "moderation_blocks_observed": 0,
+  "backend": "Codex built-in image_gen",
+  "created_on": "2026-10-13",
+  "notes": [
+    "One directly referenced original photograph per style; no generated derivative or mixed scene was used as input.",
+    "Twelve visually inspected native PNGs, one example per new recipe. Same-style multi-image consistency is not established by these single examples.",
+    "Model identity and monetary cost were not exposed by the tool and remain null."
+  ]
+}

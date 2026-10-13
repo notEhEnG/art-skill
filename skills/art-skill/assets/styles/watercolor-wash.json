@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "id": "watercolor-wash",
+  "version": "1.0.0",
+  "label": "Watercolor Wash",
+  "traits": {
+    "medium": "transparent watercolor landscape with loose layered pigment washes",
+    "palette": [
+      "#F7F0DF",
+      "#DF9269",
+      "#CC6573",
+      "#706C96",
+      "#3C5768"
+    ],
+    "texture": "visible cold-pressed paper, delicate pigment blooms and feathered wash edges",
+    "composition": "keep the low horizon and broad cloud bands; leave small light areas as unpainted paper",
+    "lighting": "luminous warm sunset washes against cool island silhouettes"
+  },
+  "avoid": [
+    "real people",
+    "copyrighted characters",
+    "logos and brand marks",
+    "copied artworks",
+    "unrequested lettering"
+  ],
+  "review_checks": [
+    "paper is visibly part of the image",
+    "cloud layers remain distinct",
+    "translucent washes instead of opaque impasto"
+  ],
+  "limitations": [
+    "Paper and pigment behavior are visual approximations, not a physical watercolor simulation.",
+    "Palette and fine geometry are prompt guidance and require visual review across a series."
+  ]
+}

@@ -6,6 +6,8 @@ Examples on a host with a native `/art-skill` skill command:
 
 ```text
 /art-skill styles
+/art-skill remix this image in watercolor-wash; preserve its composition
+/art-skill make a quiet garden in felt-collage, no lettering
 /art-skill brief a rainy reading-room pack in digital impressionism
 /art-skill make a sunlit desk in sketch-scribble, no people or text
 /art-skill pack @examples/rainy-reading-room.brief.json

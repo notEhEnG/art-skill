@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0",
+  "pack_id": "risograph-example",
+  "status": "planned",
+  "generation_performed": false,
+  "backend": null,
+  "model": null,
+  "style_lock": {
+    "id": "risograph",
+    "version": "1.0.0",
+    "sha256": "f8348a3d878bc98c9c3385a47f1f7e673a641c9969be24909f1984a697907270",
+    "recipe": {
+      "schema_version": "1.0",
+      "id": "risograph",
+      "version": "1.0.0",
+      "label": "Risograph",
+      "traits": {
+        "medium": "three-color risograph-looking architectural illustration with spot-color-like layers",
+        "palette": [
+          "#F3EBD6",
+          "#254D78",
+          "#CE6354",
+          "#C6A047"
+        ],
+        "texture": "dry grain, translucent overprint-looking overlaps and a subtle consistent edge offset",
+        "composition": "retain the diagonal roofline, railing and window rhythm; leave broad paper sky",
+        "lighting": "flat graphic contrast with three restrained colored layers on cream"
+      },
+      "avoid": [
+        "real people",
+        "copyrighted characters",
+        "logos and brand marks",
+        "copied artworks",
+        "unrequested lettering"
+      ],
+      "review_checks": [
+        "limited color layers",
+        "restrained consistent edge offset",
+        "roofline and windows remain readable"
+      ],
+      "limitations": [
+        "No actual spot-color separations, calibrated inks or press-ready print files are generated.",
+        "Palette and fine geometry are prompt guidance and require visual review across a series."
+      ]
+    }
+  },
+  "anchor_asset_id": "artwork",
+  "base_calls": 1,
+  "max_calls": 2,
+  "repair_allowance": 1,
+  "calls_used": 0,
+  "actual_cost_usd": null,
+  "assets": [
+    {
+      "id": "artwork",
+      "role": "README style reference",
+      "status": "planned",
+      "reference": null,
+      "requested_size": "1024x1536",
+      "requested_background": "opaque",
+      "requested_format": "png",
+      "planned_path": "images/artwork.png",
+      "prompt": "Use case: stylized-concept\nAsset type: README style reference; intended use: One reviewed Risograph example for the Art Skill style catalog\nPrimary request: An upward view of a warm beige building with a diagonal roofline, a slim roof railing and red-trimmed windows in the lower part of the frame, beneath a vast blue sky, a small soft white cloud and a faint rainbow patch. Small foliage sits along the lower edge.\nStyle/medium: three-color risograph-looking architectural illustration with spot-color-like layers\nColor palette: #F3EBD6, #254D78, #CE6354, #C6A047\nMaterials/textures: dry grain, translucent overprint-looking overlaps and a subtle consistent edge offset\nComposition/framing: retain the diagonal roofline, railing and window rhythm; leave broad paper sky; Keep portrait orientation and the original broad framing; one image, no frame or panels\nLighting/mood: flat graphic contrast with three restrained colored layers on cream\nRequested output target: 1024x1536, opaque background, png; use only supported tool controls\nAvoid: real people; copyrighted characters; logos and brand marks; copied artworks; unrequested lettering\nConstraints: Keep the original upward viewpoint, diagonal building line, window rhythm, broad empty sky, small cloud placement and faint rainbow motif. Do not add a sea, mountains, a garden terrace or a sunset.; No added people, brands, characters, captions or signatures; Use only this source photograph as the composition reference; never mix motifs from the other photos"
+    }
+  ]
+}

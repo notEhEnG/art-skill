@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0",
+  "pack_id": "felt-collage-example",
+  "status": "planned",
+  "generation_performed": false,
+  "backend": null,
+  "model": null,
+  "style_lock": {
+    "id": "felt-collage",
+    "version": "1.0.0",
+    "sha256": "6162aa3e71f3cb8a958c45cb2b7c8cd01dffb96c90ea99dc21172bcbfda9413a",
+    "recipe": {
+      "schema_version": "1.0",
+      "id": "felt-collage",
+      "version": "1.0.0",
+      "label": "Felt Collage",
+      "traits": {
+        "medium": "layered colored-felt landscape collage",
+        "palette": [
+          "#E8DDBF",
+          "#335440",
+          "#7D9B58",
+          "#729EAD",
+          "#A04F53"
+        ],
+        "texture": "soft fiber edges, matte textile surfaces and shallow layered shadows",
+        "composition": "use large felt shapes for the hillside, tree trunk and conifers; simplify minor foliage",
+        "lighting": "gentle diffuse light reveals the fabric layers without glossy highlights"
+      },
+      "avoid": [
+        "real people",
+        "copyrighted characters",
+        "logos and brand marks",
+        "copied artworks",
+        "unrequested lettering"
+      ],
+      "review_checks": [
+        "fibrous textile surfaces",
+        "layered cut shapes",
+        "garden slope and conifers remain recognizable"
+      ],
+      "limitations": [
+        "No fabric cutting template or stitch pattern is supplied.",
+        "Palette and fine geometry are prompt guidance and require visual review across a series."
+      ]
+    }
+  },
+  "anchor_asset_id": "artwork",
+  "base_calls": 1,
+  "max_calls": 2,
+  "repair_allowance": 1,
+  "calls_used": 0,
+  "actual_cost_usd": null,
+  "assets": [
+    {
+      "id": "artwork",
+      "role": "README style reference",
+      "status": "planned",
+      "reference": null,
+      "requested_size": "1536x1024",
+      "requested_background": "opaque",
+      "requested_format": "png",
+      "planned_path": "images/artwork.png",
+      "prompt": "Use case: stylized-concept\nAsset type: README style reference; intended use: One reviewed Felt Collage example for the Art Skill style catalog\nPrimary request: A lush sloping hillside garden with a thick foreground tree trunk on the left, tall slender conifers across the center-right, dense layered foliage, distant bluish hills, a small blue roof lower-center, external stairs at far left and a curving path on the right beneath a bright cloudy sky.\nStyle/medium: layered colored-felt landscape collage\nColor palette: #E8DDBF, #335440, #7D9B58, #729EAD, #A04F53\nMaterials/textures: soft fiber edges, matte textile surfaces and shallow layered shadows\nComposition/framing: use large felt shapes for the hillside, tree trunk and conifers; simplify minor foliage; Keep landscape orientation and the original broad framing; one image, no frame or panels\nLighting/mood: gentle diffuse light reveals the fabric layers without glossy highlights\nRequested output target: 1536x1024, opaque background, png; use only supported tool controls\nAvoid: real people; copyrighted characters; logos and brand marks; copied artworks; unrequested lettering\nConstraints: Keep the original layered garden viewpoint, left tree trunk, tall conifer rhythm, slope, distant hills and curving path. Simplify minor details only to suit the medium. Do not add a sea, island bay, rainbow or sunset.; No added people, brands, characters, captions or signatures; Use only this source photograph as the composition reference; never mix motifs from the other photos"
+    }
+  ]
+}

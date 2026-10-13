@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0",
+  "pack_id": "clay-diorama-example",
+  "status": "planned",
+  "generation_performed": false,
+  "backend": null,
+  "model": null,
+  "style_lock": {
+    "id": "clay-diorama",
+    "version": "1.0.0",
+    "sha256": "bfd3bd0a0bf4fa57976235da7434da82ed6fc4436813eaf401fd21098813d815",
+    "recipe": {
+      "schema_version": "1.0",
+      "id": "clay-diorama",
+      "version": "1.0.0",
+      "label": "Clay Diorama",
+      "traits": {
+        "medium": "hand-formed colored-clay miniature reinterpretation of an architectural scene",
+        "palette": [
+          "#E3D0A5",
+          "#789FA9",
+          "#B87359",
+          "#F2E9D6",
+          "#5B6F50"
+        ],
+        "texture": "rounded clay edges, tiny fingerprints and soft handmade surface imperfections",
+        "composition": "preserve the upward view and diagonal facade; model windows, railing and cloud as simple clay forms",
+        "lighting": "soft directional daylight with shallow miniature shadows"
+      },
+      "avoid": [
+        "real people",
+        "copyrighted characters",
+        "logos and brand marks",
+        "copied artworks",
+        "unrequested lettering"
+      ],
+      "review_checks": [
+        "clay-like surfaces and rounded forms",
+        "windows and railing retain their rhythm",
+        "lighting supports a coherent miniature scene"
+      ],
+      "limitations": [
+        "Raster visualization only; no 3D model, mesh, construction plan or physically accurate material is supplied.",
+        "Palette and fine geometry are prompt guidance and require visual review across a series."
+      ]
+    }
+  },
+  "anchor_asset_id": "artwork",
+  "base_calls": 1,
+  "max_calls": 2,
+  "repair_allowance": 1,
+  "calls_used": 0,
+  "actual_cost_usd": null,
+  "assets": [
+    {
+      "id": "artwork",
+      "role": "README style reference",
+      "status": "planned",
+      "reference": null,
+      "requested_size": "1024x1536",
+      "requested_background": "opaque",
+      "requested_format": "png",
+      "planned_path": "images/artwork.png",
+      "prompt": "Use case: stylized-concept\nAsset type: README style reference; intended use: One reviewed Clay Diorama example for the Art Skill style catalog\nPrimary request: An upward view of a warm beige building with a diagonal roofline, a slim roof railing and red-trimmed windows in the lower part of the frame, beneath a vast blue sky, a small soft white cloud and a faint rainbow patch. Small foliage sits along the lower edge.\nStyle/medium: hand-formed colored-clay miniature reinterpretation of an architectural scene\nColor palette: #E3D0A5, #789FA9, #B87359, #F2E9D6, #5B6F50\nMaterials/textures: rounded clay edges, tiny fingerprints and soft handmade surface imperfections\nComposition/framing: preserve the upward view and diagonal facade; model windows, railing and cloud as simple clay forms; Keep portrait orientation and the original broad framing; one image, no frame or panels\nLighting/mood: soft directional daylight with shallow miniature shadows\nRequested output target: 1024x1536, opaque background, png; use only supported tool controls\nAvoid: real people; copyrighted characters; logos and brand marks; copied artworks; unrequested lettering\nConstraints: Keep the original upward viewpoint, diagonal building line, window rhythm, broad empty sky, small cloud placement and faint rainbow motif. Do not add a sea, mountains, a garden terrace or a sunset.; No added people, brands, characters, captions or signatures; Use only this source photograph as the composition reference; never mix motifs from the other photos"
+    }
+  ]
+}

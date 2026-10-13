@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "id": "clay-diorama",
+  "version": "1.0.0",
+  "label": "Clay Diorama",
+  "traits": {
+    "medium": "hand-formed colored-clay miniature reinterpretation of an architectural scene",
+    "palette": [
+      "#E3D0A5",
+      "#789FA9",
+      "#B87359",
+      "#F2E9D6",
+      "#5B6F50"
+    ],
+    "texture": "rounded clay edges, tiny fingerprints and soft handmade surface imperfections",
+    "composition": "preserve the upward view and diagonal facade; model windows, railing and cloud as simple clay forms",
+    "lighting": "soft directional daylight with shallow miniature shadows"
+  },
+  "avoid": [
+    "real people",
+    "copyrighted characters",
+    "logos and brand marks",
+    "copied artworks",
+    "unrequested lettering"
+  ],
+  "review_checks": [
+    "clay-like surfaces and rounded forms",
+    "windows and railing retain their rhythm",
+    "lighting supports a coherent miniature scene"
+  ],
+  "limitations": [
+    "Raster visualization only; no 3D model, mesh, construction plan or physically accurate material is supplied.",
+    "Palette and fine geometry are prompt guidance and require visual review across a series."
+  ]
+}

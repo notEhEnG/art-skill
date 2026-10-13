@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "id": "stained-glass",
+  "version": "1.0.0",
+  "label": "Stained Glass",
+  "traits": {
+    "medium": "luminous stained-glass-looking cloud artwork built from translucent jewel-colored panes",
+    "palette": [
+      "#183C71",
+      "#427BA8",
+      "#B9DCDD",
+      "#F1E4BE",
+      "#292B38"
+    ],
+    "texture": "subtle rippled glass surfaces, dark leading and light passing through colored panes",
+    "composition": "pane shapes follow the original cloud lobes and broad sky; avoid random decorative symbols",
+    "lighting": "backlit cream cloud panes against deep blue sky panes"
+  },
+  "avoid": [
+    "real people",
+    "copyrighted characters",
+    "logos and brand marks",
+    "copied artworks",
+    "unrequested lettering"
+  ],
+  "review_checks": [
+    "cloud silhouette organizes the pane layout",
+    "leading is coherent",
+    "translucent-looking surfaces with restrained highlights"
+  ],
+  "limitations": [
+    "No fabrication pattern, cut lines or structurally validated glazing design is supplied.",
+    "Palette and fine geometry are prompt guidance and require visual review across a series."
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0",
+  "pack_id": "cyanotype-example",
+  "status": "planned",
+  "generation_performed": false,
+  "backend": null,
+  "model": null,
+  "style_lock": {
+    "id": "cyanotype",
+    "version": "1.0.0",
+    "sha256": "0266a024c8d941cae3c65d2014fa2c4a1f4fc9dbda50af5a097083550439efed",
+    "recipe": {
+      "schema_version": "1.0",
+      "id": "cyanotype",
+      "version": "1.0.0",
+      "label": "Cyanotype",
+      "traits": {
+        "medium": "monochrome cyanotype-looking botanical landscape print",
+        "palette": [
+          "#F1F0E7",
+          "#164B78",
+          "#2D6B98"
+        ],
+        "texture": "quiet paper texture, pale botanical forms and subtly uneven blue print density",
+        "composition": "preserve garden depth and the tall conifer rhythm with a coherent blue/white hierarchy",
+        "lighting": "light appears as pale silhouettes and softly graded blue values"
+      },
+      "avoid": [
+        "real people",
+        "copyrighted characters",
+        "logos and brand marks",
+        "copied artworks",
+        "unrequested lettering"
+      ],
+      "review_checks": [
+        "blue and pale-paper tonal family",
+        "garden depth is readable",
+        "foliage is structured rather than random silhouettes"
+      ],
+      "limitations": [
+        "This is an image aesthetic, not a real photographic exposure or calibrated cyanotype process.",
+        "Palette and fine geometry are prompt guidance and require visual review across a series."
+      ]
+    }
+  },
+  "anchor_asset_id": "artwork",
+  "base_calls": 1,
+  "max_calls": 2,
+  "repair_allowance": 1,
+  "calls_used": 0,
+  "actual_cost_usd": null,
+  "assets": [
+    {
+      "id": "artwork",
+      "role": "README style reference",
+      "status": "planned",
+      "reference": null,
+      "requested_size": "1536x1024",
+      "requested_background": "opaque",
+      "requested_format": "png",
+      "planned_path": "images/artwork.png",
+      "prompt": "Use case: stylized-concept\nAsset type: README style reference; intended use: One reviewed Cyanotype example for the Art Skill style catalog\nPrimary request: A lush sloping hillside garden with a thick foreground tree trunk on the left, tall slender conifers across the center-right, dense layered foliage, distant bluish hills, a small blue roof lower-center, external stairs at far left and a curving path on the right beneath a bright cloudy sky.\nStyle/medium: monochrome cyanotype-looking botanical landscape print\nColor palette: #F1F0E7, #164B78, #2D6B98\nMaterials/textures: quiet paper texture, pale botanical forms and subtly uneven blue print density\nComposition/framing: preserve garden depth and the tall conifer rhythm with a coherent blue/white hierarchy; Keep landscape orientation and the original broad framing; one image, no frame or panels\nLighting/mood: light appears as pale silhouettes and softly graded blue values\nRequested output target: 1536x1024, opaque background, png; use only supported tool controls\nAvoid: real people; copyrighted characters; logos and brand marks; copied artworks; unrequested lettering\nConstraints: Keep the original layered garden viewpoint, left tree trunk, tall conifer rhythm, slope, distant hills and curving path. Simplify minor details only to suit the medium. Do not add a sea, island bay, rainbow or sunset.; No added people, brands, characters, captions or signatures; Use only this source photograph as the composition reference; never mix motifs from the other photos"
+    }
+  ]
+}

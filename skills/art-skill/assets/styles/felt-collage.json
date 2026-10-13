@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "id": "felt-collage",
+  "version": "1.0.0",
+  "label": "Felt Collage",
+  "traits": {
+    "medium": "layered colored-felt landscape collage",
+    "palette": [
+      "#E8DDBF",
+      "#335440",
+      "#7D9B58",
+      "#729EAD",
+      "#A04F53"
+    ],
+    "texture": "soft fiber edges, matte textile surfaces and shallow layered shadows",
+    "composition": "use large felt shapes for the hillside, tree trunk and conifers; simplify minor foliage",
+    "lighting": "gentle diffuse light reveals the fabric layers without glossy highlights"
+  },
+  "avoid": [
+    "real people",
+    "copyrighted characters",
+    "logos and brand marks",
+    "copied artworks",
+    "unrequested lettering"
+  ],
+  "review_checks": [
+    "fibrous textile surfaces",
+    "layered cut shapes",
+    "garden slope and conifers remain recognizable"
+  ],
+  "limitations": [
+    "No fabric cutting template or stitch pattern is supplied.",
+    "Palette and fine geometry are prompt guidance and require visual review across a series."
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0",
+  "id": "risograph",
+  "version": "1.0.0",
+  "label": "Risograph",
+  "traits": {
+    "medium": "three-color risograph-looking architectural illustration with spot-color-like layers",
+    "palette": [
+      "#F3EBD6",
+      "#254D78",
+      "#CE6354",
+      "#C6A047"
+    ],
+    "texture": "dry grain, translucent overprint-looking overlaps and a subtle consistent edge offset",
+    "composition": "retain the diagonal roofline, railing and window rhythm; leave broad paper sky",
+    "lighting": "flat graphic contrast with three restrained colored layers on cream"
+  },
+  "avoid": [
+    "real people",
+    "copyrighted characters",
+    "logos and brand marks",
+    "copied artworks",
+    "unrequested lettering"
+  ],
+  "review_checks": [
+    "limited color layers",
+    "restrained consistent edge offset",
+    "roofline and windows remain readable"
+  ],
+  "limitations": [
+    "No actual spot-color separations, calibrated inks or press-ready print files are generated.",
+    "Palette and fine geometry are prompt guidance and require visual review across a series."
+  ]
+}

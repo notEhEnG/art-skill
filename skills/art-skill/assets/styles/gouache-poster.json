@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "id": "gouache-poster",
+  "version": "1.0.0",
+  "label": "Gouache Poster",
+  "traits": {
+    "medium": "hand-painted gouache landscape poster with opaque matte color shapes",
+    "palette": [
+      "#F4E4BE",
+      "#426345",
+      "#759B62",
+      "#2F535D",
+      "#AFCAD0"
+    ],
+    "texture": "chalky matte paint, decisive brush edges and sparse dry-brush marks",
+    "composition": "simplify the garden into distinct depth layers; preserve the tree rhythm and path",
+    "lighting": "clear daylight described with flat light and shadow shapes"
+  },
+  "avoid": [
+    "real people",
+    "copyrighted characters",
+    "logos and brand marks",
+    "copied artworks",
+    "unrequested lettering"
+  ],
+  "review_checks": [
+    "opaque matte coverage",
+    "distinct foreground and background layers",
+    "tree rhythm and path survive simplification"
+  ],
+  "limitations": [
+    "A poster aesthetic does not supply print layouts or guarantee exact typography.",
+    "Palette and fine geometry are prompt guidance and require visual review across a series."
+  ]
+}

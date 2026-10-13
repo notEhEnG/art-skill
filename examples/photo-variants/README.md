@@ -26,7 +26,7 @@ Archived prompts, briefs and plans retain the input names used during the record
 ## Try the workflow
 
 ```text
-Use $art-skill to reinterpret each of my four photos in all six styles.
+Use $art-skill to reinterpret each of my four photos in the six original styles listed above.
 Create four separate sets, six images each. Use each original photo
 directly for all its variants, preserve its orientation and main
 composition, and do not combine the scenes. Save the native images,
@@ -42,4 +42,4 @@ python skills/art-skill/scripts/plan_pack.py examples/photo-variants/building-ra
 
 Use the linked original references, or supply your own photos. When rerunning, use the descriptive filenames in your new prompts. `plan.json` describes intended work; `manifest.json` records the actual result. Code/instruction licensing does not establish rights in source photographs or generated imagery.
 
-[More proposed styles and workflows](../../docs/art-ideas.md) · [Generation index](manifest.json) · [Back to Art Skill](../../README.md)
+[More styles and workflow ideas](../../docs/art-ideas.md) · [Generation index](manifest.json) · [Back to Art Skill](../../README.md)

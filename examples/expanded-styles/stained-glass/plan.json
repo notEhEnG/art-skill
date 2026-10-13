@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0",
+  "pack_id": "stained-glass-example",
+  "status": "planned",
+  "generation_performed": false,
+  "backend": null,
+  "model": null,
+  "style_lock": {
+    "id": "stained-glass",
+    "version": "1.0.0",
+    "sha256": "5bc18f76fab417b08a85f9fdf4b884e26d9b2d636c5d9a0456d6e9db097474c9",
+    "recipe": {
+      "schema_version": "1.0",
+      "id": "stained-glass",
+      "version": "1.0.0",
+      "label": "Stained Glass",
+      "traits": {
+        "medium": "luminous stained-glass-looking cloud artwork built from translucent jewel-colored panes",
+        "palette": [
+          "#183C71",
+          "#427BA8",
+          "#B9DCDD",
+          "#F1E4BE",
+          "#292B38"
+        ],
+        "texture": "subtle rippled glass surfaces, dark leading and light passing through colored panes",
+        "composition": "pane shapes follow the original cloud lobes and broad sky; avoid random decorative symbols",
+        "lighting": "backlit cream cloud panes against deep blue sky panes"
+      },
+      "avoid": [
+        "real people",
+        "copyrighted characters",
+        "logos and brand marks",
+        "copied artworks",
+        "unrequested lettering"
+      ],
+      "review_checks": [
+        "cloud silhouette organizes the pane layout",
+        "leading is coherent",
+        "translucent-looking surfaces with restrained highlights"
+      ],
+      "limitations": [
+        "No fabrication pattern, cut lines or structurally validated glazing design is supplied.",
+        "Palette and fine geometry are prompt guidance and require visual review across a series."
+      ]
+    }
+  },
+  "anchor_asset_id": "artwork",
+  "base_calls": 1,
+  "max_calls": 2,
+  "repair_allowance": 1,
+  "calls_used": 0,
+  "actual_cost_usd": null,
+  "assets": [
+    {
+      "id": "artwork",
+      "role": "README style reference",
+      "status": "planned",
+      "reference": null,
+      "requested_size": "1024x1536",
+      "requested_background": "opaque",
+      "requested_format": "png",
+      "planned_path": "images/artwork.png",
+      "prompt": "Use case: stylized-concept\nAsset type: README style reference; intended use: One reviewed Stained Glass example for the Art Skill style catalog\nPrimary request: A towering white cumulus cloud with bright sunlit upper-right lobes and cool shadowed lower-left volumes, rising into a large deep-blue sky. Tiny dark foliage and roofline details sit only along the bottom edge.\nStyle/medium: luminous stained-glass-looking cloud artwork built from translucent jewel-colored panes\nColor palette: #183C71, #427BA8, #B9DCDD, #F1E4BE, #292B38\nMaterials/textures: subtle rippled glass surfaces, dark leading and light passing through colored panes\nComposition/framing: pane shapes follow the original cloud lobes and broad sky; avoid random decorative symbols; Keep portrait orientation and the original broad framing; one image, no frame or panels\nLighting/mood: backlit cream cloud panes against deep blue sky panes\nRequested output target: 1024x1536, opaque background, png; use only supported tool controls\nAvoid: real people; copyrighted characters; logos and brand marks; copied artworks; unrequested lettering\nConstraints: Keep the original upward sky viewpoint, large lobed cloud shape, light/shadow arrangement and broad upper sky. Foreground remains a small lower-edge suggestion. Do not add a sea, island bay, garden, sunset or rainbow.; No added people, brands, characters, captions or signatures; Use only this source photograph as the composition reference; never mix motifs from the other photos"
+    }
+  ]
+}

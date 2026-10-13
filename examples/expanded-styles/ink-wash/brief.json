@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "id": "ink-wash-example",
+  "style": "ink-wash",
+  "subject": "A towering white cumulus cloud with bright sunlit upper-right lobes and cool shadowed lower-left volumes, rising into a large deep-blue sky. Tiny dark foliage and roofline details sit only along the bottom edge.",
+  "purpose": "One reviewed Ink Wash example for the Art Skill style catalog",
+  "constraints": [
+    "Keep the original upward sky viewpoint, large lobed cloud shape, light/shadow arrangement and broad upper sky. Foreground remains a small lower-edge suggestion. Do not add a sea, island bay, garden, sunset or rainbow.",
+    "No added people, brands, characters, captions or signatures",
+    "Use only this source photograph as the composition reference; never mix motifs from the other photos"
+  ],
+  "max_calls": 2,
+  "assets": [
+    {
+      "id": "artwork",
+      "role": "README style reference",
+      "size": "1024x1536",
+      "background": "opaque",
+      "format": "png",
+      "direction": "Keep portrait orientation and the original broad framing; one image, no frame or panels"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "id": "geometric-facets",
+  "version": "1.0.0",
+  "label": "Geometric Facets",
+  "traits": {
+    "medium": "flat polygon-like landscape illustration with a restrained color-plane hierarchy",
+    "palette": [
+      "#E5B973",
+      "#C66D58",
+      "#9A677D",
+      "#454C69",
+      "#273840"
+    ],
+    "texture": "crisp flat planes with no photographic texture or obvious outlines",
+    "composition": "align large facets with sweeping cloud bands, a low horizon and water reflections",
+    "lighting": "sunset luminosity expressed through warm and cool color planes"
+  },
+  "avoid": [
+    "real people",
+    "copyrighted characters",
+    "logos and brand marks",
+    "copied artworks",
+    "unrequested lettering"
+  ],
+  "review_checks": [
+    "low horizon stays clear",
+    "large planes precede small detail",
+    "flat color hierarchy without photographic gradients"
+  ],
+  "limitations": [
+    "Raster illustration only; no vector paths or exact polygon topology is supplied.",
+    "Palette and fine geometry are prompt guidance and require visual review across a series."
+  ]
+}

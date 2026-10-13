@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "id": "embroidery",
+  "version": "1.0.0",
+  "label": "Embroidery",
+  "traits": {
+    "medium": "thread-embroidered-looking cloud landscape on woven fabric",
+    "palette": [
+      "#EAE4D4",
+      "#396895",
+      "#90ACBA",
+      "#F3ECD7",
+      "#6F7F91"
+    ],
+    "texture": "visible woven ground and raised thread-like marks with coherent stitch directions",
+    "composition": "thread directions follow cloud volume and preserve the broad silhouette and blue sky",
+    "lighting": "soft raking light gives delicate shadows to thread-like ridges"
+  },
+  "avoid": [
+    "real people",
+    "copyrighted characters",
+    "logos and brand marks",
+    "copied artworks",
+    "unrequested lettering"
+  ],
+  "review_checks": [
+    "fabric ground remains visible",
+    "stitch directions describe cloud volume",
+    "light and shadow cloud masses stay distinct"
+  ],
+  "limitations": [
+    "No machine embroidery file, thread specification or repeatable stitch geometry is generated.",
+    "Palette and fine geometry are prompt guidance and require visual review across a series."
+  ]
+}

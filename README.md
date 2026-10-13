@@ -2,7 +2,39 @@
 
 An art-direction skill for Codex and other AI agents, with reusable styles and slash-command workflows for images and visual asset packs.
 
-**Status:** usable skill with tested offline planning, installation, and 24 visually reviewed photo-to-style examples. Cross-host slash-menu discovery, a same-style multi-asset pack and cutout transparency still need smoke tests.
+**Status:** usable skill with tested offline planning, installation, and 18 bundled recipes and 36 visually reviewed photo-to-style examples. Cross-host slash-menu discovery, a same-style multi-asset pack and cutout transparency still need smoke tests.
+
+## Twelve new styles
+
+**12 new generated examples**, one per added recipe. These use the four original photographs shown below. Click any image for its original reference, prompt, recipe and review notes.
+
+| Watercolor Wash | Gouache Poster |
+| --- | --- |
+| [![Watercolor Wash](examples/expanded-styles/watercolor-wash/artwork.png)](examples/expanded-styles/watercolor-wash/README.md) | [![Gouache Poster](examples/expanded-styles/gouache-poster/artwork.png)](examples/expanded-styles/gouache-poster/README.md) |
+
+| Linocut | Risograph |
+| --- | --- |
+| [![Linocut](examples/expanded-styles/linocut/artwork.png)](examples/expanded-styles/linocut/README.md) | [![Risograph](examples/expanded-styles/risograph/artwork.png)](examples/expanded-styles/risograph/README.md) |
+
+| Stained Glass | Cyanotype |
+| --- | --- |
+| [![Stained Glass](examples/expanded-styles/stained-glass/artwork.png)](examples/expanded-styles/stained-glass/README.md) | [![Cyanotype](examples/expanded-styles/cyanotype/artwork.png)](examples/expanded-styles/cyanotype/README.md) |
+
+| Clay Diorama | Felt Collage |
+| --- | --- |
+| [![Clay Diorama](examples/expanded-styles/clay-diorama/artwork.png)](examples/expanded-styles/clay-diorama/README.md) | [![Felt Collage](examples/expanded-styles/felt-collage/artwork.png)](examples/expanded-styles/felt-collage/README.md) |
+
+| Embroidery | Ink Wash |
+| --- | --- |
+| [![Embroidery](examples/expanded-styles/embroidery/artwork.png)](examples/expanded-styles/embroidery/README.md) | [![Ink Wash](examples/expanded-styles/ink-wash/artwork.png)](examples/expanded-styles/ink-wash/README.md) |
+
+| Geometric Facets | Ceramic Mosaic |
+| --- | --- |
+| [![Geometric Facets](examples/expanded-styles/geometric-facets/artwork.png)](examples/expanded-styles/geometric-facets/README.md) | [![Ceramic Mosaic](examples/expanded-styles/ceramic-mosaic/artwork.png)](examples/expanded-styles/ceramic-mosaic/README.md) |
+
+[All twelve examples and recorded results](examples/expanded-styles/README.md) · [All 18 selectable styles](skills/art-skill/references/styles.md)
+
+Try `$art-skill remix this photo in watercolor-wash`, or choose any ID in the catalog. Hosts with a native skill command use `/art-skill remix …`; the host invocation rules below still apply.
 
 ## Four photos × six styles
 
@@ -132,13 +164,26 @@ The sample requests four assets: landscape anchor, square cover, portrait compos
 | `generative-flow` | Layered contours and filaments | Raster art, not executable seeded code |
 | `off-white` | Warm neutral still life and empty space | Artwork, not a functional website |
 
+| `watercolor-wash` | Watercolor Wash | Paper and pigment behavior are visual approximations, not a physical watercolor simulation. |
+| `gouache-poster` | Gouache Poster | A poster aesthetic does not supply print layouts or guarantee exact typography. |
+| `linocut` | Linocut | Raster art only; no cutting template, separated plates or carve-ready geometry is supplied. |
+| `risograph` | Risograph | No actual spot-color separations, calibrated inks or press-ready print files are generated. |
+| `stained-glass` | Stained Glass | No fabrication pattern, cut lines or structurally validated glazing design is supplied. |
+| `cyanotype` | Cyanotype | This is an image aesthetic, not a real photographic exposure or calibrated cyanotype process. |
+| `clay-diorama` | Clay Diorama | Raster visualization only; no 3D model, mesh, construction plan or physically accurate material is supplied. |
+| `felt-collage` | Felt Collage | No fabric cutting template or stitch pattern is supplied. |
+| `embroidery` | Embroidery | No machine embroidery file, thread specification or repeatable stitch geometry is generated. |
+| `ink-wash` | Ink Wash | Wash edges and tonal detail may drift during edits; physical ink diffusion is not simulated. |
+| `geometric-facets` | Geometric Facets | Raster illustration only; no vector paths or exact polygon topology is supplied. |
+| `ceramic-mosaic` | Ceramic Mosaic | No tile schedule, fabrication pattern, seamless texture or exact tessellation is supplied. |
+
 The recipes are original descriptions of broad visual traits. No presenter images, video collages, artist works or brand marks are included. The gallery includes four user-provided reference photographs and their generated artwork. Source names are descriptive; the supplied files and visible credits are preserved.
 
 ## More art ideas
 
-Twelve proposed directions: **watercolor wash, gouache poster, linocut, risograph, stained glass, cyanotype, clay diorama, felt collage, embroidery, ink wash, geometric facets, and ceramic mosaic**.
+The twelve additional directions are now bundled recipes with live examples: **watercolor wash, gouache poster, linocut, risograph, stained glass, cyanotype, clay diorama, felt collage, embroidery, ink wash, geometric facets, and ceramic mosaic**.
 
-[See the ideas, suggested first photos, and four asset-pack workflows](docs/art-ideas.md). These are proposals; the six recipes above remain the supported, demonstrated set. My suggested first additions are watercolor, risograph and clay diorama.
+[See the added styles and four asset-pack workflow ideas](docs/art-ideas.md). The eighteen recipes are available now; the workflow ideas describe ways to use them. Same-style pack consistency still needs a separate smoke test.
 
 ## Repository map
 
@@ -146,7 +191,7 @@ Twelve proposed directions: **watercolor wash, gouache poster, linocut, risograp
 skills/art-skill/
   SKILL.md
   agents/openai.yaml
-  assets/styles/                  six JSON recipes
+  assets/styles/                  18 JSON recipes
   scripts/plan_pack.py            offline planning
   references/                    commands, hosts, contracts, visual checks
 examples/
@@ -154,11 +199,12 @@ examples/
   rainy-reading-room.plan.json    actual planner output; no artwork
   photo-variants/                 four originals × six styles, prompts and manifests
     originals/                    unchanged photos with descriptive filenames
+  expanded-styles/                twelve more recipes, one live example each
 tools/install.py
 tests/test_contracts.py
 docs/research-evidence.json
 docs/recipe-format.md
-docs/art-ideas.md                  twelve proposed styles and four pack ideas
+docs/art-ideas.md                  twelve added styles and four pack ideas
 docs/validation.md
 LICENSE
 ```
