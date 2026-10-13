@@ -56,6 +56,82 @@ One generated example per core style, paired with its original photo. Click an a
 | --- | --- |
 | [<img src="examples/photo-variants/originals/building-rainbow.jpg" alt="Original photograph: Building and Rainbow" width="360">](examples/photo-variants/originals/building-rainbow.jpg) | [<img src="examples/photo-variants/building-rainbow/off-white/artwork.png" alt="Off-white Minimalism: Building and Rainbow" width="360">](examples/photo-variants/building-rainbow/off-white/README.md) |
 
+## Twelve additional styles
+
+One example for each remaining recipe, using the same four original photos. Every artwork is paired with the exact photograph used to generate it. Click an artwork for its prompt, recipe and recorded review.
+
+### Watercolor Wash — Sunset Bay
+
+| Original photo | Generated example |
+| --- | --- |
+| [<img src="examples/photo-variants/originals/sunset-bay.jpg" alt="Original photograph: Sunset Bay" width="360">](examples/photo-variants/originals/sunset-bay.jpg) | [<img src="examples/expanded-styles/watercolor-wash/artwork.png" alt="Watercolor Wash: Sunset Bay" width="360">](examples/expanded-styles/watercolor-wash/README.md) |
+
+### Gouache Poster — Hillside Garden
+
+| Original photo | Generated example |
+| --- | --- |
+| [<img src="examples/photo-variants/originals/hillside-garden.jpg" alt="Original photograph: Hillside Garden" width="360">](examples/photo-variants/originals/hillside-garden.jpg) | [<img src="examples/expanded-styles/gouache-poster/artwork.png" alt="Gouache Poster: Hillside Garden" width="360">](examples/expanded-styles/gouache-poster/README.md) |
+
+### Linocut — Hillside Garden
+
+| Original photo | Generated example |
+| --- | --- |
+| [<img src="examples/photo-variants/originals/hillside-garden.jpg" alt="Original photograph: Hillside Garden" width="360">](examples/photo-variants/originals/hillside-garden.jpg) | [<img src="examples/expanded-styles/linocut/artwork.png" alt="Linocut: Hillside Garden" width="360">](examples/expanded-styles/linocut/README.md) |
+
+### Risograph — Building and Rainbow
+
+| Original photo | Generated example |
+| --- | --- |
+| [<img src="examples/photo-variants/originals/building-rainbow.jpg" alt="Original photograph: Building and Rainbow" width="360">](examples/photo-variants/originals/building-rainbow.jpg) | [<img src="examples/expanded-styles/risograph/artwork.png" alt="Risograph: Building and Rainbow" width="360">](examples/expanded-styles/risograph/README.md) |
+
+### Stained Glass — Cumulus Clouds
+
+| Original photo | Generated example |
+| --- | --- |
+| [<img src="examples/photo-variants/originals/cumulus-clouds.jpg" alt="Original photograph: Cumulus Clouds" width="360">](examples/photo-variants/originals/cumulus-clouds.jpg) | [<img src="examples/expanded-styles/stained-glass/artwork.png" alt="Stained Glass: Cumulus Clouds" width="360">](examples/expanded-styles/stained-glass/README.md) |
+
+### Cyanotype — Hillside Garden
+
+| Original photo | Generated example |
+| --- | --- |
+| [<img src="examples/photo-variants/originals/hillside-garden.jpg" alt="Original photograph: Hillside Garden" width="360">](examples/photo-variants/originals/hillside-garden.jpg) | [<img src="examples/expanded-styles/cyanotype/artwork.png" alt="Cyanotype: Hillside Garden" width="360">](examples/expanded-styles/cyanotype/README.md) |
+
+### Clay Diorama — Building and Rainbow
+
+| Original photo | Generated example |
+| --- | --- |
+| [<img src="examples/photo-variants/originals/building-rainbow.jpg" alt="Original photograph: Building and Rainbow" width="360">](examples/photo-variants/originals/building-rainbow.jpg) | [<img src="examples/expanded-styles/clay-diorama/artwork.png" alt="Clay Diorama: Building and Rainbow" width="360">](examples/expanded-styles/clay-diorama/README.md) |
+
+### Felt Collage — Hillside Garden
+
+| Original photo | Generated example |
+| --- | --- |
+| [<img src="examples/photo-variants/originals/hillside-garden.jpg" alt="Original photograph: Hillside Garden" width="360">](examples/photo-variants/originals/hillside-garden.jpg) | [<img src="examples/expanded-styles/felt-collage/artwork.png" alt="Felt Collage: Hillside Garden" width="360">](examples/expanded-styles/felt-collage/README.md) |
+
+### Embroidery — Cumulus Clouds
+
+| Original photo | Generated example |
+| --- | --- |
+| [<img src="examples/photo-variants/originals/cumulus-clouds.jpg" alt="Original photograph: Cumulus Clouds" width="360">](examples/photo-variants/originals/cumulus-clouds.jpg) | [<img src="examples/expanded-styles/embroidery/artwork.png" alt="Embroidery: Cumulus Clouds" width="360">](examples/expanded-styles/embroidery/README.md) |
+
+### Ink Wash — Cumulus Clouds
+
+| Original photo | Generated example |
+| --- | --- |
+| [<img src="examples/photo-variants/originals/cumulus-clouds.jpg" alt="Original photograph: Cumulus Clouds" width="360">](examples/photo-variants/originals/cumulus-clouds.jpg) | [<img src="examples/expanded-styles/ink-wash/artwork.png" alt="Ink Wash: Cumulus Clouds" width="360">](examples/expanded-styles/ink-wash/README.md) |
+
+### Geometric Facets — Sunset Bay
+
+| Original photo | Generated example |
+| --- | --- |
+| [<img src="examples/photo-variants/originals/sunset-bay.jpg" alt="Original photograph: Sunset Bay" width="360">](examples/photo-variants/originals/sunset-bay.jpg) | [<img src="examples/expanded-styles/geometric-facets/artwork.png" alt="Geometric Facets: Sunset Bay" width="360">](examples/expanded-styles/geometric-facets/README.md) |
+
+### Ceramic Mosaic — Sunset Bay
+
+| Original photo | Generated example |
+| --- | --- |
+| [<img src="examples/photo-variants/originals/sunset-bay.jpg" alt="Original photograph: Sunset Bay" width="360">](examples/photo-variants/originals/sunset-bay.jpg) | [<img src="examples/expanded-styles/ceramic-mosaic/artwork.png" alt="Ceramic Mosaic: Sunset Bay" width="360">](examples/expanded-styles/ceramic-mosaic/README.md) |
+
 More examples: [four photos in all six core styles](examples/photo-variants/README.md) · [twelve additional styles](examples/expanded-styles/README.md) · [all 18 recipes](skills/art-skill/references/styles.md).
 
 ## Start in a project
