@@ -1,6 +1,6 @@
 # Hillside garden — Lo-fi Film Imagery
 
-Source: `11111111.jpg`. One independent style interpretation of that photograph.
+Source: [hillside-garden.jpg](../../originals/hillside-garden.jpg). One independent style interpretation of that photograph.
 
 ![Generated hillside garden in Lo-fi Film Imagery](artwork.png)
 

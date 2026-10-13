@@ -9,13 +9,15 @@
   "max_calls": 2,
   "actual_cost_usd": null,
   "source": {
-    "filename": "222222222.jpg",
+    "filename": "sunset-bay.jpg",
     "sha256": "eb5ed753b256f9d960a68f60e78a46d8fe34d031bf511d8e96a3c0d0a3cadd53",
     "role": "Immutable edit target and composition reference for all six styles",
     "author": null,
     "license": null,
     "visible_credit": null,
-    "distributed_in_repository": false
+    "distributed_in_repository": true,
+    "generation_input_filename": "222222222.jpg",
+    "path": "../../originals/sunset-bay.jpg"
   },
   "style_lock": {
     "id": "ascii-pixels",

@@ -13,46 +13,58 @@
     {
       "id": "building-rainbow",
       "title": "Building and rainbow",
-      "filename": "444444.jpg",
+      "filename": "building-rainbow.jpg",
       "orientation": "portrait",
       "manifest": "building-rainbow/manifest.json",
       "status": "complete",
       "final_asset_count": 6,
       "calls_used": 6,
-      "repair_calls": 0
+      "repair_calls": 0,
+      "generation_input_filename": "444444.jpg",
+      "original": "originals/building-rainbow.jpg",
+      "source_sha256": "3190d4ac7a04e14e094a264211e27fbb6bbcf839ab73649c4f88968f7a3e0f86"
     },
     {
       "id": "hillside-garden",
       "title": "Hillside garden",
-      "filename": "11111111.jpg",
+      "filename": "hillside-garden.jpg",
       "orientation": "landscape",
       "manifest": "hillside-garden/manifest.json",
       "status": "complete",
       "final_asset_count": 6,
       "calls_used": 6,
-      "repair_calls": 0
+      "repair_calls": 0,
+      "generation_input_filename": "11111111.jpg",
+      "original": "originals/hillside-garden.jpg",
+      "source_sha256": "068cc4fe28a1c386848c5c4535c6456b1ce5f42da009ad603b39c3f801b3938d"
     },
     {
       "id": "sunset-bay",
       "title": "Sunset bay",
-      "filename": "222222222.jpg",
+      "filename": "sunset-bay.jpg",
       "orientation": "landscape",
       "manifest": "sunset-bay/manifest.json",
       "status": "complete",
       "final_asset_count": 6,
       "calls_used": 6,
-      "repair_calls": 0
+      "repair_calls": 0,
+      "generation_input_filename": "222222222.jpg",
+      "original": "originals/sunset-bay.jpg",
+      "source_sha256": "eb5ed753b256f9d960a68f60e78a46d8fe34d031bf511d8e96a3c0d0a3cadd53"
     },
     {
       "id": "cumulus-clouds",
       "title": "Towering cumulus",
-      "filename": "33333333.jpg",
+      "filename": "cumulus-clouds.jpg",
       "orientation": "portrait",
       "manifest": "cumulus-clouds/manifest.json",
       "status": "complete",
       "final_asset_count": 6,
       "calls_used": 6,
-      "repair_calls": 0
+      "repair_calls": 0,
+      "generation_input_filename": "33333333.jpg",
+      "original": "originals/cumulus-clouds.jpg",
+      "source_sha256": "f420bdb084f444672a4fe008d2ae5c7c1512926ad6c029443a92c3381c75f601"
     }
   ],
   "generation_performed": true,
@@ -63,6 +75,6 @@
   "notes": [
     "Four separate original-photo studies, six styles each; no composite scene is used in this gallery.",
     "All outputs are saved native PNGs; requested planning sizes are not a claim about actual tool sizes.",
-    "Original source photographs remain local. All public paths are repository-relative."
+    "Original source photographs are included unchanged under descriptive filenames. All public paths are repository-relative."
   ]
 }

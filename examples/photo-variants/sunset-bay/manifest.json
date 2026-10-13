@@ -6,13 +6,15 @@
   "generation_performed": true,
   "workflow": "Six independent remixes of the same supplied photograph",
   "source": {
-    "filename": "222222222.jpg",
+    "filename": "sunset-bay.jpg",
     "sha256": "eb5ed753b256f9d960a68f60e78a46d8fe34d031bf511d8e96a3c0d0a3cadd53",
     "role": "Immutable edit target and composition reference for all six styles",
     "author": null,
     "license": null,
     "visible_credit": null,
-    "distributed_in_repository": false
+    "distributed_in_repository": true,
+    "generation_input_filename": "222222222.jpg",
+    "path": "../originals/sunset-bay.jpg"
   },
   "max_calls": 8,
   "calls_used": 6,
@@ -259,7 +261,7 @@
   "moderation_blocks_observed": 0,
   "notes": [
     "The same original photo is the immutable composition reference for all six remixes.",
-    "The source photograph is not redistributed; author and license were not supplied.",
+    "The original photograph is included unchanged under a descriptive filename; author and source license were not supplied.",
     "Each medium is judged visually; exact palette or geometry matching is not claimed."
   ]
 }

@@ -8,7 +8,7 @@ Completed:
 - The source video was visually inspected at exact 0–7 second samples; six style captions were recorded. Audio was not transcribed.
 
 - 24 live built-in image calls produced four separate six-style source-photo sets in `examples/photo-variants/`, with zero repairs. Every native PNG has verified SHA-256, CRCs and decodable image data. Actual dimensions and source orientation are recorded; none were inferred from the requested planner sizes.
-- README gallery links, per-style prompt/recipe/manifest links and manifest file hashes were checked. No original input photographs are distributed.
+- README gallery links, per-style prompt/recipe/manifest links and manifest file hashes were checked. Four unchanged original photographs are included under descriptive filenames, with source hashes and gallery paths recorded.
 
 Pending release checks:
 

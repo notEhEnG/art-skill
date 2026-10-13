@@ -9,13 +9,15 @@
   "max_calls": 2,
   "actual_cost_usd": null,
   "source": {
-    "filename": "444444.jpg",
+    "filename": "building-rainbow.jpg",
     "sha256": "3190d4ac7a04e14e094a264211e27fbb6bbcf839ab73649c4f88968f7a3e0f86",
     "role": "Immutable edit target and composition reference for all six styles",
     "author": null,
     "license": null,
     "visible_credit": "Redamancy. signature visible in the supplied photograph",
-    "distributed_in_repository": false
+    "distributed_in_repository": true,
+    "generation_input_filename": "444444.jpg",
+    "path": "../../originals/building-rainbow.jpg"
   },
   "style_lock": {
     "id": "generative-flow",

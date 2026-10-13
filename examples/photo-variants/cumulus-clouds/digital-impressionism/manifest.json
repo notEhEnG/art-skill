@@ -9,13 +9,15 @@
   "max_calls": 2,
   "actual_cost_usd": null,
   "source": {
-    "filename": "33333333.jpg",
+    "filename": "cumulus-clouds.jpg",
     "sha256": "f420bdb084f444672a4fe008d2ae5c7c1512926ad6c029443a92c3381c75f601",
     "role": "Immutable edit target and composition reference for all six styles",
     "author": null,
     "license": null,
     "visible_credit": null,
-    "distributed_in_repository": false
+    "distributed_in_repository": true,
+    "generation_input_filename": "33333333.jpg",
+    "path": "../../originals/cumulus-clouds.jpg"
   },
   "style_lock": {
     "id": "digital-impressionism",

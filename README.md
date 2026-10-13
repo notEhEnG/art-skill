@@ -8,7 +8,11 @@ An art-direction skill for Codex and other AI agents, with reusable styles and s
 
 **24 generated reference images.** Each supplied photo has its own six-style gallery, using that original directly for every version. Click any artwork to open its prompt, recipe and recorded result.
 
-### Building and rainbow — `444444.jpg`
+### Building and rainbow
+
+Original reference: [building-rainbow.jpg](examples/photo-variants/originals/building-rainbow.jpg).
+
+<img src="examples/photo-variants/originals/building-rainbow.jpg" alt="Original photograph: building and rainbow" width="480">
 
 | ASCII & Pixels | Sketch & Scribble |
 | --- | --- |
@@ -22,7 +26,11 @@ An art-direction skill for Codex and other AI agents, with reusable styles and s
 | --- | --- |
 | [![Generative Flow](examples/photo-variants/building-rainbow/generative-flow/artwork.png)](examples/photo-variants/building-rainbow/generative-flow/README.md) | [![Off-white Minimalism](examples/photo-variants/building-rainbow/off-white/artwork.png)](examples/photo-variants/building-rainbow/off-white/README.md) |
 
-### Hillside garden — `11111111.jpg`
+### Hillside garden
+
+Original reference: [hillside-garden.jpg](examples/photo-variants/originals/hillside-garden.jpg).
+
+<img src="examples/photo-variants/originals/hillside-garden.jpg" alt="Original photograph: hillside garden" width="480">
 
 | ASCII & Pixels | Sketch & Scribble |
 | --- | --- |
@@ -36,7 +44,11 @@ An art-direction skill for Codex and other AI agents, with reusable styles and s
 | --- | --- |
 | [![Generative Flow](examples/photo-variants/hillside-garden/generative-flow/artwork.png)](examples/photo-variants/hillside-garden/generative-flow/README.md) | [![Off-white Minimalism](examples/photo-variants/hillside-garden/off-white/artwork.png)](examples/photo-variants/hillside-garden/off-white/README.md) |
 
-### Sunset bay — `222222222.jpg`
+### Sunset bay
+
+Original reference: [sunset-bay.jpg](examples/photo-variants/originals/sunset-bay.jpg).
+
+<img src="examples/photo-variants/originals/sunset-bay.jpg" alt="Original photograph: sunset bay" width="480">
 
 | ASCII & Pixels | Sketch & Scribble |
 | --- | --- |
@@ -50,7 +62,11 @@ An art-direction skill for Codex and other AI agents, with reusable styles and s
 | --- | --- |
 | [![Generative Flow](examples/photo-variants/sunset-bay/generative-flow/artwork.png)](examples/photo-variants/sunset-bay/generative-flow/README.md) | [![Off-white Minimalism](examples/photo-variants/sunset-bay/off-white/artwork.png)](examples/photo-variants/sunset-bay/off-white/README.md) |
 
-### Towering cumulus — `33333333.jpg`
+### Towering cumulus
+
+Original reference: [cumulus-clouds.jpg](examples/photo-variants/originals/cumulus-clouds.jpg).
+
+<img src="examples/photo-variants/originals/cumulus-clouds.jpg" alt="Original photograph: towering cumulus" width="480">
 
 | ASCII & Pixels | Sketch & Scribble |
 | --- | --- |
@@ -66,7 +82,7 @@ An art-direction skill for Codex and other AI agents, with reusable styles and s
 
 [All photo sets and source notes](examples/photo-variants/README.md) · [Recorded generation index](examples/photo-variants/manifest.json)
 
-Recorded run: 24 built-in image calls, 24 native PNGs, zero repairs. Actual dimensions and review notes are recorded per image; model identity and monetary cost were not exposed. Originals remain local.
+Recorded run: 24 built-in image calls, 24 native PNGs, zero repairs. Actual dimensions and review notes are recorded per image; model identity and monetary cost were not exposed. Each gallery now includes its unchanged original reference under a descriptive filename.
 
 ## Start in a project
 
@@ -116,7 +132,13 @@ The sample requests four assets: landscape anchor, square cover, portrait compos
 | `generative-flow` | Layered contours and filaments | Raster art, not executable seeded code |
 | `off-white` | Warm neutral still life and empty space | Artwork, not a functional website |
 
-The recipes are original descriptions of broad visual traits. No presenter images, video collages, artist works or brand marks are included. The gallery contains generated artwork inspired by user-provided landscape photographs; the originals are not bundled.
+The recipes are original descriptions of broad visual traits. No presenter images, video collages, artist works or brand marks are included. The gallery includes four user-provided reference photographs and their generated artwork. Source names are descriptive; the supplied files and visible credits are preserved.
+
+## More art ideas
+
+Twelve proposed directions: **watercolor wash, gouache poster, linocut, risograph, stained glass, cyanotype, clay diorama, felt collage, embroidery, ink wash, geometric facets, and ceramic mosaic**.
+
+[See the ideas, suggested first photos, and four asset-pack workflows](docs/art-ideas.md). These are proposals; the six recipes above remain the supported, demonstrated set. My suggested first additions are watercolor, risograph and clay diorama.
 
 ## Repository map
 
@@ -130,11 +152,13 @@ skills/art-skill/
 examples/
   rainy-reading-room.brief.json
   rainy-reading-room.plan.json    actual planner output; no artwork
-  photo-variants/                 four photos × six styles, prompts and manifests
+  photo-variants/                 four originals × six styles, prompts and manifests
+    originals/                    unchanged photos with descriptive filenames
 tools/install.py
 tests/test_contracts.py
 docs/research-evidence.json
 docs/recipe-format.md
+docs/art-ideas.md                  twelve proposed styles and four pack ideas
 docs/validation.md
 LICENSE
 ```

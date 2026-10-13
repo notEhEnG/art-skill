@@ -1,6 +1,6 @@
 # Building and rainbow — Sketch & Scribble
 
-Source: `444444.jpg`. One independent style interpretation of that photograph.
+Source: [building-rainbow.jpg](../../originals/building-rainbow.jpg). One independent style interpretation of that photograph.
 
 ![Generated building and rainbow in Sketch & Scribble](artwork.png)
 

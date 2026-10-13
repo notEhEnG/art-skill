@@ -1,6 +1,6 @@
 # Hillside garden — Off-white Minimalism
 
-Source: `11111111.jpg`. One independent style interpretation of that photograph.
+Source: [hillside-garden.jpg](../../originals/hillside-garden.jpg). One independent style interpretation of that photograph.
 
 ![Generated hillside garden in Off-white Minimalism](artwork.png)
 

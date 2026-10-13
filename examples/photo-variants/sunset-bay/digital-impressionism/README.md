@@ -1,6 +1,6 @@
 # Sunset bay — Digital Impressionism
 
-Source: `222222222.jpg`. One independent style interpretation of that photograph.
+Source: [sunset-bay.jpg](../../originals/sunset-bay.jpg). One independent style interpretation of that photograph.
 
 ![Generated sunset bay in Digital Impressionism](artwork.png)
 

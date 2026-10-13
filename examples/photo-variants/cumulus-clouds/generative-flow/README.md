@@ -1,6 +1,6 @@
 # Towering cumulus — Generative Flow
 
-Source: `33333333.jpg`. One independent style interpretation of that photograph.
+Source: [cumulus-clouds.jpg](../../originals/cumulus-clouds.jpg). One independent style interpretation of that photograph.
 
 ![Generated towering cumulus in Generative Flow](artwork.png)
 

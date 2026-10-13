@@ -6,13 +6,15 @@
   "generation_performed": true,
   "workflow": "Six independent remixes of the same supplied photograph",
   "source": {
-    "filename": "11111111.jpg",
+    "filename": "hillside-garden.jpg",
     "sha256": "068cc4fe28a1c386848c5c4535c6456b1ce5f42da009ad603b39c3f801b3938d",
     "role": "Immutable edit target and composition reference for all six styles",
     "author": null,
     "license": null,
     "visible_credit": null,
-    "distributed_in_repository": false
+    "distributed_in_repository": true,
+    "generation_input_filename": "11111111.jpg",
+    "path": "../originals/hillside-garden.jpg"
   },
   "max_calls": 8,
   "calls_used": 6,
@@ -259,7 +261,7 @@
   "moderation_blocks_observed": 0,
   "notes": [
     "The same original photo is the immutable composition reference for all six remixes.",
-    "The source photograph is not redistributed; author and license were not supplied.",
+    "The original photograph is included unchanged under a descriptive filename; author and source license were not supplied.",
     "Each medium is judged visually; exact palette or geometry matching is not claimed."
   ]
 }

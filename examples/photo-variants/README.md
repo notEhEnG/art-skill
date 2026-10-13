@@ -2,12 +2,12 @@
 
 This gallery contains **24 generated images**: each of the four supplied photographs is independently interpreted in ASCII & Pixels, Sketch & Scribble, Digital Impressionism, Lo-fi Film, Generative Flow and Off-white Minimalism.
 
-| Photo set | Supplied filename | Final images | Actual calls |
+| Photo set | Original photograph | Final images | Actual calls |
 | --- | --- | ---: | ---: |
-| [Building and rainbow](building-rainbow/README.md) | `444444.jpg` | 6 | 6 |
-| [Hillside garden](hillside-garden/README.md) | `11111111.jpg` | 6 | 6 |
-| [Sunset bay](sunset-bay/README.md) | `222222222.jpg` | 6 | 6 |
-| [Towering cumulus](cumulus-clouds/README.md) | `33333333.jpg` | 6 | 6 |
+| [Building and rainbow](building-rainbow/README.md) | [building-rainbow.jpg](originals/building-rainbow.jpg) | 6 | 6 |
+| [Hillside garden](hillside-garden/README.md) | [hillside-garden.jpg](originals/hillside-garden.jpg) | 6 | 6 |
+| [Sunset bay](sunset-bay/README.md) | [sunset-bay.jpg](originals/sunset-bay.jpg) | 6 | 6 |
+| [Towering cumulus](cumulus-clouds/README.md) | [cumulus-clouds.jpg](originals/cumulus-clouds.jpg) | 6 | 6 |
 
 Each photo page shows all six versions. Every style page links to its actual prompt, brief, offline plan, frozen recipe and generation/review manifest. The same original photograph is used directly for all six versions; variants do not reference one another or combine the four scenes.
 
@@ -19,7 +19,9 @@ Visual checks covered recognizable subject/composition, distinct medium, palette
 
 ## Source notes
 
-The four original photographs are user-supplied local references and are not redistributed. Their filenames and hashes are recorded in the photo manifests. Authors and source licenses were not supplied. `444444.jpg` visibly carries the “Redamancy.” signature; that visible attribution is recorded without inferring authorship or licensing.
+The four original photographs are included byte-for-byte under descriptive filenames in `originals/` and displayed on their photo pages. The files in Downloads are unchanged. Their SHA-256 hashes are recorded in the photo manifests. Authors and source licenses were not supplied. [building-rainbow.jpg](originals/building-rainbow.jpg) visibly carries the “Redamancy.” signature; it is preserved without inferring authorship or licensing. The repository's MIT license covers its original code and instructions, not an asserted license for these photographs.
+
+Archived prompts, briefs and plans retain the input names used during the recorded generation. Each manifest's `generation_input_filename` maps that historical name to the descriptive `filename` and original-image `path`; the actual prompts have not been rewritten.
 
 ## Try the workflow
 
@@ -38,6 +40,6 @@ The planner remains offline. For example:
 python skills/art-skill/scripts/plan_pack.py examples/photo-variants/building-rainbow/ascii-pixels/brief.json
 ```
 
-Supply your own reference images and replace the filenames in the prompts. `plan.json` describes intended work; `manifest.json` records the actual result. Code/instruction licensing does not establish rights in source photographs or generated imagery.
+Use the linked original references, or supply your own photos. When rerunning, use the descriptive filenames in your new prompts. `plan.json` describes intended work; `manifest.json` records the actual result. Code/instruction licensing does not establish rights in source photographs or generated imagery.
 
-[Generation index](manifest.json) · [Back to Art Skill](../../README.md)
+[More proposed styles and workflows](../../docs/art-ideas.md) · [Generation index](manifest.json) · [Back to Art Skill](../../README.md)

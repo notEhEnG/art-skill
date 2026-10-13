@@ -9,13 +9,15 @@
   "max_calls": 2,
   "actual_cost_usd": null,
   "source": {
-    "filename": "11111111.jpg",
+    "filename": "hillside-garden.jpg",
     "sha256": "068cc4fe28a1c386848c5c4535c6456b1ce5f42da009ad603b39c3f801b3938d",
     "role": "Immutable edit target and composition reference for all six styles",
     "author": null,
     "license": null,
     "visible_credit": null,
-    "distributed_in_repository": false
+    "distributed_in_repository": true,
+    "generation_input_filename": "11111111.jpg",
+    "path": "../../originals/hillside-garden.jpg"
   },
   "style_lock": {
     "id": "generative-flow",

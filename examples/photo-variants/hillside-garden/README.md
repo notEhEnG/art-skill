@@ -1,6 +1,12 @@
 # Hillside garden: six styles
 
-Source: `11111111.jpg`. These six images each use this original photo directly; scenes are kept separate.
+Source: [hillside-garden.jpg](../originals/hillside-garden.jpg). These six images each use this original photo directly; scenes are kept separate.
+
+## Original photograph
+
+<img src="../originals/hillside-garden.jpg" alt="Original photograph: hillside garden" width="480">
+
+## Six generated styles
 
 | ASCII & Pixels | Sketch & Scribble |
 | --- | --- |
@@ -16,6 +22,6 @@ Source: `11111111.jpg`. These six images each use this original photo directly; 
 
 Every preview links to its style page, actual prompt, frozen recipe and manifest. All six native PNGs were inspected and accepted as aesthetic references. Palette and fine-detail departures are recorded on the individual pages.
 
-Recorded run: six image calls, zero repairs. [Manifest and source hash](manifest.json). The original photo remains local; source author/license and generated-model identity/cost are unknown.
+Recorded run: six image calls, zero repairs. [Manifest and source hash](manifest.json). The original photo is included unchanged under its descriptive filename; source author/license and generated-model identity/cost are unknown.
 
 [All four photo sets](../README.md) · [Art Skill](../../../README.md)

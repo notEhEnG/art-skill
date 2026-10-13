@@ -1,6 +1,6 @@
 # Building and rainbow — Off-white Minimalism
 
-Source: `444444.jpg`. One independent style interpretation of that photograph.
+Source: [building-rainbow.jpg](../../originals/building-rainbow.jpg). One independent style interpretation of that photograph.
 
 ![Generated building and rainbow in Off-white Minimalism](artwork.png)
 
