@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "id": "rainy-reading-room",
+  "style": "digital-impressionism",
+  "subject": "An original empty reading room with a rain-streaked window, an unbranded terracotta mug and an open book",
+  "purpose": "A cohesive illustrated pack for a reading journal and its website",
+  "constraints": [
+    "No people, logos, brands, or lettering",
+    "Keep the room materials, mug design and palette consistent",
+    "Do not reproduce existing artwork"
+  ],
+  "max_calls": 6,
+  "assets": [
+    {
+      "id": "anchor",
+      "role": "hero",
+      "size": "1536x1024",
+      "background": "opaque",
+      "format": "png",
+      "direction": "Wide room scene with breathing room for separate website copy"
+    },
+    {
+      "id": "cover",
+      "role": "cover",
+      "size": "1024x1024",
+      "background": "opaque",
+      "format": "png",
+      "reference": "anchor",
+      "direction": "Square composition of the same room and objects; preserve the visual language"
+    },
+    {
+      "id": "poster",
+      "role": "poster",
+      "size": "1024x1536",
+      "background": "opaque",
+      "format": "png",
+      "reference": "anchor",
+      "direction": "Portrait composition of the same room with generous quiet space"
+    },
+    {
+      "id": "mug-cutout",
+      "role": "cutout",
+      "size": "1024x1024",
+      "background": "transparent",
+      "format": "png",
+      "reference": "anchor",
+      "direction": "Isolate the same terracotta mug and a small open-book vignette on actual transparency"
+    }
+  ]
+}

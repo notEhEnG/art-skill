@@ -1,0 +1,4 @@
+interface:
+  display_name: "Art Skill"
+  short_description: "Create cohesive image and visual asset packs"
+  default_prompt: "Use $art-skill to make a digital impressionist image pack for a rainy reading room."

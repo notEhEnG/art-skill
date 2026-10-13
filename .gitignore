@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.agents/
+.claude/
+.cursor/
+output/
+.env
+.env.*
+!.env.example

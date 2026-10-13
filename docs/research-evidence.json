@@ -1,0 +1,93 @@
+{
+  "checked_on": "2026-10-13",
+  "video": {
+    "source": "Private user-provided reference clip (not distributed)",
+    "duration_seconds": 8.02,
+    "width": 392,
+    "height": 850,
+    "review_method": "Inspected exact 0–7 second video frames and onscreen captions; audio not transcribed.",
+    "observed_captions": [
+      {
+        "second": 1,
+        "text": "ASCII and pixels"
+      },
+      {
+        "second": 2,
+        "text": "sketch and scribble"
+      },
+      {
+        "second": 3,
+        "text": "digital impressionism"
+      },
+      {
+        "second": 4,
+        "text": "lomo imagery"
+      },
+      {
+        "second": 5,
+        "text": "generative art"
+      },
+      {
+        "second": 6,
+        "text": "shades of off-white"
+      }
+    ],
+    "scope": "Aesthetic examples, not a demonstrated slash-command tool or agent protocol.",
+    "source_kind": "private_video",
+    "file_distributed": false
+  },
+  "repositories": [
+    {
+      "repository": "anthropics/skills",
+      "url": "https://github.com/anthropics/skills",
+      "stars": 180819,
+      "license_detected": null,
+      "last_commit_sha": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+      "last_commit_date": "2026-10-09T18:45:49Z",
+      "commit_url": "https://github.com/anthropics/skills/commit/dbd4588f9e1033efb41dad4bef2f7947c8993d44"
+    },
+    {
+      "repository": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+      "stars": 135321,
+      "license_detected": "MIT",
+      "last_commit_sha": "7246805992a42b7bba37d4cac83b01416f0c6c44",
+      "last_commit_date": "2026-10-12T11:08:03Z",
+      "commit_url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/commit/7246805992a42b7bba37d4cac83b01416f0c6c44"
+    },
+    {
+      "repository": "openai/plugins",
+      "url": "https://github.com/openai/plugins",
+      "stars": 7423,
+      "license_detected": null,
+      "last_commit_sha": "0722921d5542fc593105c27bd52630babd8b8c2a",
+      "last_commit_date": "2026-10-08T05:21:32Z",
+      "commit_url": "https://github.com/openai/plugins/commit/0722921d5542fc593105c27bd52630babd8b8c2a"
+    }
+  ],
+  "official_sources": [
+    "https://learn.chatgpt.com/docs/build-skills",
+    "https://learn.chatgpt.com/docs/reference/slash-commands",
+    "https://code.claude.com/docs/en/skills",
+    "https://cursor.com/help/customization/skills",
+    "https://developers.openai.com/api/docs/guides/image-generation",
+    "https://developers.openai.com/api/docs/models/gpt-image-2.5-sunburst"
+  ],
+  "validation": {
+    "live_generation": false,
+    "interactive_host_smoke_test": false
+  },
+  "historical_repo_name_search": {
+    "query": "art-direction-kit in:name",
+    "returned_repositories": 0,
+    "url": "https://github.com/search?q=art-direction-kit+in%3Aname&type=repositories",
+    "limitation": "Search is not a namespace reservation or trademark clearance."
+  },
+  "selected_name": {
+    "repo": "art-skill",
+    "skill": "art-skill",
+    "display_name": "Art Skill",
+    "source": "User instruction: Stick with art-skill",
+    "selected_on": "2026-10-13"
+  }
+}

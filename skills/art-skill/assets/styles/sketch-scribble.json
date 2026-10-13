@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0",
+  "id": "sketch-scribble",
+  "version": "1.0.0",
+  "label": "Sketch & Scribble",
+  "traits": {
+    "medium": "gestural pencil and ink drawing with sparse color accents",
+    "palette": [
+      "#F4EFE4",
+      "#2D2926",
+      "#B96843",
+      "#6A8072"
+    ],
+    "texture": "paper tooth, varied line weight, restrained graphite smudges",
+    "composition": "loose energetic marks around a clearly structured subject",
+    "lighting": "soft implied light with selective crosshatching"
+  },
+  "avoid": [
+    "real people",
+    "copyrighted characters",
+    "logos and brand marks",
+    "copied artworks",
+    "unrequested lettering"
+  ],
+  "review_checks": [
+    "line hierarchy",
+    "paper remains visible",
+    "controlled accents"
+  ],
+  "limitations": [
+    "Stroke placement can drift during edits."
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "schema_version": "1.0",
+  "pack_id": "rainy-reading-room",
+  "status": "planned",
+  "generation_performed": false,
+  "backend": null,
+  "model": null,
+  "style_lock": {
+    "id": "digital-impressionism",
+    "version": "1.0.0",
+    "sha256": "d7aeb22c11f5465bffdc708c354357c1f6f8e6d7dbef8bca3de4c51719f7884f",
+    "recipe": {
+      "schema_version": "1.0",
+      "id": "digital-impressionism",
+      "version": "1.0.0",
+      "label": "Digital Impressionism",
+      "traits": {
+        "medium": "original painterly raster illustration using broken-color strokes",
+        "palette": [
+          "#ECDCB8",
+          "#557C91",
+          "#71978A",
+          "#B67A53",
+          "#E4B75E"
+        ],
+        "texture": "short layered brush marks; keep brush scale coherent throughout the pack",
+        "composition": "readable forms, softened edges and breathing room",
+        "lighting": "warm scattered highlights balanced with cool shadows"
+      },
+      "avoid": [
+        "real people",
+        "copyrighted characters",
+        "logos and brand marks",
+        "copied artworks",
+        "unrequested lettering"
+      ],
+      "review_checks": [
+        "broken-color brushwork",
+        "warm/cool balance",
+        "matching brush scale"
+      ],
+      "limitations": [
+        "Palette and geometry require visual review across images."
+      ]
+    }
+  },
+  "anchor_asset_id": "anchor",
+  "base_calls": 4,
+  "max_calls": 6,
+  "repair_allowance": 2,
+  "calls_used": 0,
+  "actual_cost_usd": null,
+  "assets": [
+    {
+      "id": "anchor",
+      "role": "hero",
+      "status": "planned",
+      "reference": null,
+      "requested_size": "1536x1024",
+      "requested_background": "opaque",
+      "requested_format": "png",
+      "planned_path": "images/anchor.png",
+      "prompt": "Use case: stylized-concept\nAsset type: hero; intended use: A cohesive illustrated pack for a reading journal and its website\nPrimary request: An original empty reading room with a rain-streaked window, an unbranded terracotta mug and an open book\nStyle/medium: original painterly raster illustration using broken-color strokes\nColor palette: #ECDCB8, #557C91, #71978A, #B67A53, #E4B75E\nMaterials/textures: short layered brush marks; keep brush scale coherent throughout the pack\nComposition/framing: readable forms, softened edges and breathing room; Wide room scene with breathing room for separate website copy\nLighting/mood: warm scattered highlights balanced with cool shadows\nRequested output target: 1536x1024, opaque background, png; use only supported tool controls\nAvoid: real people; copyrighted characters; logos and brand marks; copied artworks; unrequested lettering\nConstraints: No people, logos, brands, or lettering; Keep the room materials, mug design and palette consistent; Do not reproduce existing artwork"
+    },
+    {
+      "id": "cover",
+      "role": "cover",
+      "status": "planned",
+      "reference": "anchor",
+      "requested_size": "1024x1024",
+      "requested_background": "opaque",
+      "requested_format": "png",
+      "planned_path": "images/cover.png",
+      "prompt": "Use case: stylized-concept\nAsset type: cover; intended use: A cohesive illustrated pack for a reading journal and its website\nPrimary request: An original empty reading room with a rain-streaked window, an unbranded terracotta mug and an open book\nStyle/medium: original painterly raster illustration using broken-color strokes\nColor palette: #ECDCB8, #557C91, #71978A, #B67A53, #E4B75E\nMaterials/textures: short layered brush marks; keep brush scale coherent throughout the pack\nComposition/framing: readable forms, softened edges and breathing room; Square composition of the same room and objects; preserve the visual language\nLighting/mood: warm scattered highlights balanced with cool shadows\nRequested output target: 1024x1024, opaque background, png; use only supported tool controls\nAvoid: real people; copyrighted characters; logos and brand marks; copied artworks; unrequested lettering\nInput images: accepted anchor artwork as shared reference; preserve applicable palette, materials and subject details\nConstraints: No people, logos, brands, or lettering; Keep the room materials, mug design and palette consistent; Do not reproduce existing artwork"
+    },
+    {
+      "id": "poster",
+      "role": "poster",
+      "status": "planned",
+      "reference": "anchor",
+      "requested_size": "1024x1536",
+      "requested_background": "opaque",
+      "requested_format": "png",
+      "planned_path": "images/poster.png",
+      "prompt": "Use case: stylized-concept\nAsset type: poster; intended use: A cohesive illustrated pack for a reading journal and its website\nPrimary request: An original empty reading room with a rain-streaked window, an unbranded terracotta mug and an open book\nStyle/medium: original painterly raster illustration using broken-color strokes\nColor palette: #ECDCB8, #557C91, #71978A, #B67A53, #E4B75E\nMaterials/textures: short layered brush marks; keep brush scale coherent throughout the pack\nComposition/framing: readable forms, softened edges and breathing room; Portrait composition of the same room with generous quiet space\nLighting/mood: warm scattered highlights balanced with cool shadows\nRequested output target: 1024x1536, opaque background, png; use only supported tool controls\nAvoid: real people; copyrighted characters; logos and brand marks; copied artworks; unrequested lettering\nInput images: accepted anchor artwork as shared reference; preserve applicable palette, materials and subject details\nConstraints: No people, logos, brands, or lettering; Keep the room materials, mug design and palette consistent; Do not reproduce existing artwork"
+    },
+    {
+      "id": "mug-cutout",
+      "role": "cutout",
+      "status": "planned",
+      "reference": "anchor",
+      "requested_size": "1024x1024",
+      "requested_background": "transparent",
+      "requested_format": "png",
+      "planned_path": "images/mug-cutout.png",
+      "prompt": "Use case: stylized-concept\nAsset type: cutout; intended use: A cohesive illustrated pack for a reading journal and its website\nPrimary request: An original empty reading room with a rain-streaked window, an unbranded terracotta mug and an open book\nStyle/medium: original painterly raster illustration using broken-color strokes\nColor palette: #ECDCB8, #557C91, #71978A, #B67A53, #E4B75E\nMaterials/textures: short layered brush marks; keep brush scale coherent throughout the pack\nComposition/framing: readable forms, softened edges and breathing room; Isolate the same terracotta mug and a small open-book vignette on actual transparency\nLighting/mood: warm scattered highlights balanced with cool shadows\nRequested output target: 1024x1024, transparent background, png; use only supported tool controls\nAvoid: real people; copyrighted characters; logos and brand marks; copied artworks; unrequested lettering\nInput images: accepted anchor artwork as shared reference; preserve applicable palette, materials and subject details\nConstraints: No people, logos, brands, or lettering; Keep the room materials, mug design and palette consistent; Do not reproduce existing artwork"
+    }
+  ]
+}
