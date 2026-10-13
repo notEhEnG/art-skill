@@ -2,119 +2,61 @@
 
 An art-direction skill for Codex and other AI agents, with reusable styles and slash-command workflows for images and visual asset packs.
 
-**Status:** usable skill with tested offline planning, installation, and 18 bundled recipes and 36 visually reviewed photo-to-style examples. Cross-host slash-menu discovery, a same-style multi-asset pack and cutout transparency still need smoke tests.
+**Status:** usable skill with tested offline planning and installation, 18 bundled recipes, and 36 visually reviewed photo-to-style examples. Cross-host slash-menu discovery, a same-style multi-asset pack and cutout transparency still need smoke tests.
 
-## Twelve new styles
+## Quick install
 
-**12 new generated examples**, one per added recipe. These use the four original photographs shown below. Click any image for its original reference, prompt, recipe and review notes.
+Copy this into Codex:
 
-| Watercolor Wash | Gouache Poster |
+```text
+Hey Codex, please install this skill for me: https://github.com/notEhEnG/art-skill
+```
+
+The installable skill is in [`skills/art-skill`](https://github.com/notEhEnG/art-skill/tree/main/skills/art-skill). Codex's skill installer supports GitHub repositories; if a newly installed skill does not appear, restart Codex. [Official installation guidance](https://learn.chatgpt.com/docs/build-skills).
+
+After installation, try `$art-skill styles`. See the invocation and manual project installation options below.
+
+## Six featured styles
+
+One generated example per core style, paired with its original photo. Click an artwork for its prompt, recipe and review notes, or an original to view the source photograph.
+
+### ASCII & Pixels — Building and Rainbow
+
+| Original photo | Generated example |
 | --- | --- |
-| [![Watercolor Wash](examples/expanded-styles/watercolor-wash/artwork.png)](examples/expanded-styles/watercolor-wash/README.md) | [![Gouache Poster](examples/expanded-styles/gouache-poster/artwork.png)](examples/expanded-styles/gouache-poster/README.md) |
+| [<img src="examples/photo-variants/originals/building-rainbow.jpg" alt="Original photograph: Building and Rainbow" width="360">](examples/photo-variants/originals/building-rainbow.jpg) | [<img src="examples/photo-variants/building-rainbow/ascii-pixels/artwork.png" alt="ASCII & Pixels: Building and Rainbow" width="360">](examples/photo-variants/building-rainbow/ascii-pixels/README.md) |
 
-| Linocut | Risograph |
+### Sketch & Scribble — Sunset Bay
+
+| Original photo | Generated example |
 | --- | --- |
-| [![Linocut](examples/expanded-styles/linocut/artwork.png)](examples/expanded-styles/linocut/README.md) | [![Risograph](examples/expanded-styles/risograph/artwork.png)](examples/expanded-styles/risograph/README.md) |
+| [<img src="examples/photo-variants/originals/sunset-bay.jpg" alt="Original photograph: Sunset Bay" width="360">](examples/photo-variants/originals/sunset-bay.jpg) | [<img src="examples/photo-variants/sunset-bay/sketch-scribble/artwork.png" alt="Sketch & Scribble: Sunset Bay" width="360">](examples/photo-variants/sunset-bay/sketch-scribble/README.md) |
 
-| Stained Glass | Cyanotype |
+### Digital Impressionism — Hillside Garden
+
+| Original photo | Generated example |
 | --- | --- |
-| [![Stained Glass](examples/expanded-styles/stained-glass/artwork.png)](examples/expanded-styles/stained-glass/README.md) | [![Cyanotype](examples/expanded-styles/cyanotype/artwork.png)](examples/expanded-styles/cyanotype/README.md) |
+| [<img src="examples/photo-variants/originals/hillside-garden.jpg" alt="Original photograph: Hillside Garden" width="360">](examples/photo-variants/originals/hillside-garden.jpg) | [<img src="examples/photo-variants/hillside-garden/digital-impressionism/artwork.png" alt="Digital Impressionism: Hillside Garden" width="360">](examples/photo-variants/hillside-garden/digital-impressionism/README.md) |
 
-| Clay Diorama | Felt Collage |
+### Lo-fi Film Imagery — Sunset Bay
+
+| Original photo | Generated example |
 | --- | --- |
-| [![Clay Diorama](examples/expanded-styles/clay-diorama/artwork.png)](examples/expanded-styles/clay-diorama/README.md) | [![Felt Collage](examples/expanded-styles/felt-collage/artwork.png)](examples/expanded-styles/felt-collage/README.md) |
+| [<img src="examples/photo-variants/originals/sunset-bay.jpg" alt="Original photograph: Sunset Bay" width="360">](examples/photo-variants/originals/sunset-bay.jpg) | [<img src="examples/photo-variants/sunset-bay/lofi-film/artwork.png" alt="Lo-fi Film Imagery: Sunset Bay" width="360">](examples/photo-variants/sunset-bay/lofi-film/README.md) |
 
-| Embroidery | Ink Wash |
+### Generative Flow — Cumulus Clouds
+
+| Original photo | Generated example |
 | --- | --- |
-| [![Embroidery](examples/expanded-styles/embroidery/artwork.png)](examples/expanded-styles/embroidery/README.md) | [![Ink Wash](examples/expanded-styles/ink-wash/artwork.png)](examples/expanded-styles/ink-wash/README.md) |
+| [<img src="examples/photo-variants/originals/cumulus-clouds.jpg" alt="Original photograph: Cumulus Clouds" width="360">](examples/photo-variants/originals/cumulus-clouds.jpg) | [<img src="examples/photo-variants/cumulus-clouds/generative-flow/artwork.png" alt="Generative Flow: Cumulus Clouds" width="360">](examples/photo-variants/cumulus-clouds/generative-flow/README.md) |
 
-| Geometric Facets | Ceramic Mosaic |
+### Off-white Minimalism — Building and Rainbow
+
+| Original photo | Generated example |
 | --- | --- |
-| [![Geometric Facets](examples/expanded-styles/geometric-facets/artwork.png)](examples/expanded-styles/geometric-facets/README.md) | [![Ceramic Mosaic](examples/expanded-styles/ceramic-mosaic/artwork.png)](examples/expanded-styles/ceramic-mosaic/README.md) |
+| [<img src="examples/photo-variants/originals/building-rainbow.jpg" alt="Original photograph: Building and Rainbow" width="360">](examples/photo-variants/originals/building-rainbow.jpg) | [<img src="examples/photo-variants/building-rainbow/off-white/artwork.png" alt="Off-white Minimalism: Building and Rainbow" width="360">](examples/photo-variants/building-rainbow/off-white/README.md) |
 
-[All twelve examples and recorded results](examples/expanded-styles/README.md) · [All 18 selectable styles](skills/art-skill/references/styles.md)
-
-Try `$art-skill remix this photo in watercolor-wash`, or choose any ID in the catalog. Hosts with a native skill command use `/art-skill remix …`; the host invocation rules below still apply.
-
-## Four photos × six styles
-
-**24 generated reference images.** Each supplied photo has its own six-style gallery, using that original directly for every version. Click any artwork to open its prompt, recipe and recorded result.
-
-### Building and rainbow
-
-Original reference: [building-rainbow.jpg](examples/photo-variants/originals/building-rainbow.jpg).
-
-<img src="examples/photo-variants/originals/building-rainbow.jpg" alt="Original photograph: building and rainbow" width="480">
-
-| ASCII & Pixels | Sketch & Scribble |
-| --- | --- |
-| [![ASCII & Pixels](examples/photo-variants/building-rainbow/ascii-pixels/artwork.png)](examples/photo-variants/building-rainbow/ascii-pixels/README.md) | [![Sketch & Scribble](examples/photo-variants/building-rainbow/sketch-scribble/artwork.png)](examples/photo-variants/building-rainbow/sketch-scribble/README.md) |
-
-| Digital Impressionism | Lo-fi Film Imagery |
-| --- | --- |
-| [![Digital Impressionism](examples/photo-variants/building-rainbow/digital-impressionism/artwork.png)](examples/photo-variants/building-rainbow/digital-impressionism/README.md) | [![Lo-fi Film Imagery](examples/photo-variants/building-rainbow/lofi-film/artwork.png)](examples/photo-variants/building-rainbow/lofi-film/README.md) |
-
-| Generative Flow | Off-white Minimalism |
-| --- | --- |
-| [![Generative Flow](examples/photo-variants/building-rainbow/generative-flow/artwork.png)](examples/photo-variants/building-rainbow/generative-flow/README.md) | [![Off-white Minimalism](examples/photo-variants/building-rainbow/off-white/artwork.png)](examples/photo-variants/building-rainbow/off-white/README.md) |
-
-### Hillside garden
-
-Original reference: [hillside-garden.jpg](examples/photo-variants/originals/hillside-garden.jpg).
-
-<img src="examples/photo-variants/originals/hillside-garden.jpg" alt="Original photograph: hillside garden" width="480">
-
-| ASCII & Pixels | Sketch & Scribble |
-| --- | --- |
-| [![ASCII & Pixels](examples/photo-variants/hillside-garden/ascii-pixels/artwork.png)](examples/photo-variants/hillside-garden/ascii-pixels/README.md) | [![Sketch & Scribble](examples/photo-variants/hillside-garden/sketch-scribble/artwork.png)](examples/photo-variants/hillside-garden/sketch-scribble/README.md) |
-
-| Digital Impressionism | Lo-fi Film Imagery |
-| --- | --- |
-| [![Digital Impressionism](examples/photo-variants/hillside-garden/digital-impressionism/artwork.png)](examples/photo-variants/hillside-garden/digital-impressionism/README.md) | [![Lo-fi Film Imagery](examples/photo-variants/hillside-garden/lofi-film/artwork.png)](examples/photo-variants/hillside-garden/lofi-film/README.md) |
-
-| Generative Flow | Off-white Minimalism |
-| --- | --- |
-| [![Generative Flow](examples/photo-variants/hillside-garden/generative-flow/artwork.png)](examples/photo-variants/hillside-garden/generative-flow/README.md) | [![Off-white Minimalism](examples/photo-variants/hillside-garden/off-white/artwork.png)](examples/photo-variants/hillside-garden/off-white/README.md) |
-
-### Sunset bay
-
-Original reference: [sunset-bay.jpg](examples/photo-variants/originals/sunset-bay.jpg).
-
-<img src="examples/photo-variants/originals/sunset-bay.jpg" alt="Original photograph: sunset bay" width="480">
-
-| ASCII & Pixels | Sketch & Scribble |
-| --- | --- |
-| [![ASCII & Pixels](examples/photo-variants/sunset-bay/ascii-pixels/artwork.png)](examples/photo-variants/sunset-bay/ascii-pixels/README.md) | [![Sketch & Scribble](examples/photo-variants/sunset-bay/sketch-scribble/artwork.png)](examples/photo-variants/sunset-bay/sketch-scribble/README.md) |
-
-| Digital Impressionism | Lo-fi Film Imagery |
-| --- | --- |
-| [![Digital Impressionism](examples/photo-variants/sunset-bay/digital-impressionism/artwork.png)](examples/photo-variants/sunset-bay/digital-impressionism/README.md) | [![Lo-fi Film Imagery](examples/photo-variants/sunset-bay/lofi-film/artwork.png)](examples/photo-variants/sunset-bay/lofi-film/README.md) |
-
-| Generative Flow | Off-white Minimalism |
-| --- | --- |
-| [![Generative Flow](examples/photo-variants/sunset-bay/generative-flow/artwork.png)](examples/photo-variants/sunset-bay/generative-flow/README.md) | [![Off-white Minimalism](examples/photo-variants/sunset-bay/off-white/artwork.png)](examples/photo-variants/sunset-bay/off-white/README.md) |
-
-### Towering cumulus
-
-Original reference: [cumulus-clouds.jpg](examples/photo-variants/originals/cumulus-clouds.jpg).
-
-<img src="examples/photo-variants/originals/cumulus-clouds.jpg" alt="Original photograph: towering cumulus" width="480">
-
-| ASCII & Pixels | Sketch & Scribble |
-| --- | --- |
-| [![ASCII & Pixels](examples/photo-variants/cumulus-clouds/ascii-pixels/artwork.png)](examples/photo-variants/cumulus-clouds/ascii-pixels/README.md) | [![Sketch & Scribble](examples/photo-variants/cumulus-clouds/sketch-scribble/artwork.png)](examples/photo-variants/cumulus-clouds/sketch-scribble/README.md) |
-
-| Digital Impressionism | Lo-fi Film Imagery |
-| --- | --- |
-| [![Digital Impressionism](examples/photo-variants/cumulus-clouds/digital-impressionism/artwork.png)](examples/photo-variants/cumulus-clouds/digital-impressionism/README.md) | [![Lo-fi Film Imagery](examples/photo-variants/cumulus-clouds/lofi-film/artwork.png)](examples/photo-variants/cumulus-clouds/lofi-film/README.md) |
-
-| Generative Flow | Off-white Minimalism |
-| --- | --- |
-| [![Generative Flow](examples/photo-variants/cumulus-clouds/generative-flow/artwork.png)](examples/photo-variants/cumulus-clouds/generative-flow/README.md) | [![Off-white Minimalism](examples/photo-variants/cumulus-clouds/off-white/artwork.png)](examples/photo-variants/cumulus-clouds/off-white/README.md) |
-
-[All photo sets and source notes](examples/photo-variants/README.md) · [Recorded generation index](examples/photo-variants/manifest.json)
-
-Recorded run: 24 built-in image calls, 24 native PNGs, zero repairs. Actual dimensions and review notes are recorded per image; model identity and monetary cost were not exposed. Each gallery now includes its unchanged original reference under a descriptive filename.
+More examples: [four photos in all six core styles](examples/photo-variants/README.md) · [twelve additional styles](examples/expanded-styles/README.md) · [all 18 recipes](skills/art-skill/references/styles.md).
 
 ## Start in a project
 
@@ -163,7 +105,6 @@ The sample requests four assets: landscape anchor, square cover, portrait compos
 | `lofi-film` | Soft focus, restrained grain and light leaks | Aesthetic, not calibrated film simulation |
 | `generative-flow` | Layered contours and filaments | Raster art, not executable seeded code |
 | `off-white` | Warm neutral still life and empty space | Artwork, not a functional website |
-
 | `watercolor-wash` | Watercolor Wash | Paper and pigment behavior are visual approximations, not a physical watercolor simulation. |
 | `gouache-poster` | Gouache Poster | A poster aesthetic does not supply print layouts or guarantee exact typography. |
 | `linocut` | Linocut | Raster art only; no cutting template, separated plates or carve-ready geometry is supplied. |
