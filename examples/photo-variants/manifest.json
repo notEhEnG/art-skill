@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.0",
+  "id": "photo-variants",
+  "status": "complete",
+  "photo_count": 4,
+  "requested_asset_count": 24,
+  "max_calls": 32,
+  "calls_used": 24,
+  "backend": "Codex built-in image_gen",
+  "model": null,
+  "actual_cost_usd": null,
+  "sets": [
+    {
+      "id": "building-rainbow",
+      "title": "Building and rainbow",
+      "filename": "444444.jpg",
+      "orientation": "portrait",
+      "manifest": "building-rainbow/manifest.json",
+      "status": "complete",
+      "final_asset_count": 6,
+      "calls_used": 6,
+      "repair_calls": 0
+    },
+    {
+      "id": "hillside-garden",
+      "title": "Hillside garden",
+      "filename": "11111111.jpg",
+      "orientation": "landscape",
+      "manifest": "hillside-garden/manifest.json",
+      "status": "complete",
+      "final_asset_count": 6,
+      "calls_used": 6,
+      "repair_calls": 0
+    },
+    {
+      "id": "sunset-bay",
+      "title": "Sunset bay",
+      "filename": "222222222.jpg",
+      "orientation": "landscape",
+      "manifest": "sunset-bay/manifest.json",
+      "status": "complete",
+      "final_asset_count": 6,
+      "calls_used": 6,
+      "repair_calls": 0
+    },
+    {
+      "id": "cumulus-clouds",
+      "title": "Towering cumulus",
+      "filename": "33333333.jpg",
+      "orientation": "portrait",
+      "manifest": "cumulus-clouds/manifest.json",
+      "status": "complete",
+      "final_asset_count": 6,
+      "calls_used": 6,
+      "repair_calls": 0
+    }
+  ],
+  "generation_performed": true,
+  "final_asset_count": 24,
+  "repair_calls": 0,
+  "created_on": "2026-10-13",
+  "moderation_blocks_observed": 0,
+  "notes": [
+    "Four separate original-photo studies, six styles each; no composite scene is used in this gallery.",
+    "All outputs are saved native PNGs; requested planning sizes are not a claim about actual tool sizes.",
+    "Original source photographs remain local. All public paths are repository-relative."
+  ]
+}

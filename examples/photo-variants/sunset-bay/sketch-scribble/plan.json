@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0",
+  "pack_id": "sunset-bay-sketch-scribble",
+  "status": "planned",
+  "generation_performed": false,
+  "backend": null,
+  "model": null,
+  "style_lock": {
+    "id": "sketch-scribble",
+    "version": "1.0.0",
+    "sha256": "27a6b771c79d09c0829abbfb03eb75caa7b66d07992cca3636a72052cb2b1169",
+    "recipe": {
+      "schema_version": "1.0",
+      "id": "sketch-scribble",
+      "version": "1.0.0",
+      "label": "Sketch & Scribble",
+      "traits": {
+        "medium": "gestural pencil and ink drawing with sparse color accents",
+        "palette": [
+          "#F4EFE4",
+          "#2D2926",
+          "#B96843",
+          "#6A8072"
+        ],
+        "texture": "paper tooth, varied line weight, restrained graphite smudges",
+        "composition": "loose energetic marks around a clearly structured subject",
+        "lighting": "soft implied light with selective crosshatching"
+      },
+      "avoid": [
+        "real people",
+        "copyrighted characters",
+        "logos and brand marks",
+        "copied artworks",
+        "unrequested lettering"
+      ],
+      "review_checks": [
+        "line hierarchy",
+        "paper remains visible",
+        "controlled accents"
+      ],
+      "limitations": [
+        "Stroke placement can drift during edits."
+      ]
+    }
+  },
+  "anchor_asset_id": "artwork",
+  "base_calls": 1,
+  "max_calls": 2,
+  "repair_allowance": 1,
+  "calls_used": 0,
+  "actual_cost_usd": null,
+  "assets": [
+    {
+      "id": "artwork",
+      "role": "README style reference",
+      "status": "planned",
+      "reference": null,
+      "requested_size": "1536x1024",
+      "requested_background": "opaque",
+      "requested_format": "png",
+      "planned_path": "images/artwork.png",
+      "prompt": "Use case: stylized-concept\nAsset type: README style reference; intended use: A six-style comparison of this individual source photograph for the Art Skill README\nPrimary request: A wide view across dark gently rippling water toward low island silhouettes beneath an expansive sunset sky. The horizon sits low, with a larger dark headland at the left edge, layered orange, coral, gold and purple clouds and a tiny distant boat near the right horizon.\nStyle/medium: gestural pencil and ink drawing with sparse color accents\nColor palette: #F4EFE4, #2D2926, #B96843, #6A8072\nMaterials/textures: paper tooth, varied line weight, restrained graphite smudges\nComposition/framing: loose energetic marks around a clearly structured subject; Keep landscape orientation and the original broad framing; one image, no frame or panels\nLighting/mood: soft implied light with selective crosshatching\nRequested output target: 1536x1024, opaque background, png; use only supported tool controls\nAvoid: real people; copyrighted characters; logos and brand marks; copied artworks; unrequested lettering\nConstraints: Keep the original low horizon, open water, dark left headland, low islands and sweeping layered sunset clouds. The sky dominates. Do not add a garden, terrace, trees or a towering central cloud.; No added people, brands, characters, captions or signatures; Use only this source photograph as the composition reference; never mix motifs from the other photos"
+    }
+  ]
+}

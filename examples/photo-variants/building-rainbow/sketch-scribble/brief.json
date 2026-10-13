@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "id": "building-rainbow-sketch-scribble",
+  "style": "sketch-scribble",
+  "subject": "An upward view of a warm beige building with a diagonal roofline, a slim roof railing and red-trimmed windows in the lower part of the frame, beneath a vast blue sky, a small soft white cloud and a faint rainbow patch. Small foliage sits along the lower edge.",
+  "purpose": "A six-style comparison of this individual source photograph for the Art Skill README",
+  "constraints": [
+    "Keep the original upward viewpoint, diagonal building line, window rhythm, broad empty sky, small cloud placement and faint rainbow motif. Do not add a sea, mountains, a garden terrace or a sunset.",
+    "No added people, brands, characters, captions or signatures",
+    "Use only this source photograph as the composition reference; never mix motifs from the other photos"
+  ],
+  "max_calls": 2,
+  "assets": [
+    {
+      "id": "artwork",
+      "role": "README style reference",
+      "size": "1024x1536",
+      "background": "opaque",
+      "format": "png",
+      "direction": "Keep portrait orientation and the original broad framing; one image, no frame or panels"
+    }
+  ]
+}

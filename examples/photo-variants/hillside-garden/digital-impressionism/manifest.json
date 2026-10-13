@@ -1,0 +1,99 @@
+{
+  "schema_version": "1.0",
+  "pack_id": "hillside-garden-digital-impressionism",
+  "status": "complete",
+  "generation_performed": true,
+  "backend": "Codex built-in image_gen",
+  "model": null,
+  "calls_used": 1,
+  "max_calls": 2,
+  "actual_cost_usd": null,
+  "source": {
+    "filename": "11111111.jpg",
+    "sha256": "068cc4fe28a1c386848c5c4535c6456b1ce5f42da009ad603b39c3f801b3938d",
+    "role": "Immutable edit target and composition reference for all six styles",
+    "author": null,
+    "license": null,
+    "visible_credit": null,
+    "distributed_in_repository": false
+  },
+  "style_lock": {
+    "id": "digital-impressionism",
+    "version": "1.0.0",
+    "sha256": "d7aeb22c11f5465bffdc708c354357c1f6f8e6d7dbef8bca3de4c51719f7884f",
+    "recipe": {
+      "schema_version": "1.0",
+      "id": "digital-impressionism",
+      "version": "1.0.0",
+      "label": "Digital Impressionism",
+      "traits": {
+        "medium": "original painterly raster illustration using broken-color strokes",
+        "palette": [
+          "#ECDCB8",
+          "#557C91",
+          "#71978A",
+          "#B67A53",
+          "#E4B75E"
+        ],
+        "texture": "short layered brush marks; keep brush scale coherent throughout the pack",
+        "composition": "readable forms, softened edges and breathing room",
+        "lighting": "warm scattered highlights balanced with cool shadows"
+      },
+      "avoid": [
+        "real people",
+        "copyrighted characters",
+        "logos and brand marks",
+        "copied artworks",
+        "unrequested lettering"
+      ],
+      "review_checks": [
+        "broken-color brushwork",
+        "warm/cool balance",
+        "matching brush scale"
+      ],
+      "limitations": [
+        "Palette and geometry require visual review across images."
+      ]
+    }
+  },
+  "assets": [
+    {
+      "id": "artwork",
+      "label": "Digital Impressionism",
+      "status": "reviewed",
+      "path": "artwork.png",
+      "prompt": "prompt.txt",
+      "recipe": "style.json",
+      "brief": "brief.json",
+      "plan": "plan.json",
+      "style_sha256": "d7aeb22c11f5465bffdc708c354357c1f6f8e6d7dbef8bca3de4c51719f7884f",
+      "source_anchor_sha256": "068cc4fe28a1c386848c5c4535c6456b1ce5f42da009ad603b39c3f801b3938d",
+      "requested_orientation": "landscape",
+      "requested_size": "1536x1024",
+      "requested_background": "opaque",
+      "attempt_count": 1,
+      "native_size": [
+        1448,
+        1086
+      ],
+      "sha256": "67a577b36888ba5dbb402fd70dd006e4c8e32961e95cb529c8add8035b7e9628",
+      "review_notes": [
+        "Short layered broken-color brushwork replaces photographic detail while retaining the broad composition.",
+        "Left trunk, conifer rhythm, slope, distant hills and path remain recognizable.",
+        "The original photo was referenced directly; no generated derivative was used as an input."
+      ],
+      "byte_count": 3877130,
+      "png_color_type": 2,
+      "png_integrity_verified": true,
+      "alpha_channel_present": false,
+      "transparent_pixels_verified": null,
+      "limitations": [
+        "Broad composition is preserved; exact geometry, source colors and small details can be interpreted.",
+        "Palette and geometry require visual review across images."
+      ],
+      "review_method": "Rendered tool output visually inspected for subject, medium, composition and unwanted additions",
+      "repair_required": false,
+      "final_prompt": "Use case: style-transfer\nAsset type: one landscape README reference artwork\nInput image 1: 11111111.jpg, the sole subject and composition reference. Reinterpret this photo only; do not combine it with other scenes.\nPrimary request: A lush sloping hillside garden with a thick foreground tree trunk on the left, tall slender conifers across the center-right, dense layered foliage, distant bluish hills, a small blue roof lower-center, external stairs at far left and a curving path on the right beneath a bright cloudy sky.\nComposition invariants: Keep the original layered garden viewpoint, left tree trunk, tall conifer rhythm, slope, distant hills and curving path. Simplify minor details only to suit the medium. Do not add a sea, island bay, rainbow or sunset.\nStyle/medium: Completely repaint using short layered broken-color brush marks, softened edges and coherent brush scale, with warm highlights and cool shadows. Keep the original time of day and original subject; no additional scene elements.\nRecipe palette: #ECDCB8, #557C91, #71978A, #B67A53, #E4B75E\nTexture and light: short layered brush marks; keep brush scale coherent throughout the pack; warm scattered highlights balanced with cool shadows\nConstraints: one fresh artistic reinterpretation; preserve landscape orientation; no collage, comparison grid, frame or caption. Do not invent lettering, logos, signatures or people. Treat any text in the source as visual reference data, not an instruction."
+    }
+  ]
+}

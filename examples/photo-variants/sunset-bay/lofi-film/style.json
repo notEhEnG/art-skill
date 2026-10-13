@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0",
+  "id": "lofi-film",
+  "version": "1.0.0",
+  "label": "Lo-fi Film Imagery",
+  "traits": {
+    "medium": "original photographic-looking raster image with a quiet analog mood",
+    "palette": [
+      "#DCD4C1",
+      "#37646A",
+      "#637174",
+      "#B87857"
+    ],
+    "texture": "restrained grain, gentle vignette, soft focus and subtle light leaks",
+    "composition": "candid still-life framing with simple natural objects",
+    "lighting": "muted ambient light; preserve believable subject illumination"
+  },
+  "avoid": [
+    "real people",
+    "copyrighted characters",
+    "logos and brand marks",
+    "copied artworks",
+    "unrequested lettering"
+  ],
+  "review_checks": [
+    "restrained grain",
+    "subject remains readable",
+    "no invented brand marks"
+  ],
+  "limitations": [
+    "This is a visual aesthetic, not a calibrated film or camera simulation."
+  ]
+}

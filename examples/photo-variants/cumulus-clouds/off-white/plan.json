@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0",
+  "pack_id": "cumulus-clouds-off-white",
+  "status": "planned",
+  "generation_performed": false,
+  "backend": null,
+  "model": null,
+  "style_lock": {
+    "id": "off-white",
+    "version": "1.0.0",
+    "sha256": "c3777b60333ba928ed152971ddeea85086b7289b4e15fa97c87d7f65139b694f",
+    "recipe": {
+      "schema_version": "1.0",
+      "id": "off-white",
+      "version": "1.0.0",
+      "label": "Off-white Minimalism",
+      "traits": {
+        "medium": "quiet minimal raster still life or editorial backdrop",
+        "palette": [
+          "#F3EFE5",
+          "#DED8CC",
+          "#B8B0A1",
+          "#524D43"
+        ],
+        "texture": "subtle matte paper or plaster texture, restrained grain",
+        "composition": "sparse subject placement, calm margins and ample empty space",
+        "lighting": "soft diffuse light with delicate warm-neutral shadows"
+      },
+      "avoid": [
+        "real people",
+        "copyrighted characters",
+        "logos and brand marks",
+        "copied artworks",
+        "unrequested lettering"
+      ],
+      "review_checks": [
+        "warm neutral balance",
+        "subtle material detail",
+        "useful empty space"
+      ],
+      "limitations": [
+        "Does not generate a functional UI or guarantee legible page typography."
+      ]
+    }
+  },
+  "anchor_asset_id": "artwork",
+  "base_calls": 1,
+  "max_calls": 2,
+  "repair_allowance": 1,
+  "calls_used": 0,
+  "actual_cost_usd": null,
+  "assets": [
+    {
+      "id": "artwork",
+      "role": "README style reference",
+      "status": "planned",
+      "reference": null,
+      "requested_size": "1024x1536",
+      "requested_background": "opaque",
+      "requested_format": "png",
+      "planned_path": "images/artwork.png",
+      "prompt": "Use case: stylized-concept\nAsset type: README style reference; intended use: A six-style comparison of this individual source photograph for the Art Skill README\nPrimary request: A towering white cumulus cloud with bright sunlit upper-right lobes and cool shadowed lower-left volumes, rising into a large deep-blue sky. Tiny dark foliage and roofline details sit only along the bottom edge.\nStyle/medium: quiet minimal raster still life or editorial backdrop\nColor palette: #F3EFE5, #DED8CC, #B8B0A1, #524D43\nMaterials/textures: subtle matte paper or plaster texture, restrained grain\nComposition/framing: sparse subject placement, calm margins and ample empty space; Keep portrait orientation and the original broad framing; one image, no frame or panels\nLighting/mood: soft diffuse light with delicate warm-neutral shadows\nRequested output target: 1024x1536, opaque background, png; use only supported tool controls\nAvoid: real people; copyrighted characters; logos and brand marks; copied artworks; unrequested lettering\nConstraints: Keep the original upward sky viewpoint, large lobed cloud shape, light/shadow arrangement and broad upper sky. Foreground remains a small lower-edge suggestion. Do not add a sea, island bay, garden, sunset or rainbow.; No added people, brands, characters, captions or signatures; Use only this source photograph as the composition reference; never mix motifs from the other photos"
+    }
+  ]
+}

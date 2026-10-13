@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "id": "sunset-bay-ascii-pixels",
+  "style": "ascii-pixels",
+  "subject": "A wide view across dark gently rippling water toward low island silhouettes beneath an expansive sunset sky. The horizon sits low, with a larger dark headland at the left edge, layered orange, coral, gold and purple clouds and a tiny distant boat near the right horizon.",
+  "purpose": "A six-style comparison of this individual source photograph for the Art Skill README",
+  "constraints": [
+    "Keep the original low horizon, open water, dark left headland, low islands and sweeping layered sunset clouds. The sky dominates. Do not add a garden, terrace, trees or a towering central cloud.",
+    "No added people, brands, characters, captions or signatures",
+    "Use only this source photograph as the composition reference; never mix motifs from the other photos"
+  ],
+  "max_calls": 2,
+  "assets": [
+    {
+      "id": "artwork",
+      "role": "README style reference",
+      "size": "1536x1024",
+      "background": "opaque",
+      "format": "png",
+      "direction": "Keep landscape orientation and the original broad framing; one image, no frame or panels"
+    }
+  ]
+}

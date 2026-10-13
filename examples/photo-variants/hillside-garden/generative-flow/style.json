@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0",
+  "id": "generative-flow",
+  "version": "1.0.0",
+  "label": "Generative Flow",
+  "traits": {
+    "medium": "original abstract raster artwork inspired by flow fields and contour systems",
+    "palette": [
+      "#EEECE4",
+      "#2948A3",
+      "#6B83C4",
+      "#B8C3D6"
+    ],
+    "texture": "fine layered filaments, controlled contour density and subtle overlap",
+    "composition": "a coherent focal flow with quiet surrounding space",
+    "lighting": "graphic tonal depth without photorealistic material claims"
+  },
+  "avoid": [
+    "real people",
+    "copyrighted characters",
+    "logos and brand marks",
+    "copied artworks",
+    "unrequested lettering"
+  ],
+  "review_checks": [
+    "coherent flow",
+    "intentional contour density",
+    "clean negative space"
+  ],
+  "limitations": [
+    "No executable algorithm or reproducible seed is supplied.",
+    "Seamless tiling is unverified."
+  ]
+}

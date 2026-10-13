@@ -2,7 +2,71 @@
 
 An art-direction skill for Codex and other AI agents, with reusable styles and slash-command workflows for images and visual asset packs.
 
-**Status:** usable skill draft with tested offline planning and project installation. Live image generation, visual consistency, host command discovery, and export still need smoke tests. The example output is a generation plan, not generated artwork.
+**Status:** usable skill with tested offline planning, installation, and 24 visually reviewed photo-to-style examples. Cross-host slash-menu discovery, a same-style multi-asset pack and cutout transparency still need smoke tests.
+
+## Four photos × six styles
+
+**24 generated reference images.** Each supplied photo has its own six-style gallery, using that original directly for every version. Click any artwork to open its prompt, recipe and recorded result.
+
+### Building and rainbow — `444444.jpg`
+
+| ASCII & Pixels | Sketch & Scribble |
+| --- | --- |
+| [![ASCII & Pixels](examples/photo-variants/building-rainbow/ascii-pixels/artwork.png)](examples/photo-variants/building-rainbow/ascii-pixels/README.md) | [![Sketch & Scribble](examples/photo-variants/building-rainbow/sketch-scribble/artwork.png)](examples/photo-variants/building-rainbow/sketch-scribble/README.md) |
+
+| Digital Impressionism | Lo-fi Film Imagery |
+| --- | --- |
+| [![Digital Impressionism](examples/photo-variants/building-rainbow/digital-impressionism/artwork.png)](examples/photo-variants/building-rainbow/digital-impressionism/README.md) | [![Lo-fi Film Imagery](examples/photo-variants/building-rainbow/lofi-film/artwork.png)](examples/photo-variants/building-rainbow/lofi-film/README.md) |
+
+| Generative Flow | Off-white Minimalism |
+| --- | --- |
+| [![Generative Flow](examples/photo-variants/building-rainbow/generative-flow/artwork.png)](examples/photo-variants/building-rainbow/generative-flow/README.md) | [![Off-white Minimalism](examples/photo-variants/building-rainbow/off-white/artwork.png)](examples/photo-variants/building-rainbow/off-white/README.md) |
+
+### Hillside garden — `11111111.jpg`
+
+| ASCII & Pixels | Sketch & Scribble |
+| --- | --- |
+| [![ASCII & Pixels](examples/photo-variants/hillside-garden/ascii-pixels/artwork.png)](examples/photo-variants/hillside-garden/ascii-pixels/README.md) | [![Sketch & Scribble](examples/photo-variants/hillside-garden/sketch-scribble/artwork.png)](examples/photo-variants/hillside-garden/sketch-scribble/README.md) |
+
+| Digital Impressionism | Lo-fi Film Imagery |
+| --- | --- |
+| [![Digital Impressionism](examples/photo-variants/hillside-garden/digital-impressionism/artwork.png)](examples/photo-variants/hillside-garden/digital-impressionism/README.md) | [![Lo-fi Film Imagery](examples/photo-variants/hillside-garden/lofi-film/artwork.png)](examples/photo-variants/hillside-garden/lofi-film/README.md) |
+
+| Generative Flow | Off-white Minimalism |
+| --- | --- |
+| [![Generative Flow](examples/photo-variants/hillside-garden/generative-flow/artwork.png)](examples/photo-variants/hillside-garden/generative-flow/README.md) | [![Off-white Minimalism](examples/photo-variants/hillside-garden/off-white/artwork.png)](examples/photo-variants/hillside-garden/off-white/README.md) |
+
+### Sunset bay — `222222222.jpg`
+
+| ASCII & Pixels | Sketch & Scribble |
+| --- | --- |
+| [![ASCII & Pixels](examples/photo-variants/sunset-bay/ascii-pixels/artwork.png)](examples/photo-variants/sunset-bay/ascii-pixels/README.md) | [![Sketch & Scribble](examples/photo-variants/sunset-bay/sketch-scribble/artwork.png)](examples/photo-variants/sunset-bay/sketch-scribble/README.md) |
+
+| Digital Impressionism | Lo-fi Film Imagery |
+| --- | --- |
+| [![Digital Impressionism](examples/photo-variants/sunset-bay/digital-impressionism/artwork.png)](examples/photo-variants/sunset-bay/digital-impressionism/README.md) | [![Lo-fi Film Imagery](examples/photo-variants/sunset-bay/lofi-film/artwork.png)](examples/photo-variants/sunset-bay/lofi-film/README.md) |
+
+| Generative Flow | Off-white Minimalism |
+| --- | --- |
+| [![Generative Flow](examples/photo-variants/sunset-bay/generative-flow/artwork.png)](examples/photo-variants/sunset-bay/generative-flow/README.md) | [![Off-white Minimalism](examples/photo-variants/sunset-bay/off-white/artwork.png)](examples/photo-variants/sunset-bay/off-white/README.md) |
+
+### Towering cumulus — `33333333.jpg`
+
+| ASCII & Pixels | Sketch & Scribble |
+| --- | --- |
+| [![ASCII & Pixels](examples/photo-variants/cumulus-clouds/ascii-pixels/artwork.png)](examples/photo-variants/cumulus-clouds/ascii-pixels/README.md) | [![Sketch & Scribble](examples/photo-variants/cumulus-clouds/sketch-scribble/artwork.png)](examples/photo-variants/cumulus-clouds/sketch-scribble/README.md) |
+
+| Digital Impressionism | Lo-fi Film Imagery |
+| --- | --- |
+| [![Digital Impressionism](examples/photo-variants/cumulus-clouds/digital-impressionism/artwork.png)](examples/photo-variants/cumulus-clouds/digital-impressionism/README.md) | [![Lo-fi Film Imagery](examples/photo-variants/cumulus-clouds/lofi-film/artwork.png)](examples/photo-variants/cumulus-clouds/lofi-film/README.md) |
+
+| Generative Flow | Off-white Minimalism |
+| --- | --- |
+| [![Generative Flow](examples/photo-variants/cumulus-clouds/generative-flow/artwork.png)](examples/photo-variants/cumulus-clouds/generative-flow/README.md) | [![Off-white Minimalism](examples/photo-variants/cumulus-clouds/off-white/artwork.png)](examples/photo-variants/cumulus-clouds/off-white/README.md) |
+
+[All photo sets and source notes](examples/photo-variants/README.md) · [Recorded generation index](examples/photo-variants/manifest.json)
+
+Recorded run: 24 built-in image calls, 24 native PNGs, zero repairs. Actual dimensions and review notes are recorded per image; model identity and monetary cost were not exposed. Originals remain local.
 
 ## Start in a project
 
@@ -52,7 +116,7 @@ The sample requests four assets: landscape anchor, square cover, portrait compos
 | `generative-flow` | Layered contours and filaments | Raster art, not executable seeded code |
 | `off-white` | Warm neutral still life and empty space | Artwork, not a functional website |
 
-The recipes are original descriptions of broad visual traits. No presenter images, video collages, artist works or brand marks are included.
+The recipes are original descriptions of broad visual traits. No presenter images, video collages, artist works or brand marks are included. The gallery contains generated artwork inspired by user-provided landscape photographs; the originals are not bundled.
 
 ## Repository map
 
@@ -66,6 +130,7 @@ skills/art-skill/
 examples/
   rainy-reading-room.brief.json
   rainy-reading-room.plan.json    actual planner output; no artwork
+  photo-variants/                 four photos × six styles, prompts and manifests
 tools/install.py
 tests/test_contracts.py
 docs/research-evidence.json

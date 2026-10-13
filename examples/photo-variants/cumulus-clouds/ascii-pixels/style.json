@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0",
+  "id": "ascii-pixels",
+  "version": "1.0.0",
+  "label": "ASCII & Pixels",
+  "traits": {
+    "medium": "raster illustration with intentional pixel blocks and glyph-like stippling",
+    "palette": [
+      "#EFEBDD",
+      "#242722",
+      "#67826E",
+      "#B99054"
+    ],
+    "texture": "crisp block edges and printed dot texture",
+    "composition": "a clear silhouette, restrained detail, deliberate negative space",
+    "lighting": "flat graphic light with limited tonal steps"
+  },
+  "avoid": [
+    "real people",
+    "copyrighted characters",
+    "logos and brand marks",
+    "copied artworks",
+    "unrequested lettering"
+  ],
+  "review_checks": [
+    "intentional block structure",
+    "readable subject silhouette",
+    "no unwanted lettering"
+  ],
+  "limitations": [
+    "Does not produce valid ASCII text files.",
+    "Does not guarantee a pixel-aligned grid."
+  ]
+}

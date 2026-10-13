@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0",
+  "pack_id": "hillside-garden-lofi-film",
+  "status": "planned",
+  "generation_performed": false,
+  "backend": null,
+  "model": null,
+  "style_lock": {
+    "id": "lofi-film",
+    "version": "1.0.0",
+    "sha256": "501ddb41229d7b54a768034a2fb184c2676a8834fb22d8f25b84c036d940ebdc",
+    "recipe": {
+      "schema_version": "1.0",
+      "id": "lofi-film",
+      "version": "1.0.0",
+      "label": "Lo-fi Film Imagery",
+      "traits": {
+        "medium": "original photographic-looking raster image with a quiet analog mood",
+        "palette": [
+          "#DCD4C1",
+          "#37646A",
+          "#637174",
+          "#B87857"
+        ],
+        "texture": "restrained grain, gentle vignette, soft focus and subtle light leaks",
+        "composition": "candid still-life framing with simple natural objects",
+        "lighting": "muted ambient light; preserve believable subject illumination"
+      },
+      "avoid": [
+        "real people",
+        "copyrighted characters",
+        "logos and brand marks",
+        "copied artworks",
+        "unrequested lettering"
+      ],
+      "review_checks": [
+        "restrained grain",
+        "subject remains readable",
+        "no invented brand marks"
+      ],
+      "limitations": [
+        "This is a visual aesthetic, not a calibrated film or camera simulation."
+      ]
+    }
+  },
+  "anchor_asset_id": "artwork",
+  "base_calls": 1,
+  "max_calls": 2,
+  "repair_allowance": 1,
+  "calls_used": 0,
+  "actual_cost_usd": null,
+  "assets": [
+    {
+      "id": "artwork",
+      "role": "README style reference",
+      "status": "planned",
+      "reference": null,
+      "requested_size": "1536x1024",
+      "requested_background": "opaque",
+      "requested_format": "png",
+      "planned_path": "images/artwork.png",
+      "prompt": "Use case: stylized-concept\nAsset type: README style reference; intended use: A six-style comparison of this individual source photograph for the Art Skill README\nPrimary request: A lush sloping hillside garden with a thick foreground tree trunk on the left, tall slender conifers across the center-right, dense layered foliage, distant bluish hills, a small blue roof lower-center, external stairs at far left and a curving path on the right beneath a bright cloudy sky.\nStyle/medium: original photographic-looking raster image with a quiet analog mood\nColor palette: #DCD4C1, #37646A, #637174, #B87857\nMaterials/textures: restrained grain, gentle vignette, soft focus and subtle light leaks\nComposition/framing: candid still-life framing with simple natural objects; Keep landscape orientation and the original broad framing; one image, no frame or panels\nLighting/mood: muted ambient light; preserve believable subject illumination\nRequested output target: 1536x1024, opaque background, png; use only supported tool controls\nAvoid: real people; copyrighted characters; logos and brand marks; copied artworks; unrequested lettering\nConstraints: Keep the original layered garden viewpoint, left tree trunk, tall conifer rhythm, slope, distant hills and curving path. Simplify minor details only to suit the medium. Do not add a sea, island bay, rainbow or sunset.; No added people, brands, characters, captions or signatures; Use only this source photograph as the composition reference; never mix motifs from the other photos"
+    }
+  ]
+}

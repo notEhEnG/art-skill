@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "id": "hillside-garden-digital-impressionism",
+  "style": "digital-impressionism",
+  "subject": "A lush sloping hillside garden with a thick foreground tree trunk on the left, tall slender conifers across the center-right, dense layered foliage, distant bluish hills, a small blue roof lower-center, external stairs at far left and a curving path on the right beneath a bright cloudy sky.",
+  "purpose": "A six-style comparison of this individual source photograph for the Art Skill README",
+  "constraints": [
+    "Keep the original layered garden viewpoint, left tree trunk, tall conifer rhythm, slope, distant hills and curving path. Simplify minor details only to suit the medium. Do not add a sea, island bay, rainbow or sunset.",
+    "No added people, brands, characters, captions or signatures",
+    "Use only this source photograph as the composition reference; never mix motifs from the other photos"
+  ],
+  "max_calls": 2,
+  "assets": [
+    {
+      "id": "artwork",
+      "role": "README style reference",
+      "size": "1536x1024",
+      "background": "opaque",
+      "format": "png",
+      "direction": "Keep landscape orientation and the original broad framing; one image, no frame or panels"
+    }
+  ]
+}

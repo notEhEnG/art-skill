@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0",
+  "pack_id": "building-rainbow-generative-flow",
+  "status": "planned",
+  "generation_performed": false,
+  "backend": null,
+  "model": null,
+  "style_lock": {
+    "id": "generative-flow",
+    "version": "1.0.0",
+    "sha256": "837f573867cf17712a0faa6495b700e2b827860d73a2e9358de502e9d45a91ab",
+    "recipe": {
+      "schema_version": "1.0",
+      "id": "generative-flow",
+      "version": "1.0.0",
+      "label": "Generative Flow",
+      "traits": {
+        "medium": "original abstract raster artwork inspired by flow fields and contour systems",
+        "palette": [
+          "#EEECE4",
+          "#2948A3",
+          "#6B83C4",
+          "#B8C3D6"
+        ],
+        "texture": "fine layered filaments, controlled contour density and subtle overlap",
+        "composition": "a coherent focal flow with quiet surrounding space",
+        "lighting": "graphic tonal depth without photorealistic material claims"
+      },
+      "avoid": [
+        "real people",
+        "copyrighted characters",
+        "logos and brand marks",
+        "copied artworks",
+        "unrequested lettering"
+      ],
+      "review_checks": [
+        "coherent flow",
+        "intentional contour density",
+        "clean negative space"
+      ],
+      "limitations": [
+        "No executable algorithm or reproducible seed is supplied.",
+        "Seamless tiling is unverified."
+      ]
+    }
+  },
+  "anchor_asset_id": "artwork",
+  "base_calls": 1,
+  "max_calls": 2,
+  "repair_allowance": 1,
+  "calls_used": 0,
+  "actual_cost_usd": null,
+  "assets": [
+    {
+      "id": "artwork",
+      "role": "README style reference",
+      "status": "planned",
+      "reference": null,
+      "requested_size": "1024x1536",
+      "requested_background": "opaque",
+      "requested_format": "png",
+      "planned_path": "images/artwork.png",
+      "prompt": "Use case: stylized-concept\nAsset type: README style reference; intended use: A six-style comparison of this individual source photograph for the Art Skill README\nPrimary request: An upward view of a warm beige building with a diagonal roofline, a slim roof railing and red-trimmed windows in the lower part of the frame, beneath a vast blue sky, a small soft white cloud and a faint rainbow patch. Small foliage sits along the lower edge.\nStyle/medium: original abstract raster artwork inspired by flow fields and contour systems\nColor palette: #EEECE4, #2948A3, #6B83C4, #B8C3D6\nMaterials/textures: fine layered filaments, controlled contour density and subtle overlap\nComposition/framing: a coherent focal flow with quiet surrounding space; Keep portrait orientation and the original broad framing; one image, no frame or panels\nLighting/mood: graphic tonal depth without photorealistic material claims\nRequested output target: 1024x1536, opaque background, png; use only supported tool controls\nAvoid: real people; copyrighted characters; logos and brand marks; copied artworks; unrequested lettering\nConstraints: Keep the original upward viewpoint, diagonal building line, window rhythm, broad empty sky, small cloud placement and faint rainbow motif. Do not add a sea, mountains, a garden terrace or a sunset.; No added people, brands, characters, captions or signatures; Use only this source photograph as the composition reference; never mix motifs from the other photos"
+    }
+  ]
+}

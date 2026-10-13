@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0",
+  "pack_id": "building-rainbow-ascii-pixels",
+  "status": "planned",
+  "generation_performed": false,
+  "backend": null,
+  "model": null,
+  "style_lock": {
+    "id": "ascii-pixels",
+    "version": "1.0.0",
+    "sha256": "431dc987af31299ce3ef3dc79d0a9f9fb23264fb5a76ab1d3ebec828be80928d",
+    "recipe": {
+      "schema_version": "1.0",
+      "id": "ascii-pixels",
+      "version": "1.0.0",
+      "label": "ASCII & Pixels",
+      "traits": {
+        "medium": "raster illustration with intentional pixel blocks and glyph-like stippling",
+        "palette": [
+          "#EFEBDD",
+          "#242722",
+          "#67826E",
+          "#B99054"
+        ],
+        "texture": "crisp block edges and printed dot texture",
+        "composition": "a clear silhouette, restrained detail, deliberate negative space",
+        "lighting": "flat graphic light with limited tonal steps"
+      },
+      "avoid": [
+        "real people",
+        "copyrighted characters",
+        "logos and brand marks",
+        "copied artworks",
+        "unrequested lettering"
+      ],
+      "review_checks": [
+        "intentional block structure",
+        "readable subject silhouette",
+        "no unwanted lettering"
+      ],
+      "limitations": [
+        "Does not produce valid ASCII text files.",
+        "Does not guarantee a pixel-aligned grid."
+      ]
+    }
+  },
+  "anchor_asset_id": "artwork",
+  "base_calls": 1,
+  "max_calls": 2,
+  "repair_allowance": 1,
+  "calls_used": 0,
+  "actual_cost_usd": null,
+  "assets": [
+    {
+      "id": "artwork",
+      "role": "README style reference",
+      "status": "planned",
+      "reference": null,
+      "requested_size": "1024x1536",
+      "requested_background": "opaque",
+      "requested_format": "png",
+      "planned_path": "images/artwork.png",
+      "prompt": "Use case: stylized-concept\nAsset type: README style reference; intended use: A six-style comparison of this individual source photograph for the Art Skill README\nPrimary request: An upward view of a warm beige building with a diagonal roofline, a slim roof railing and red-trimmed windows in the lower part of the frame, beneath a vast blue sky, a small soft white cloud and a faint rainbow patch. Small foliage sits along the lower edge.\nStyle/medium: raster illustration with intentional pixel blocks and glyph-like stippling\nColor palette: #EFEBDD, #242722, #67826E, #B99054\nMaterials/textures: crisp block edges and printed dot texture\nComposition/framing: a clear silhouette, restrained detail, deliberate negative space; Keep portrait orientation and the original broad framing; one image, no frame or panels\nLighting/mood: flat graphic light with limited tonal steps\nRequested output target: 1024x1536, opaque background, png; use only supported tool controls\nAvoid: real people; copyrighted characters; logos and brand marks; copied artworks; unrequested lettering\nConstraints: Keep the original upward viewpoint, diagonal building line, window rhythm, broad empty sky, small cloud placement and faint rainbow motif. Do not add a sea, mountains, a garden terrace or a sunset.; No added people, brands, characters, captions or signatures; Use only this source photograph as the composition reference; never mix motifs from the other photos"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0",
+  "pack_id": "sunset-bay-digital-impressionism",
+  "status": "planned",
+  "generation_performed": false,
+  "backend": null,
+  "model": null,
+  "style_lock": {
+    "id": "digital-impressionism",
+    "version": "1.0.0",
+    "sha256": "d7aeb22c11f5465bffdc708c354357c1f6f8e6d7dbef8bca3de4c51719f7884f",
+    "recipe": {
+      "schema_version": "1.0",
+      "id": "digital-impressionism",
+      "version": "1.0.0",
+      "label": "Digital Impressionism",
+      "traits": {
+        "medium": "original painterly raster illustration using broken-color strokes",
+        "palette": [
+          "#ECDCB8",
+          "#557C91",
+          "#71978A",
+          "#B67A53",
+          "#E4B75E"
+        ],
+        "texture": "short layered brush marks; keep brush scale coherent throughout the pack",
+        "composition": "readable forms, softened edges and breathing room",
+        "lighting": "warm scattered highlights balanced with cool shadows"
+      },
+      "avoid": [
+        "real people",
+        "copyrighted characters",
+        "logos and brand marks",
+        "copied artworks",
+        "unrequested lettering"
+      ],
+      "review_checks": [
+        "broken-color brushwork",
+        "warm/cool balance",
+        "matching brush scale"
+      ],
+      "limitations": [
+        "Palette and geometry require visual review across images."
+      ]
+    }
+  },
+  "anchor_asset_id": "artwork",
+  "base_calls": 1,
+  "max_calls": 2,
+  "repair_allowance": 1,
+  "calls_used": 0,
+  "actual_cost_usd": null,
+  "assets": [
+    {
+      "id": "artwork",
+      "role": "README style reference",
+      "status": "planned",
+      "reference": null,
+      "requested_size": "1536x1024",
+      "requested_background": "opaque",
+      "requested_format": "png",
+      "planned_path": "images/artwork.png",
+      "prompt": "Use case: stylized-concept\nAsset type: README style reference; intended use: A six-style comparison of this individual source photograph for the Art Skill README\nPrimary request: A wide view across dark gently rippling water toward low island silhouettes beneath an expansive sunset sky. The horizon sits low, with a larger dark headland at the left edge, layered orange, coral, gold and purple clouds and a tiny distant boat near the right horizon.\nStyle/medium: original painterly raster illustration using broken-color strokes\nColor palette: #ECDCB8, #557C91, #71978A, #B67A53, #E4B75E\nMaterials/textures: short layered brush marks; keep brush scale coherent throughout the pack\nComposition/framing: readable forms, softened edges and breathing room; Keep landscape orientation and the original broad framing; one image, no frame or panels\nLighting/mood: warm scattered highlights balanced with cool shadows\nRequested output target: 1536x1024, opaque background, png; use only supported tool controls\nAvoid: real people; copyrighted characters; logos and brand marks; copied artworks; unrequested lettering\nConstraints: Keep the original low horizon, open water, dark left headland, low islands and sweeping layered sunset clouds. The sky dominates. Do not add a garden, terrace, trees or a towering central cloud.; No added people, brands, characters, captions or signatures; Use only this source photograph as the composition reference; never mix motifs from the other photos"
+    }
+  ]
+}
