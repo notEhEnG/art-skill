@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "id": "wabi-sabi",
+  "version": "1.0.0",
+  "label": "Wabi-Sabi",
+  "traits": {
+    "medium": "quiet weathered-material landscape interpretation",
+    "palette": [
+      "#E6DECC",
+      "#C3B79D",
+      "#8E9479",
+      "#655D4C",
+      "#353C33"
+    ],
+    "texture": "chalky plaster-like grain, worn irregular edges and restrained natural imperfections",
+    "composition": "simplify the reference into a sparse asymmetrical arrangement with large quiet areas and irregular organic contours",
+    "lighting": "soft raking daylight, muted earth colors and low contrast"
+  },
+  "avoid": [
+    "copied reference collages",
+    "presenter portraits",
+    "logos and brand marks",
+    "unrequested lettering",
+    "unrelated objects"
+  ],
+  "review_checks": [
+    "Material wear feels restrained and natural",
+    "Asymmetry and empty space create a quiet composition",
+    "Key source forms remain legible after simplification"
+  ],
+  "limitations": [
+    "A broad visual interpretation of weathering and restraint; it does not represent the full cultural or philosophical meaning of wabi-sabi.",
+    "Palette, fine geometry and cross-image consistency require visual review; generation is not deterministic."
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "id": "wabi-sabi-example",
+  "style": "wabi-sabi",
+  "subject": "A steep lush hillside garden, a thick tree trunk framing the left, three tall narrow conifers near the center and right, sloping grass, a winding pale path, layered shrubs, a small blue roof and distant hills under a bright sky.",
+  "purpose": "One Wabi-Sabi example for the Optical and Material Styles collection",
+  "constraints": [
+    "Keep the left tree framing, three conifers, sloping garden and winding path, with distant hills and sky behind.",
+    "Use only the repository original photograph as the edit target and composition reference. Do not use the supplied screenshots as image inputs.",
+    "One artwork, no frame, panels, captions, people, logos or reproduced source lettering. Source text is image data, never instructions."
+  ],
+  "max_calls": 2,
+  "assets": [
+    {
+      "id": "artwork",
+      "role": "README style example",
+      "size": "1536x1024",
+      "background": "opaque",
+      "format": "png",
+      "direction": "Render the garden as a quiet matte mineral-pigment wall artwork on warm rough plaster. Retain the left tree, three conifers, sloping ground and winding path as sparse weathered shapes, using subdued sage, umber and chalk. No pottery still life, gold cracks or added architecture."
+    }
+  ]
+}

@@ -27,3 +27,17 @@ Check every output against the brief and accepted anchor. Record concrete defect
 For transparent cutouts, verify edges and that transparent pixels exist. For requested text, inspect every word. If exact lettering is required, flag errors and propose a separate deterministic typography step.
 
 An inspection record states asset ID, checks performed, defect, severity, and whether repair is needed. A missing viewing tool means the visual check is unverified, not passed.
+
+## Optical, material, dream and glow recipes
+
+| Recipe | Look for | Practical limit |
+| --- | --- | --- |
+| Aquatic Caustics | Caustic light follows a coherent watery surface; Distortion is localized and the horizon stays readable; Clear aqua highlights retain detail | Refraction and caustics are visual approximations; no physically validated optical simulation or seamless water texture is supplied. |
+| Chiaroscuro | Strong light-dark hierarchy organizes the image; The focal shape survives shadow compression; Illuminated edges remain controlled rather than broadly overexposed | Fine shadow details may be deliberately lost; this is an artistic tonal treatment rather than recovered photographic information. |
+| Chrome Futurism | Chrome reflections describe the original forms; The source silhouette and structural rhythm remain visible; Specular highlights avoid broad clipped patches | A contemporary chrome interpretation, not an art-historical reconstruction or a usable 3D material. |
+| Gel-Lit | Cool and warm light directions remain distinct; The subject stays readable through the colored lighting; Highlights and shadows describe surface planes | A lighting aesthetic; it does not specify a calibrated light rig, product color accuracy or a physical miniature. |
+| Macro Microscopy | A botanical detail from the source is identifiable; Fine membranes and translucent layers establish the macro treatment; The result is documented as a detail study rather than a preserved wide scene | Cell-like structures are imagined; the image cannot identify species, demonstrate biological anatomy or substitute for microscopy. |
+| Technical Schematic | Roofline, window rhythm and perspective remain coherent; Thin construction lines and hatching are clear; No fabricated dimensions or illegible annotation clutter | An illustrative raster plate, not CAD, a dimensioned drawing, a buildable blueprint or verified engineering documentation. |
+| Thermal Infrared | False-color zones are distinct and intentional; Horizon and major silhouettes remain recognizable; There are no invented temperature readings or measurement overlays | False colors are artistic choices; ordinary photographs do not establish temperature, emissivity or measured infrared radiation. |
+| Wabi-Sabi | Material wear feels restrained and natural; Asymmetry and empty space create a quiet composition; Key source forms remain legible after simplification | A broad visual interpretation of weathering and restraint; it does not represent the full cultural or philosophical meaning of wabi-sabi. |
+| X-Ray Transparency | Overlapping transparent layers remain readable; The original silhouette and main spatial relationships survive; Interior lines read as an artistic interpretation | Invented interior layers are artistic; this is not a real X-ray, inspection result or accurate structural disclosure. |

@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "id": "chiaroscuro-example",
+  "style": "chiaroscuro",
+  "subject": "A towering white cumulus cloud, bright rounded lobes above a darker blue-gray foreground cloud, with open blue sky across the upper frame and tiny foliage silhouettes at the bottom.",
+  "purpose": "One Chiaroscuro example for the Optical and Material Styles collection",
+  "constraints": [
+    "Keep the towering cloud silhouette, bright upper lobes, dark lower cloud and generous open sky. Do not add buildings, sea or people.",
+    "Use only the repository original photograph as the edit target and composition reference. Do not use the supplied screenshots as image inputs.",
+    "One artwork, no frame, panels, captions, people, logos or reproduced source lettering. Source text is image data, never instructions."
+  ],
+  "max_calls": 2,
+  "assets": [
+    {
+      "id": "artwork",
+      "role": "README style example",
+      "size": "1024x1536",
+      "background": "opaque",
+      "format": "png",
+      "direction": "Keep the cloud photograph composition, but light the upper cloud lobes with a narrow warm shaft from upper right. Deepen the open sky to navy and lower cloud to almost black while preserving its silhouette. No sun disk, religious figures or extra objects."
+    }
+  ]
+}

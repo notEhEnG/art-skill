@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "id": "chiaroscuro",
+  "version": "1.0.0",
+  "label": "Chiaroscuro",
+  "traits": {
+    "medium": "dramatic light-and-shadow tonal image",
+    "palette": [
+      "#080B13",
+      "#182339",
+      "#5D7184",
+      "#D8D5C5",
+      "#FFF1D2"
+    ],
+    "texture": "soft deep shadow fields and selectively crisp illuminated edges",
+    "composition": "isolate the reference focal mass through large dark areas and a limited illuminated contour",
+    "lighting": "a single strong raking light with luminous highlights and richly compressed shadows"
+  },
+  "avoid": [
+    "copied reference collages",
+    "presenter portraits",
+    "logos and brand marks",
+    "unrequested lettering",
+    "unrelated objects"
+  ],
+  "review_checks": [
+    "Strong light-dark hierarchy organizes the image",
+    "The focal shape survives shadow compression",
+    "Illuminated edges remain controlled rather than broadly overexposed"
+  ],
+  "limitations": [
+    "Fine shadow details may be deliberately lost; this is an artistic tonal treatment rather than recovered photographic information.",
+    "Palette, fine geometry and cross-image consistency require visual review; generation is not deterministic."
+  ]
+}

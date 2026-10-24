@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "id": "chrome-futurism",
+  "version": "1.0.0",
+  "label": "Chrome Futurism",
+  "traits": {
+    "medium": "contemporary liquid-chrome speculative material image",
+    "palette": [
+      "#0C1724",
+      "#3D5369",
+      "#91ADBF",
+      "#E5EDF1",
+      "#C5A5D7"
+    ],
+    "texture": "smooth reflective silver shells, crisp specular edges and restrained iridescent reflections",
+    "composition": "translate the original forms into sleek metallic surfaces while preserving their main proportions and viewpoint",
+    "lighting": "cool environment reflections and controlled bright highlights against a spacious background"
+  },
+  "avoid": [
+    "copied reference collages",
+    "presenter portraits",
+    "logos and brand marks",
+    "unrequested lettering",
+    "unrelated objects"
+  ],
+  "review_checks": [
+    "Chrome reflections describe the original forms",
+    "The source silhouette and structural rhythm remain visible",
+    "Specular highlights avoid broad clipped patches"
+  ],
+  "limitations": [
+    "A contemporary chrome interpretation, not an art-historical reconstruction or a usable 3D material.",
+    "Palette, fine geometry and cross-image consistency require visual review; generation is not deterministic."
+  ]
+}
