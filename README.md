@@ -16,10 +16,10 @@ For developers and creators who want reusable styles, bounded image batches and 
 
 ## Quick install
 
-Paste this into Codex chat:
+Invoke the installer in **Codex chat**, not in a terminal:
 
 ```text
-Hey Codex, please install this skill for me: https://github.com/notEhEnG/art-skill/tree/main/skills/art-skill
+$skill-installer install the art-skill skill from https://github.com/notEhEnG/art-skill/tree/main/skills/art-skill
 ```
 
 Then browse the available styles:
@@ -61,7 +61,14 @@ If no image backend is available, the agent saves the brief, prompts and a `requ
 | Claude Code | Project installer with `--agent claude` | `/art-skill styles` | Requires a separately configured image tool or provider |
 | Cursor | Project installer with `--agent cursor` | `/art-skill styles` | Requires a separately configured image tool or provider |
 
-From a checkout of this repository, run the matching command in your terminal. **Python 3.10+** is required for these helpers; they use only the standard library. Replace `/path/to/project` with an existing project folder, and quote paths containing spaces.
+For project-local installation, first clone the repository and enter its directory in your terminal:
+
+```text
+git clone https://github.com/notEhEnG/art-skill.git
+cd art-skill
+```
+
+Then run the matching command below. **Python 3.10+** is required for these helpers; they use only the standard library. Replace `/path/to/project` with an existing project folder, and quote paths containing spaces.
 
 ```text
 python tools/install.py --project /path/to/project --agent codex
@@ -69,7 +76,9 @@ python tools/install.py --project /path/to/project --agent claude
 python tools/install.py --project /path/to/project --agent cursor
 ```
 
-Choose the command for your host. Add `--dry-run` to preview destinations, or repeat `--agent` to install for multiple hosts. The installer copies the complete skill and refuses to overwrite an existing installation. Codex project copies go into `.agents/skills/art-skill/`; Claude Code uses `.claude/skills/art-skill/`; Cursor uses `.cursor/skills/art-skill/`.
+Choose the command for your host. Add `--dry-run` to preview destinations, or repeat `--agent` to install for multiple hosts. The installer copies the complete skill and refuses to overwrite an existing installation. If a copy fails or is interrupted, it rolls back copies and empty parent directories created by that invocation, preserving existing content. A forced process termination or power loss can still leave partial files; cleanup failures are reported.
+
+Codex project copies go into `.agents/skills/art-skill/`; Claude Code uses `.claude/skills/art-skill/`; Cursor uses `.cursor/skills/art-skill/`.
 
 Host syntax: [OpenAI skills](https://learn.chatgpt.com/docs/build-skills), [Claude Code skills](https://code.claude.com/docs/en/skills), [Cursor skills](https://cursor.com/help/customization/skills). [Host support and testing limits](skills/art-skill/references/hosts.md).
 
@@ -284,7 +293,7 @@ python skills/art-skill/scripts/plan_pack.py examples/rainy-reading-room.brief.j
 python -m unittest discover -s tests -v
 ```
 
-The sample plans four assets with a six-call cap, including two repair slots. Planning makes no image calls. [Tests](tests/test_contracts.py) cover recipe planning, budgets, shared-anchor dependencies, filenames, format compatibility, installation copies and overwrite protection.
+The sample plans four assets with a six-call cap, including two repair slots. Planning makes no image calls. [Tests](tests/test_contracts.py) cover recipe planning, budgets, shared-anchor dependencies, filenames, format compatibility, installation copies, overwrite protection, failed/interrupted-copy rollback and dry-run behavior.
 
 ## Contributing
 

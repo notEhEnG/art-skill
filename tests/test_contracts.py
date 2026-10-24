@@ -1,8 +1,11 @@
 import copy
+import contextlib
 import importlib.util
+import io
 import json
 import tempfile
 import unittest
+from unittest import mock
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -87,6 +90,84 @@ class ContractTests(unittest.TestCase):
                     {path.name for path in planner.STYLE_ROOT.glob("*.json")},
                 )
             self.assertEqual(installer.main(["--project", folder, "--agent", "codex"]), 2)
+
+    def test_failed_copy_rolls_back_partial_and_completed_copies(self):
+        for failed_agent in ("codex", "claude"):
+            with self.subTest(failed_agent=failed_agent), tempfile.TemporaryDirectory() as folder:
+                project = Path(folder)
+                keep = project / ".claude/skills/existing-skill/keep.txt"
+                keep.parent.mkdir(parents=True)
+                keep.write_text("keep", encoding="utf-8")
+                before = {p.relative_to(project) for p in project.rglob("*")}
+                failed_target = project / installer.ROOTS[failed_agent] / "skills/art-skill"
+                real_copytree = installer.shutil.copytree
+
+                def fail_copy(source, destination, *args, **kwargs):
+                    if Path(destination) == failed_target:
+                        if failed_agent == "claude":
+                            self.assertTrue((project / ".agents/skills/art-skill/SKILL.md").is_file())
+                        (Path(destination) / "partial.txt").write_text("partial", encoding="utf-8")
+                        raise OSError("simulated copy failure")
+                    return real_copytree(source, destination, *args, **kwargs)
+
+                stdout, stderr = io.StringIO(), io.StringIO()
+                with mock.patch.object(installer.shutil, "copytree", side_effect=fail_copy), \
+                     contextlib.redirect_stdout(stdout), contextlib.redirect_stderr(stderr):
+                    result = installer.main(["--project", folder, "--agent", "codex", "--agent", "claude", "--agent", "cursor"])
+                self.assertEqual(result, 2)
+                self.assertIn("simulated copy failure", stderr.getvalue())
+                self.assertNotIn("Installed", stdout.getvalue())
+                self.assertEqual({p.relative_to(project) for p in project.rglob("*")}, before)
+                self.assertEqual(keep.read_text(encoding="utf-8"), "keep")
+
+    def test_target_created_after_preflight_is_preserved_during_rollback(self):
+        with tempfile.TemporaryDirectory() as folder:
+            project = Path(folder)
+            keep = project / ".claude/skills/art-skill/keep.txt"
+            real_destinations = installer.destinations
+
+            def create_later_target(*args):
+                targets = real_destinations(*args)
+                keep.parent.mkdir(parents=True)
+                keep.write_text("another installation", encoding="utf-8")
+                return targets
+
+            with mock.patch.object(installer, "destinations", side_effect=create_later_target), \
+                 contextlib.redirect_stdout(io.StringIO()), contextlib.redirect_stderr(io.StringIO()):
+                result = installer.main(["--project", folder, "--agent", "codex", "--agent", "claude"])
+            self.assertEqual(result, 2)
+            self.assertEqual(keep.read_text(encoding="utf-8"), "another installation")
+            self.assertFalse((project / ".agents").exists())
+
+    def test_interrupted_copy_rolls_back_the_claimed_target(self):
+        with tempfile.TemporaryDirectory() as folder:
+            with mock.patch.object(installer.shutil, "copytree", side_effect=KeyboardInterrupt), \
+                 self.assertRaises(KeyboardInterrupt):
+                installer.main(["--project", folder, "--agent", "codex"])
+            self.assertEqual(list(Path(folder).iterdir()), [])
+
+    def test_dry_run_creates_no_installation_directories(self):
+        with tempfile.TemporaryDirectory() as folder:
+            stdout = io.StringIO()
+            with contextlib.redirect_stdout(stdout):
+                result = installer.main(["--project", folder, "--agent", "codex", "--agent", "claude", "--dry-run"])
+            self.assertEqual(result, 0)
+            self.assertEqual(len(json.loads(stdout.getvalue())["destinations"]), 2)
+            self.assertEqual(list(Path(folder).iterdir()), [])
+
+    def test_rollback_failure_reports_the_original_error_and_remaining_target(self):
+        with tempfile.TemporaryDirectory() as folder:
+            target = Path(folder) / ".agents/skills/art-skill"
+            stderr = io.StringIO()
+            with mock.patch.object(installer.shutil, "copytree", side_effect=OSError("copy failed")), \
+                 mock.patch.object(installer.shutil, "rmtree", side_effect=PermissionError(f"cannot remove {target}")), \
+                 contextlib.redirect_stderr(stderr):
+                result = installer.main(["--project", folder, "--agent", "codex"])
+            self.assertEqual(result, 2)
+            self.assertIn("copy failed", stderr.getvalue())
+            self.assertIn("rollback incomplete", stderr.getvalue())
+            self.assertIn(str(target), stderr.getvalue())
+            self.assertTrue(target.is_dir())
 
 
 if __name__ == "__main__":

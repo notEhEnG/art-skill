@@ -1,12 +1,12 @@
 # Codex build prompt — Art Skill
 
-The current repository includes 18 recipes and 36 reviewed example images. Preserve that catalog when continuing the build; the video inspiration below describes the original six families. See [the current catalog](../skills/art-skill/references/styles.md).
+The current repository includes 34 recipes and 52 reviewed example images across the core, additional, optical/material and dream/glow collections. Preserve the full catalog when continuing the build. See [the current catalog](../skills/art-skill/references/styles.md) and [gallery](../README.md#gallery).
 
 Paste the instructions below into Codex with the starter folder open. They also describe the repository well enough to scaffold it from scratch.
 
 ---
 
-Build **Art Skill**, GitHub repository name **art-skill**, skill name **art-skill**. Its primary output is generated raster images and cohesive visual asset packs. The video inspiration consists of six broad visual families: ASCII/pixels, sketch/scribble, digital impressionism, lo-fi film, generative-flow raster art, and off-white minimalism. Do not implement a website builder or reproduce the video presenter/collages.
+Build **Art Skill**, GitHub repository name **art-skill**, skill name **art-skill**. Its primary output is generated raster images and cohesive visual asset packs. The six core families are ASCII/pixels, sketch/scribble, digital impressionism, lo-fi film, generative-flow raster art, and off-white minimalism; the additional, optical/material and dream/glow collections extend them. Do not implement a website builder or reproduce reference collages.
 
 Use the current starter when present. Complete and verify a small Codex-first v0.1; do not replace it with an ambitious platform. Keep an offline planner and portable SKILL.md. Use the installed skill-creator instructions when creating or updating the skill. Preserve the host's normal implicit invocation behavior.
 
@@ -17,16 +17,12 @@ art-skill/
   README.md
   LICENSE
   .gitignore
+  CHANGELOG.md
+  .github/workflows/tests.yml
   skills/art-skill/
     SKILL.md
     agents/openai.yaml
-    assets/styles/
-      ascii-pixels.json
-      sketch-scribble.json
-      digital-impressionism.json
-      lofi-film.json
-      generative-flow.json
-      off-white.json
+    assets/styles/                 34 JSON recipes across four collections
     references/
       commands.md
       hosts.md
@@ -37,6 +33,10 @@ art-skill/
   examples/
     rainy-reading-room.brief.json
     rainy-reading-room.plan.json
+    photo-variants/                four originals and 24 core-style examples
+    expanded-styles/               12 additional-style examples
+    optical-material-styles/       9 optical/material examples
+    dream-glow-styles/             7 dream/glow examples
   tests/test_contracts.py
   docs/
     recipe-format.md
@@ -48,12 +48,12 @@ Use Python 3.10+ and standard-library JSON/hash/file helpers. No runtime package
 
 ## SKILL.md requirements
 
-Use standard frontmatter:
+Preserve the current canonical [`SKILL.md`](../skills/art-skill/SKILL.md) when extending this repository. For a new scaffold, use standard frontmatter such as:
 
 ```yaml
 ---
 name: art-skill
-description: "Create cohesive generated images and visual asset packs using reusable aesthetic recipes, an anchor reference, bounded batches, visual review, and export manifests. Use for ASCII/pixel aesthetics, sketch/scribble, digital impressionism, lo-fi film imagery, generative-flow raster art, and off-white minimalism. Also use to remix or package an existing image series. Does not implement websites, interactive generative sketches, exact ASCII text files, or vector icon systems."
+description: "Create cohesive generated images and visual asset packs using reusable recipes, a shared reference, bounded batches and visual review. Use for pixel, drawn, painterly, film, abstract-flow, graphic-print, crafted-material, optical and luminous dream aesthetics, including remixing or packaging an image series. Does not implement websites, interactive generative code, exact ASCII text, vector systems or fabrication files."
 ---
 ```
 
@@ -82,7 +82,7 @@ Put host details and examples in references rather than bloating the main skill.
 
 One entry point plus action arguments is enough. Do not claim that SKILL.md can register arbitrary commands across all hosts. Do not overwrite native `/review`, `/status` or `/init`.
 
-The installer must copy the complete skill/resources into explicitly selected project directories, support `--dry-run`, reject an existing target, and refuse targets resolving outside the named project. Installing a skill must not change provider or permission configuration.
+The installer must copy the complete skill/resources into explicitly selected project directories, support `--dry-run`, reject an existing target, and refuse targets resolving outside the named project. If copying fails or is interrupted, roll back copies and empty parent directories created by that invocation; preserve existing content and report cleanup failures. This is error rollback, not a crash-atomic filesystem transaction. Installing a skill must not change provider or permission configuration.
 
 Official references to verify before changing host behavior:
 
@@ -150,11 +150,13 @@ Run the existing helper tests, or implement equivalent checks for:
 - Transparent JPEG, duplicate/unsafe IDs and unknown styles fail clearly.
 - Planning cannot overwrite an existing result.
 - Project installation copies the full resources for all three hosts and preserves existing installations.
+- Failed or interrupted copies roll back this invocation's installations and empty parent directories; a target appearing after preflight remains untouched.
+- Dry runs create no installation directories.
 
 Run the skill-creator validator; if its YAML dependency is missing, use a workspace-local validation dependency rather than adding an unnecessary runtime requirement. Check reference links and recipe paths.
 
 Manually confirm host discovery and command routing when each host is available. Report unsupported smoke tests as pending. Structural tests do not prove image quality or native command registration.
 
-Acceptance: the skill loads on Codex; `styles` shows all 18 bundled recipes; `brief` emits a plan without generation; `pack` preserves the shared anchor and call cap; `inspect` records observed outcomes; `export` packages reviewed native files and their manifest. Four reviewed demo assets are the release target, not a result to fabricate when generation fails.
+Acceptance: the skill loads on Codex; `styles` shows all 34 bundled recipes; `brief` emits a plan without generation; `pack` preserves the shared anchor and call cap; `inspect` records observed outcomes; `export` packages reviewed native files and their manifest. Preserve all 52 reviewed examples. Four reviewed same-style demo assets are a separate release target, not a result to fabricate when generation fails.
 
 Finish with saved artifact paths, tests run, image calls used, demo outcomes and any pending host checks. Keep GitHub creation, publishing and plugin-directory submission outside this build task. The repo should be ready for the user to review and publish.

@@ -1,4 +1,21 @@
-# Validation, 2026-10-13
+# Validation record
+
+## Latest verification — 2026-10-24
+
+Current inventory: **34 recipes, 52 reviewed artwork files and four original photographs**. Older dated sections below describe the catalog and tests that existed during those runs.
+
+- All **14 helper contract tests** passed locally with Python 3.14 on Windows. They exercise every current recipe and installation for all three hosts.
+- New installer regression cases cover first/later copy failures, partial-copy removal, rollback of completed copies, preservation of existing content and a target appearing after preflight, interrupted copies, cleanup-failure reporting and dry runs that create nothing.
+- Installation success messages are emitted only after every requested host succeeds. Rollback applies to handled errors and interruptions; forced process termination or power loss can still leave partial files. Cleanup failures are explicitly reported.
+- All 52 artwork SHA-256 values and native PNG dimensions match their manifests. Referenced source-photo hashes match the four unchanged originals. No artwork was regenerated in this verification.
+- README recipe rows, the four collapsed galleries, original-image references, local document links and navigation anchors were checked. The build prompt now describes the full 34-recipe, 52-example catalog.
+- [GitHub Actions](../.github/workflows/tests.yml) runs the helper tests on Windows and Linux with Python 3.10 and 3.14. See the [live workflow results](https://github.com/notEhEnG/art-skill/actions/workflows/tests.yml) for commit-specific outcomes.
+
+Live image generation, same-style multi-image consistency, cutout transparency and interactive host discovery were not exercised by this verification. Current outstanding checks are tracked in the [README roadmap](../README.md#known-gaps-and-roadmap).
+
+## Historical validation — 2026-10-13
+
+This run covered the then-current **18 recipes and 36 generated examples**, with nine helper tests. These figures are historical, not the latest inventory.
 
 Completed:
 
@@ -13,7 +30,7 @@ Completed:
 - Twelve additional recipes each have one live visually reviewed example in `examples/expanded-styles/`: 12 built-in calls, zero repairs and zero observed moderation blocks. This brings the public gallery to 36 generated images. Their native PNG integrity, dimensions, hashes, prompts, recipe locks and original-source links were checked. Same-style multi-image consistency is still pending.
 - The expanded SKILL.md passed the skill frontmatter validator; the nine helper contract tests passed with all 18 recipes and installation copies.
 
-Pending release checks:
+### Checks left pending in that run
 
 - A four-asset Codex demo, including reference consistency and actual cutout transparency.
 - Interactive skill discovery and slash-menu routing in each intended host/version.
@@ -23,10 +40,10 @@ Both example runs (24 original-style images and 12 added-style images) used the 
 
 These checks make the starter reviewable; they do not establish model quality or production readiness.
 
-## Style collections, 2026-10-24
+## Recorded artwork runs — 2026-10-24
 
-- Optical and material styles: 9 live examples, 10 built-in calls and 1 repairs. Each native output was visually inspected against its source photo and recipe.
-- Dream and glow styles: 7 live examples, 8 built-in calls and 1 repairs. Each native output was visually inspected against its source photo and recipe.
+- Optical and material styles: 9 live examples, 10 built-in calls and 1 repair. Each native output was visually inspected against its source photo and recipe.
+- Dream and glow styles: 7 live examples, 8 built-in calls and 1 repair. Each native output was visually inspected against its source photo and recipe.
 - Source and output SHA-256, PNG chunk CRCs, decoded image data, native dimensions, frozen recipes, planner results and relative gallery links were checked. The repository originals remain byte-for-byte unchanged.
-- Helper contract tests and the skill frontmatter validator were rerun. Same-style multi-image consistency and cross-host generation remain pending.
+- The then-current nine helper contract tests and the skill frontmatter validator were rerun against all 34 recipes. Same-style multi-image consistency and cross-host generation remained pending.
 - Model identity and monetary cost were not exposed by the image tool.
