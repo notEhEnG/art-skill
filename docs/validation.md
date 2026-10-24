@@ -22,3 +22,10 @@ Pending release checks:
 Both example runs (24 original-style images and 12 added-style images) used the Codex built-in image tool. No moderation blocks were observed in their 36 calls. The tool did not expose a model identifier or monetary cost, so neither is inferred. Cross-host backend access is not implied by the installation tests.
 
 These checks make the starter reviewable; they do not establish model quality or production readiness.
+
+## Style collections, 2026-10-24
+
+- Dream and glow styles: 7 live examples, 8 built-in calls and 1 repairs. Each native output was visually inspected against its source photo and recipe.
+- Source and output SHA-256, PNG chunk CRCs, decoded image data, native dimensions, frozen recipes, planner results and relative gallery links were checked. The repository originals remain byte-for-byte unchanged.
+- Helper contract tests and the skill frontmatter validator were rerun. Same-style multi-image consistency and cross-host generation remain pending.
+- Model identity and monetary cost were not exposed by the image tool.

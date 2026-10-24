@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "id": "hyper-bloom",
+  "version": "1.0.0",
+  "label": "Hyper Bloom",
+  "traits": {
+    "medium": "surreal luminous botanical landscape",
+    "palette": [
+      "#123EB0",
+      "#B9E3F0",
+      "#FF8BBA",
+      "#FFCA56",
+      "#7BE5B5"
+    ],
+    "texture": "soft translucent petals, glowing pollen-like points and airbrushed botanical edges",
+    "composition": "preserve the reference spatial hierarchy while turning existing vegetation into an otherworldly flowering garden",
+    "lighting": "radiant pastel blooms against deeper cobalt or cool blue surroundings"
+  },
+  "avoid": [
+    "copied reference collages",
+    "presenter portraits",
+    "logos and brand marks",
+    "unrequested lettering",
+    "unrelated objects"
+  ],
+  "review_checks": [
+    "The original garden layout remains visible",
+    "Blooms feel integrated with existing plants",
+    "Translucent petals and glow stay distinct from general blur"
+  ],
+  "limitations": [
+    "Flower forms and colors are imagined; this is not a botanical record or a guarantee of realistic plant morphology.",
+    "Palette, fine geometry and cross-image consistency require visual review; generation is not deterministic."
+  ]
+}

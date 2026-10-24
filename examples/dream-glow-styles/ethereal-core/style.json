@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "id": "ethereal-core",
+  "version": "1.0.0",
+  "label": "Ethereal Core",
+  "traits": {
+    "medium": "dreamlike luminous woodland landscape",
+    "palette": [
+      "#0D302E",
+      "#356361",
+      "#9EC6B0",
+      "#E4EED9",
+      "#F3D8C6"
+    ],
+    "texture": "soft halation, delicate mist, diffused foliage edges and sparse luminous airborne flecks",
+    "composition": "preserve a recognizable natural place while opening a quiet path toward a softly illuminated distance",
+    "lighting": "cool forest shadows with warm translucent shafts and localized pale glow"
+  },
+  "avoid": [
+    "copied reference collages",
+    "presenter portraits",
+    "logos and brand marks",
+    "unrequested lettering",
+    "unrelated objects"
+  ],
+  "review_checks": [
+    "Natural source landmarks remain recognizable",
+    "Mist and halation create depth without covering everything",
+    "Light flecks remain sparse and subordinate to the landscape"
+  ],
+  "limitations": [
+    "Atmospheric fantasy treatment; it cannot restore hidden detail and does not certify a photographic location or physical lighting conditions.",
+    "Palette, fine geometry and cross-image consistency require visual review; generation is not deterministic."
+  ]
+}

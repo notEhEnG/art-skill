@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "id": "retro-glow",
+  "version": "1.0.0",
+  "label": "Retro Glow",
+  "traits": {
+    "medium": "retro-fantasy airbrushed landscape with star-filter highlights",
+    "palette": [
+      "#11172E",
+      "#354A8A",
+      "#E26872",
+      "#F7BF6B",
+      "#A1D8E3"
+    ],
+    "texture": "silky airbrush gradients, restrained grain, glossy light trails and a few four-point glints",
+    "composition": "keep a strong source silhouette and spacious nostalgic framing with a limited number of bright accents",
+    "lighting": "warm glowing focal light against deep blue shadows with restrained rainbow flare"
+  },
+  "avoid": [
+    "copied reference collages",
+    "presenter portraits",
+    "logos and brand marks",
+    "unrequested lettering",
+    "unrelated objects"
+  ],
+  "review_checks": [
+    "Airbrushed forms and star-filter accents establish the retro mood",
+    "The original composition remains recognizable",
+    "Glints remain sparse and do not obscure the subject"
+  ],
+  "limitations": [
+    "A nostalgic illustration aesthetic, not a calibrated film process or an exact reconstruction of any historical advertisement.",
+    "Palette, fine geometry and cross-image consistency require visual review; generation is not deterministic."
+  ]
+}

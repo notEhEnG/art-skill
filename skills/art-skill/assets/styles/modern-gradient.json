@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "id": "modern-gradient",
+  "version": "1.0.0",
+  "label": "Modern Gradient",
+  "traits": {
+    "medium": "contemporary soft-grain gradient abstraction",
+    "palette": [
+      "#9BBDEB",
+      "#CFB0EC",
+      "#F1A9C0",
+      "#F7D2AC",
+      "#D6ECC6"
+    ],
+    "texture": "broad diffuse color fields with subtle uniform fine grain and gently feathered boundaries",
+    "composition": "reduce the reference to a few large color masses, retaining its dominant directional flow and horizon relationship",
+    "lighting": "even diffuse luminosity with no strong hard-edged specular source"
+  },
+  "avoid": [
+    "copied reference collages",
+    "presenter portraits",
+    "logos and brand marks",
+    "unrequested lettering",
+    "unrelated objects"
+  ],
+  "review_checks": [
+    "Large blended color fields establish the image",
+    "Source structure survives intentional abstraction",
+    "Fine grain is restrained and gradients remain smooth"
+  ],
+  "limitations": [
+    "The scene is intentionally abstracted; no exact color profile, banding-free display guarantee or vector gradient mesh is supplied.",
+    "Palette, fine geometry and cross-image consistency require visual review; generation is not deterministic."
+  ]
+}

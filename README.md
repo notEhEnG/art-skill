@@ -2,7 +2,7 @@
 
 An art-direction skill for Codex and other AI agents, with reusable styles and slash-command workflows for images and visual asset packs.
 
-**Status:** usable skill with tested offline planning and installation, 18 bundled recipes, and 36 visually reviewed photo-to-style examples. Cross-host slash-menu discovery, a same-style multi-asset pack and cutout transparency still need smoke tests.
+**Status:** usable skill with tested offline planning and installation, 25 bundled recipes, and 43 visually reviewed photo-to-style examples. Cross-host slash-menu discovery, a same-style multi-asset pack and cutout transparency still need smoke tests.
 
 ## Quick install
 
@@ -132,7 +132,53 @@ One example for each remaining recipe, using the same four original photos. Ever
 | --- | --- |
 | [<img src="examples/photo-variants/originals/sunset-bay.jpg" alt="Original photograph: Sunset Bay" width="360">](examples/photo-variants/originals/sunset-bay.jpg) | [<img src="examples/expanded-styles/ceramic-mosaic/artwork.png" alt="Ceramic Mosaic: Sunset Bay" width="360">](examples/expanded-styles/ceramic-mosaic/README.md) |
 
-More examples: [four photos in all six core styles](examples/photo-variants/README.md) · [twelve additional styles](examples/expanded-styles/README.md) · [all 18 recipes](skills/art-skill/references/styles.md).
+More examples: [four photos in all six core styles](examples/photo-variants/README.md) · [twelve additional styles](examples/expanded-styles/README.md) · [all 25 recipes](skills/art-skill/references/styles.md).
+
+## Dream and glow styles
+
+7 more recipes using the original repository photos. [Browse the collection](examples/dream-glow-styles/README.md) for prompts, recipes and recorded reviews.
+
+### Hyper Bloom — Hillside Garden
+
+| Original photo | Generated example |
+| --- | --- |
+| [<img src="examples/photo-variants/originals/hillside-garden.jpg" alt="Original hillside garden photograph" width="360">](examples/photo-variants/originals/hillside-garden.jpg) | [<img src="examples/dream-glow-styles/hyper-bloom/artwork.png" alt="Hyper Bloom generated example" width="360">](examples/dream-glow-styles/hyper-bloom/README.md) |
+
+### Retro Glow — Sunset Bay
+
+| Original photo | Generated example |
+| --- | --- |
+| [<img src="examples/photo-variants/originals/sunset-bay.jpg" alt="Original sunset bay photograph" width="360">](examples/photo-variants/originals/sunset-bay.jpg) | [<img src="examples/dream-glow-styles/retro-glow/artwork.png" alt="Retro Glow generated example" width="360">](examples/dream-glow-styles/retro-glow/README.md) |
+
+### Hyperglow — Cumulus Clouds
+
+| Original photo | Generated example |
+| --- | --- |
+| [<img src="examples/photo-variants/originals/cumulus-clouds.jpg" alt="Original cumulus clouds photograph" width="360">](examples/photo-variants/originals/cumulus-clouds.jpg) | [<img src="examples/dream-glow-styles/hyperglow/artwork.png" alt="Hyperglow generated example" width="360">](examples/dream-glow-styles/hyperglow/README.md) |
+
+### Modern Gradient — Sunset Bay
+
+| Original photo | Generated example |
+| --- | --- |
+| [<img src="examples/photo-variants/originals/sunset-bay.jpg" alt="Original sunset bay photograph" width="360">](examples/photo-variants/originals/sunset-bay.jpg) | [<img src="examples/dream-glow-styles/modern-gradient/artwork.png" alt="Modern Gradient generated example" width="360">](examples/dream-glow-styles/modern-gradient/README.md) |
+
+### Ethereal Core — Hillside Garden
+
+| Original photo | Generated example |
+| --- | --- |
+| [<img src="examples/photo-variants/originals/hillside-garden.jpg" alt="Original hillside garden photograph" width="360">](examples/photo-variants/originals/hillside-garden.jpg) | [<img src="examples/dream-glow-styles/ethereal-core/artwork.png" alt="Ethereal Core generated example" width="360">](examples/dream-glow-styles/ethereal-core/README.md) |
+
+### Xpiritualism — Cumulus Clouds
+
+| Original photo | Generated example |
+| --- | --- |
+| [<img src="examples/photo-variants/originals/cumulus-clouds.jpg" alt="Original cumulus clouds photograph" width="360">](examples/photo-variants/originals/cumulus-clouds.jpg) | [<img src="examples/dream-glow-styles/xpiritualism/artwork.png" alt="Xpiritualism generated example" width="360">](examples/dream-glow-styles/xpiritualism/README.md) |
+
+### Webcore — Building Rainbow
+
+| Original photo | Generated example |
+| --- | --- |
+| [<img src="examples/photo-variants/originals/building-rainbow.jpg" alt="Original building rainbow photograph" width="360">](examples/photo-variants/originals/building-rainbow.jpg) | [<img src="examples/dream-glow-styles/webcore/artwork.png" alt="Webcore generated example" width="360">](examples/dream-glow-styles/webcore/README.md) |
 
 ## Start in a project
 
@@ -193,6 +239,13 @@ The sample requests four assets: landscape anchor, square cover, portrait compos
 | `ink-wash` | Ink Wash | Wash edges and tonal detail may drift during edits; physical ink diffusion is not simulated. |
 | `geometric-facets` | Geometric Facets | Raster illustration only; no vector paths or exact polygon topology is supplied. |
 | `ceramic-mosaic` | Ceramic Mosaic | No tile schedule, fabrication pattern, seamless texture or exact tessellation is supplied. |
+| `ethereal-core` | Ethereal Core: dreamlike luminous woodland landscape | Atmospheric fantasy treatment; it cannot restore hidden detail and does not certify a photographic location or physical lighting conditions. |
+| `hyper-bloom` | Hyper Bloom: surreal luminous botanical landscape | Flower forms and colors are imagined; this is not a botanical record or a guarantee of realistic plant morphology. |
+| `hyperglow` | Hyperglow: high-energy spectral glow abstraction | A raster light effect; no HDR luminance, emissive material, animation or calibrated spectral behavior is provided. |
+| `modern-gradient` | Modern Gradient: contemporary soft-grain gradient abstraction | The scene is intentionally abstracted; no exact color profile, banding-free display guarantee or vector gradient mesh is supplied. |
+| `retro-glow` | Retro Glow: retro-fantasy airbrushed landscape with star-filter highlights | A nostalgic illustration aesthetic, not a calibrated film process or an exact reconstruction of any historical advertisement. |
+| `webcore` | Webcore: early-web-inspired raster collage aesthetic | A static bitmap aesthetic; it is not a functional website, UI implementation, exact pixel grid or guaranteed readable text. |
+| `xpiritualism` | Xpiritualism: speculative luminous-particle and veil abstraction | A descriptive aesthetic label, not a standardized art movement or evidence of spiritual phenomena. |
 
 The recipes are original descriptions of broad visual traits. No presenter images, video collages, artist works or brand marks are included. The gallery includes four user-provided reference photographs and their generated artwork. Source names are descriptive; the supplied files and visible credits are preserved.
 
@@ -200,7 +253,7 @@ The recipes are original descriptions of broad visual traits. No presenter image
 
 The twelve additional directions are now bundled recipes with live examples: **watercolor wash, gouache poster, linocut, risograph, stained glass, cyanotype, clay diorama, felt collage, embroidery, ink wash, geometric facets, and ceramic mosaic**.
 
-[See the added styles and four asset-pack workflow ideas](docs/art-ideas.md). The eighteen recipes are available now; the workflow ideas describe ways to use them. Same-style pack consistency still needs a separate smoke test.
+[See the added styles and four asset-pack workflow ideas](docs/art-ideas.md). All 25 recipes are available now; the workflow ideas describe ways to use them. Same-style pack consistency still needs a separate smoke test.
 
 ## Repository map
 
@@ -208,7 +261,7 @@ The twelve additional directions are now bundled recipes with live examples: **w
 skills/art-skill/
   SKILL.md
   agents/openai.yaml
-  assets/styles/                  18 JSON recipes
+  assets/styles/                  25 JSON recipes
   scripts/plan_pack.py            offline planning
   references/                    commands, hosts, contracts, visual checks
 examples/
@@ -217,6 +270,7 @@ examples/
   photo-variants/                 four originals × six styles, prompts and manifests
     originals/                    unchanged photos with descriptive filenames
   expanded-styles/                twelve more recipes, one live example each
+  dream-glow-styles/             recipes with reviewed original-photo examples
 tools/install.py
 tests/test_contracts.py
 docs/research-evidence.json

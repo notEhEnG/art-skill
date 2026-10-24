@@ -27,3 +27,15 @@ Check every output against the brief and accepted anchor. Record concrete defect
 For transparent cutouts, verify edges and that transparent pixels exist. For requested text, inspect every word. If exact lettering is required, flag errors and propose a separate deterministic typography step.
 
 An inspection record states asset ID, checks performed, defect, severity, and whether repair is needed. A missing viewing tool means the visual check is unverified, not passed.
+
+## Optical, material, dream and glow recipes
+
+| Recipe | Look for | Practical limit |
+| --- | --- | --- |
+| Ethereal Core | Natural source landmarks remain recognizable; Mist and halation create depth without covering everything; Light flecks remain sparse and subordinate to the landscape | Atmospheric fantasy treatment; it cannot restore hidden detail and does not certify a photographic location or physical lighting conditions. |
+| Hyper Bloom | The original garden layout remains visible; Blooms feel integrated with existing plants; Translucent petals and glow stay distinct from general blur | Flower forms and colors are imagined; this is not a botanical record or a guarantee of realistic plant morphology. |
+| Hyperglow | Spectral halos follow the source shapes; Bright contours are separated from dark negative space; Glow retains tonal structure instead of washing out the whole image | A raster light effect; no HDR luminance, emissive material, animation or calibrated spectral behavior is provided. |
+| Modern Gradient | Large blended color fields establish the image; Source structure survives intentional abstraction; Fine grain is restrained and gradients remain smooth | The scene is intentionally abstracted; no exact color profile, banding-free display guarantee or vector gradient mesh is supplied. |
+| Retro Glow | Airbrushed forms and star-filter accents establish the retro mood; The original composition remains recognizable; Glints remain sparse and do not obscure the subject | A nostalgic illustration aesthetic, not a calibrated film process or an exact reconstruction of any historical advertisement. |
+| Webcore | The source architecture and framing remain recognizable; Dither and mesh effects are localized; Decorative accents support the image without pretending to be functional UI | A static bitmap aesthetic; it is not a functional website, UI implementation, exact pixel grid or guaranteed readable text. |
+| Xpiritualism | Particles and gauzy layers follow a coherent source form; The luminous focal mass has enough dark separation; The treatment stays abstract without adding a deity or human figure | A descriptive aesthetic label, not a standardized art movement or evidence of spiritual phenomena. |

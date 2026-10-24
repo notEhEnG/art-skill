@@ -1,0 +1,117 @@
+{
+  "schema_version": "1.0",
+  "pack_id": "modern-gradient-example",
+  "status": "complete",
+  "generation_performed": true,
+  "backend": "Codex built-in image_gen",
+  "model": null,
+  "calls_used": 2,
+  "max_calls": 2,
+  "actual_cost_usd": null,
+  "source": {
+    "filename": "sunset-bay.jpg",
+    "path": "../../photo-variants/originals/sunset-bay.jpg",
+    "sha256": "eb5ed753b256f9d960a68f60e78a46d8fe34d031bf511d8e96a3c0d0a3cadd53",
+    "role": "Immutable repository original; edit target and composition reference"
+  },
+  "style_lock": {
+    "id": "modern-gradient",
+    "version": "1.0.0",
+    "sha256": "a879e9058d506aa08c707f38fa9edc05216979531012f83ef27bb630dfdee93b",
+    "recipe": {
+      "schema_version": "1.0",
+      "id": "modern-gradient",
+      "version": "1.0.0",
+      "label": "Modern Gradient",
+      "traits": {
+        "medium": "contemporary soft-grain gradient abstraction",
+        "palette": [
+          "#9BBDEB",
+          "#CFB0EC",
+          "#F1A9C0",
+          "#F7D2AC",
+          "#D6ECC6"
+        ],
+        "texture": "broad diffuse color fields with subtle uniform fine grain and gently feathered boundaries",
+        "composition": "reduce the reference to a few large color masses, retaining its dominant directional flow and horizon relationship",
+        "lighting": "even diffuse luminosity with no strong hard-edged specular source"
+      },
+      "avoid": [
+        "copied reference collages",
+        "presenter portraits",
+        "logos and brand marks",
+        "unrequested lettering",
+        "unrelated objects"
+      ],
+      "review_checks": [
+        "Large blended color fields establish the image",
+        "Source structure survives intentional abstraction",
+        "Fine grain is restrained and gradients remain smooth"
+      ],
+      "limitations": [
+        "The scene is intentionally abstracted; no exact color profile, banding-free display guarantee or vector gradient mesh is supplied.",
+        "Palette, fine geometry and cross-image consistency require visual review; generation is not deterministic."
+      ]
+    }
+  },
+  "assets": [
+    {
+      "id": "artwork",
+      "status": "reviewed",
+      "path": "artwork.png",
+      "sha256": "1f9713c6e19f57ed82397b341a06395e54419e5e8bddb9390bab7070f43d4484",
+      "attempt_count": 2,
+      "requested_orientation": "landscape",
+      "requested_size": "1536x1024",
+      "requested_background": "opaque",
+      "final_prompt": "Use image 1 as the edit target and image 2 as the original repository composition reference. Make one targeted style correction: remove almost all small photographic detail. Rebuild the sky and water from just a few extremely broad feathered pastel gradient fields, as a contemporary abstract gradient poster without text. The sky should be a few smooth flowing lavender, pink and peach masses, not many individual clouds. The water should be a smooth dusty blue to lavender color field, with at most two broad soft horizontal bands and no visible small waves. Preserve only the simplified low blue island silhouette, larger left headland and tiny boat suggestion, following image 2. Keep landscape framing, subtle fine uniform grain and gentle luminosity. No starbursts, glossy objects, hard graphic outlines, lettering or borders. One opaque finished artwork.",
+      "review_notes": [
+        "The repaired image reduces the sky and water to broad feathered lavender, pink, peach and blue fields with restrained fine grain.",
+        "A low simplified island silhouette, stronger left headland and tiny boat suggestion retain the source bay's organization."
+      ],
+      "limitations": [
+        "The scene is intentionally abstracted; no exact color profile, banding-free display guarantee or vector gradient mesh is supplied.",
+        "Palette, fine geometry and cross-image consistency require visual review; generation is not deterministic.",
+        "Some soft cloud structure and faint water texture remain; the result is a landscape-led gradient abstraction."
+      ],
+      "review_method": "Rendered built-in output visually inspected against the original photograph and recipe",
+      "repair_required": false,
+      "native_size": [
+        1449,
+        1085
+      ],
+      "format": "png",
+      "byte_count": 2079398,
+      "png_color_type": 2,
+      "png_integrity_verified": true,
+      "alpha_channel_present": false,
+      "transparent_pixels_verified": false
+    }
+  ],
+  "final_asset_count": 1,
+  "repair_calls": 1,
+  "moderation_blocks_observed": 0,
+  "created_on": "2026-10-24",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "needs_revision",
+      "prompt_path": "initial-prompt.txt",
+      "input_roles": [
+        "Repository original as edit target and composition reference"
+      ],
+      "defect": "The first attempt retained many distinct photographic clouds and small water ripples instead of broad gradient fields.",
+      "sha256": "4dbd068793659441d0e787e648861dafb7eeffc321463308b9da42e26b147b96"
+    },
+    {
+      "number": 2,
+      "status": "reviewed",
+      "prompt_path": "prompt.txt",
+      "input_roles": [
+        "First generated image as edit target",
+        "Repository original as composition reference"
+      ],
+      "sha256": "1f9713c6e19f57ed82397b341a06395e54419e5e8bddb9390bab7070f43d4484"
+    }
+  ]
+}
