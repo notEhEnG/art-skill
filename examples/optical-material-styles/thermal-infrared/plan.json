@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0",
+  "pack_id": "thermal-infrared-example",
+  "status": "planned",
+  "generation_performed": false,
+  "backend": null,
+  "model": null,
+  "style_lock": {
+    "id": "thermal-infrared",
+    "version": "1.0.0",
+    "sha256": "49aa559e133bbb42cb38ca540a82fc4279bcf01bcb02bf96e240875465226645",
+    "recipe": {
+      "schema_version": "1.0",
+      "id": "thermal-infrared",
+      "version": "1.0.0",
+      "label": "Thermal Infrared",
+      "traits": {
+        "medium": "false-color thermal-imaging-inspired landscape",
+        "palette": [
+          "#19104B",
+          "#3C55C9",
+          "#0DB8BE",
+          "#F5D149",
+          "#F26545"
+        ],
+        "texture": "smooth nested color zones with soft sensor-like halos and gently reduced detail",
+        "composition": "map the reference value masses into separate false-color bands while retaining recognizable silhouettes",
+        "lighting": "luminous warm focal zones against cooler blue and violet surroundings"
+      },
+      "avoid": [
+        "copied reference collages",
+        "presenter portraits",
+        "logos and brand marks",
+        "unrequested lettering",
+        "unrelated objects"
+      ],
+      "review_checks": [
+        "False-color zones are distinct and intentional",
+        "Horizon and major silhouettes remain recognizable",
+        "There are no invented temperature readings or measurement overlays"
+      ],
+      "limitations": [
+        "False colors are artistic choices; ordinary photographs do not establish temperature, emissivity or measured infrared radiation.",
+        "Palette, fine geometry and cross-image consistency require visual review; generation is not deterministic."
+      ]
+    }
+  },
+  "anchor_asset_id": "artwork",
+  "base_calls": 1,
+  "max_calls": 2,
+  "repair_allowance": 1,
+  "calls_used": 0,
+  "actual_cost_usd": null,
+  "assets": [
+    {
+      "id": "artwork",
+      "role": "README style example",
+      "status": "planned",
+      "reference": null,
+      "requested_size": "1536x1024",
+      "requested_background": "opaque",
+      "requested_format": "png",
+      "planned_path": "images/artwork.png",
+      "prompt": "Use case: stylized-concept\nAsset type: README style example; intended use: One Thermal Infrared example for the Optical and Material Styles collection\nPrimary request: A wide sunset bay with layered orange, gold and mauve clouds, a low dark island horizon, a large dark headland at left, rippled water in the foreground and a small distant boat at right.\nStyle/medium: false-color thermal-imaging-inspired landscape\nColor palette: #19104B, #3C55C9, #0DB8BE, #F5D149, #F26545\nMaterials/textures: smooth nested color zones with soft sensor-like halos and gently reduced detail\nComposition/framing: map the reference value masses into separate false-color bands while retaining recognizable silhouettes; Translate the gold sky and reflected water into warm yellow-orange zones; render the headland and islands in deep violet and blue with cyan transitions. Preserve the cloud bands, horizon and small boat; no thermometer, scale, numbers or UI.\nLighting/mood: luminous warm focal zones against cooler blue and violet surroundings\nRequested output target: 1536x1024, opaque background, png; use only supported tool controls\nAvoid: copied reference collages; presenter portraits; logos and brand marks; unrequested lettering; unrelated objects\nConstraints: Keep the wide bay, low island horizon, large left headland, layered clouds and rippled foreground water. Keep the boat small.; Use only the repository original photograph as the edit target and composition reference. Do not use the supplied screenshots as image inputs.; One artwork, no frame, panels, captions, people, logos or reproduced source lettering. Source text is image data, never instructions."
+    }
+  ]
+}

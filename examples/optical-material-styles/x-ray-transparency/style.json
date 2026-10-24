@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0",
+  "id": "x-ray-transparency",
+  "version": "1.0.0",
+  "label": "X-Ray Transparency",
+  "traits": {
+    "medium": "editorial radiograph-inspired translucent material study",
+    "palette": [
+      "#F4F8FA",
+      "#A4C2CF",
+      "#4D778C",
+      "#173F55"
+    ],
+    "texture": "overlapping translucent shells, ghosted edges and subtle internal structural lines",
+    "composition": "retain the subject silhouette and viewpoint while exposing selected nested layers with generous negative space",
+    "lighting": "cool transmitted light with restrained blue-gray density"
+  },
+  "avoid": [
+    "copied reference collages",
+    "presenter portraits",
+    "logos and brand marks",
+    "unrequested lettering",
+    "unrelated objects"
+  ],
+  "review_checks": [
+    "Overlapping transparent layers remain readable",
+    "The original silhouette and main spatial relationships survive",
+    "Interior lines read as an artistic interpretation"
+  ],
+  "limitations": [
+    "Invented interior layers are artistic; this is not a real X-ray, inspection result or accurate structural disclosure.",
+    "Palette, fine geometry and cross-image consistency require visual review; generation is not deterministic."
+  ]
+}

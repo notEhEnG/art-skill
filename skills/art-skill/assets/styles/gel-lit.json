@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "id": "gel-lit",
+  "version": "1.0.0",
+  "label": "Gel-Lit",
+  "traits": {
+    "medium": "colored-gel studio-lighting-inspired architectural image",
+    "palette": [
+      "#081727",
+      "#056CA0",
+      "#31C6D7",
+      "#F35B67",
+      "#F5BC83"
+    ],
+    "texture": "clean photographic surfaces, luminous edge gradients and broad colored shadows",
+    "composition": "keep the reference silhouette and framing while separating cool and warm light across major planes",
+    "lighting": "cyan key light from one side and warm coral rim light from the other with controlled deep shadows"
+  },
+  "avoid": [
+    "copied reference collages",
+    "presenter portraits",
+    "logos and brand marks",
+    "unrequested lettering",
+    "unrelated objects"
+  ],
+  "review_checks": [
+    "Cool and warm light directions remain distinct",
+    "The subject stays readable through the colored lighting",
+    "Highlights and shadows describe surface planes"
+  ],
+  "limitations": [
+    "A lighting aesthetic; it does not specify a calibrated light rig, product color accuracy or a physical miniature.",
+    "Palette, fine geometry and cross-image consistency require visual review; generation is not deterministic."
+  ]
+}

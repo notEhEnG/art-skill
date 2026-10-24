@@ -1,6 +1,6 @@
 ---
 name: art-skill
-description: "Create cohesive generated images and visual asset packs using reusable recipes, a shared reference, bounded batches and visual review. Use for pixel, drawn, painterly, film, abstract-flow, graphic-print and crafted-material aesthetics, including remixing or packaging an image series. Does not implement websites, interactive generative code, exact ASCII text, vector systems or fabrication files."
+description: "Create cohesive generated images and visual asset packs using reusable recipes, a shared reference, bounded batches and visual review. Use for pixel, drawn, painterly, film, abstract-flow, graphic-print, crafted-material, optical and luminous dream aesthetics, including remixing or packaging an image series. Does not implement websites, interactive generative code, exact ASCII text, vector systems or fabrication files."
 ---
 
 # Art Skill
@@ -53,5 +53,7 @@ For a natural-language request, infer the appropriate action. For bare invocatio
 5. Copy project-bound final images into the workspace. Follow the generation tool's save-path rules; do not leave project assets solely in a host cache.
 6. `export` copies reviewed originals into a new `export/` folder, includes the manifest and credits, and optionally creates a ZIP using normal file tools. Preserve alpha and native resolution. Do not silently crop, upscale, flatten, or mark files print-ready. Ask only for a materially missing export choice; proceed when the user's instructions already define it.
 7. Report saved paths, successful/missing counts, unresolved defects, calls used, and cost availability. Show images when the host supports previews.
+
+For optical, schematic and luminous styles, apply the selected recipe's limitations. X-ray and thermal colors are artistic interpretations, schematic plates are not engineering documentation, and macro detail studies may change framing. Do not infer measurements or scientific findings from generated effects.
 
 Read [pack-contract.md](references/pack-contract.md) for brief/manifest fields and [quality.md](references/quality.md) for style-specific checks. Style recipes are starting points for visual review, not guaranteed model capabilities.

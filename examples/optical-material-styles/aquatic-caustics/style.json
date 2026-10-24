@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "id": "aquatic-caustics",
+  "version": "1.0.0",
+  "label": "Aquatic Caustics",
+  "traits": {
+    "medium": "water-refraction and caustic-light-inspired image",
+    "palette": [
+      "#E9F5F1",
+      "#A9D5CF",
+      "#5DABB9",
+      "#1E5E7A",
+      "#F1D6AC"
+    ],
+    "texture": "liquid ripples, refracted contours and bright interlacing caustic networks",
+    "composition": "retain the source layout, concentrating optical distortion on water or a clearly defined transparent layer",
+    "lighting": "clear aqua transmitted light with narrow bright water reflections"
+  },
+  "avoid": [
+    "copied reference collages",
+    "presenter portraits",
+    "logos and brand marks",
+    "unrequested lettering",
+    "unrelated objects"
+  ],
+  "review_checks": [
+    "Caustic light follows a coherent watery surface",
+    "Distortion is localized and the horizon stays readable",
+    "Clear aqua highlights retain detail"
+  ],
+  "limitations": [
+    "Refraction and caustics are visual approximations; no physically validated optical simulation or seamless water texture is supplied.",
+    "Palette, fine geometry and cross-image consistency require visual review; generation is not deterministic."
+  ]
+}

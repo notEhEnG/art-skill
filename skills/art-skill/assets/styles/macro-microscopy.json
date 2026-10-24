@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0",
+  "id": "macro-microscopy",
+  "version": "1.0.0",
+  "label": "Macro Microscopy",
+  "traits": {
+    "medium": "microscopy-inspired botanical macro illustration",
+    "palette": [
+      "#F8F6E9",
+      "#C6D7B5",
+      "#7A9D83",
+      "#285D68"
+    ],
+    "texture": "translucent cell-like chambers, fine membranes, delicate veins and shallow optical depth",
+    "composition": "choose one identifiable natural detail from the reference and enlarge it into a carefully framed detail study",
+    "lighting": "soft transmitted light with crisp selected membranes and gradual focus falloff"
+  },
+  "avoid": [
+    "copied reference collages",
+    "presenter portraits",
+    "logos and brand marks",
+    "unrequested lettering",
+    "unrelated objects"
+  ],
+  "review_checks": [
+    "A botanical detail from the source is identifiable",
+    "Fine membranes and translucent layers establish the macro treatment",
+    "The result is documented as a detail study rather than a preserved wide scene"
+  ],
+  "limitations": [
+    "Cell-like structures are imagined; the image cannot identify species, demonstrate biological anatomy or substitute for microscopy.",
+    "Palette, fine geometry and cross-image consistency require visual review; generation is not deterministic."
+  ]
+}

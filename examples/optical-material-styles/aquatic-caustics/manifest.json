@@ -1,0 +1,118 @@
+{
+  "schema_version": "1.0",
+  "pack_id": "aquatic-caustics-example",
+  "status": "complete",
+  "generation_performed": true,
+  "backend": "Codex built-in image_gen",
+  "model": null,
+  "calls_used": 2,
+  "max_calls": 2,
+  "actual_cost_usd": null,
+  "source": {
+    "filename": "sunset-bay.jpg",
+    "path": "../../photo-variants/originals/sunset-bay.jpg",
+    "sha256": "eb5ed753b256f9d960a68f60e78a46d8fe34d031bf511d8e96a3c0d0a3cadd53",
+    "role": "Immutable repository original; edit target and composition reference"
+  },
+  "style_lock": {
+    "id": "aquatic-caustics",
+    "version": "1.0.0",
+    "sha256": "3a13607bbe18a540c39fae70a10fe53ed9ded71509db9a044cd1859eb0123da9",
+    "recipe": {
+      "schema_version": "1.0",
+      "id": "aquatic-caustics",
+      "version": "1.0.0",
+      "label": "Aquatic Caustics",
+      "traits": {
+        "medium": "water-refraction and caustic-light-inspired image",
+        "palette": [
+          "#E9F5F1",
+          "#A9D5CF",
+          "#5DABB9",
+          "#1E5E7A",
+          "#F1D6AC"
+        ],
+        "texture": "liquid ripples, refracted contours and bright interlacing caustic networks",
+        "composition": "retain the source layout, concentrating optical distortion on water or a clearly defined transparent layer",
+        "lighting": "clear aqua transmitted light with narrow bright water reflections"
+      },
+      "avoid": [
+        "copied reference collages",
+        "presenter portraits",
+        "logos and brand marks",
+        "unrequested lettering",
+        "unrelated objects"
+      ],
+      "review_checks": [
+        "Caustic light follows a coherent watery surface",
+        "Distortion is localized and the horizon stays readable",
+        "Clear aqua highlights retain detail"
+      ],
+      "limitations": [
+        "Refraction and caustics are visual approximations; no physically validated optical simulation or seamless water texture is supplied.",
+        "Palette, fine geometry and cross-image consistency require visual review; generation is not deterministic."
+      ]
+    }
+  },
+  "assets": [
+    {
+      "id": "artwork",
+      "status": "reviewed",
+      "path": "artwork.png",
+      "sha256": "51fa83200cc9ce298ffe1d6db90ee62947fca105e23a876d31d839946ee73119",
+      "attempt_count": 2,
+      "requested_orientation": "landscape",
+      "requested_size": "1536x1024",
+      "requested_background": "opaque",
+      "final_prompt": "Use image 1 as the edit target. Image 2 is the original repository photo and composition reference. Make one targeted correction to image 1: remove every interlacing caustic mesh pattern from the entire sky above the island horizon. Restore softly layered aqua and pale warm sunset clouds following image 2, with normal unpatterned atmosphere. Keep the luminous aquatic caustic network exclusively in the foreground water below the horizon. Preserve the low islands, large left headland, tiny boat at right, landscape framing, aqua palette and overall water treatment. No text, symbols, border or additional objects. Render one finished opaque artwork.",
+      "review_notes": [
+        "The repaired image concentrates the interlacing caustic network in the foreground water, with unpatterned layered clouds above.",
+        "The low island horizon, left headland and small boat remain legible in a cool aqua and warm sunset palette."
+      ],
+      "limitations": [
+        "Refraction and caustics are visual approximations; no physically validated optical simulation or seamless water texture is supplied.",
+        "Palette, fine geometry and cross-image consistency require visual review; generation is not deterministic.",
+        "Some cloud edges retain a gently rippled appearance, but the repeating sky-wide caustic mesh was removed.",
+        "The repaired scene contains a more explicit sun glow than the source."
+      ],
+      "review_method": "Rendered built-in output visually inspected against the original photograph and recipe",
+      "repair_required": false,
+      "native_size": [
+        1448,
+        1086
+      ],
+      "format": "png",
+      "byte_count": 2365157,
+      "png_color_type": 2,
+      "png_integrity_verified": true,
+      "alpha_channel_present": false,
+      "transparent_pixels_verified": false
+    }
+  ],
+  "final_asset_count": 1,
+  "repair_calls": 1,
+  "moderation_blocks_observed": 0,
+  "created_on": "2026-10-24",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "needs_revision",
+      "prompt_path": "initial-prompt.txt",
+      "input_roles": [
+        "Repository original as edit target and composition reference"
+      ],
+      "defect": "The first attempt spread a repeating water-caustic mesh across the sky instead of localizing it to the water.",
+      "sha256": "2e2b953ccefa67502fa17531e90088b83ebff90c1614bf189ebdb0c3c118f0cb"
+    },
+    {
+      "number": 2,
+      "status": "reviewed",
+      "prompt_path": "prompt.txt",
+      "input_roles": [
+        "First generated image as edit target",
+        "Repository original as composition reference"
+      ],
+      "sha256": "51fa83200cc9ce298ffe1d6db90ee62947fca105e23a876d31d839946ee73119"
+    }
+  ]
+}

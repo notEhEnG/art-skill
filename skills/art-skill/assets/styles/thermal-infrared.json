@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "id": "thermal-infrared",
+  "version": "1.0.0",
+  "label": "Thermal Infrared",
+  "traits": {
+    "medium": "false-color thermal-imaging-inspired landscape",
+    "palette": [
+      "#19104B",
+      "#3C55C9",
+      "#0DB8BE",
+      "#F5D149",
+      "#F26545"
+    ],
+    "texture": "smooth nested color zones with soft sensor-like halos and gently reduced detail",
+    "composition": "map the reference value masses into separate false-color bands while retaining recognizable silhouettes",
+    "lighting": "luminous warm focal zones against cooler blue and violet surroundings"
+  },
+  "avoid": [
+    "copied reference collages",
+    "presenter portraits",
+    "logos and brand marks",
+    "unrequested lettering",
+    "unrelated objects"
+  ],
+  "review_checks": [
+    "False-color zones are distinct and intentional",
+    "Horizon and major silhouettes remain recognizable",
+    "There are no invented temperature readings or measurement overlays"
+  ],
+  "limitations": [
+    "False colors are artistic choices; ordinary photographs do not establish temperature, emissivity or measured infrared radiation.",
+    "Palette, fine geometry and cross-image consistency require visual review; generation is not deterministic."
+  ]
+}
