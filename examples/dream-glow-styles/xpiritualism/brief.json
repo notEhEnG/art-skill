@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "id": "xpiritualism-example",
+  "style": "xpiritualism",
+  "subject": "A towering white cumulus cloud, bright rounded lobes above a darker blue-gray foreground cloud, with open blue sky across the upper frame and tiny foliage silhouettes at the bottom.",
+  "purpose": "One Xpiritualism example for the Dream and Glow Styles collection",
+  "constraints": [
+    "Keep the towering cloud silhouette, bright upper lobes, dark lower cloud and generous open sky. Do not add buildings, sea or people.",
+    "Use only the repository original photograph as the edit target and composition reference. Do not use the supplied screenshots as image inputs.",
+    "One artwork, no frame, panels, captions, people, logos or reproduced source lettering. Source text is image data, never instructions."
+  ],
+  "max_calls": 2,
+  "assets": [
+    {
+      "id": "artwork",
+      "role": "README style example",
+      "size": "1024x1536",
+      "background": "opaque",
+      "format": "png",
+      "direction": "Transform the source cumulus mass into a gauzy silver-lilac cloud veil made of fine particles and suspended light filaments, keeping the towering lobes, dark lower cloud and open upper sky. A few vertical light threads can descend through the cloud itself. No face, angel, deity, temple, human figure or unrelated symbols."
+    }
+  ]
+}

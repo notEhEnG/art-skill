@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "id": "xpiritualism",
+  "version": "1.0.0",
+  "label": "Xpiritualism",
+  "traits": {
+    "medium": "speculative luminous-particle and veil abstraction",
+    "palette": [
+      "#10162B",
+      "#3A476B",
+      "#A9B3D5",
+      "#E6E4F3",
+      "#DCC7A4"
+    ],
+    "texture": "fine sparkling points, gauzy luminous membranes and delicate suspended light filaments",
+    "composition": "retain the reference focal silhouette as an ambiguous suspended form with dark breathing room",
+    "lighting": "quiet silver-lilac radiance with sparse warm pinpoints and subtle vertical light"
+  },
+  "avoid": [
+    "copied reference collages",
+    "presenter portraits",
+    "logos and brand marks",
+    "unrequested lettering",
+    "unrelated objects"
+  ],
+  "review_checks": [
+    "Particles and gauzy layers follow a coherent source form",
+    "The luminous focal mass has enough dark separation",
+    "The treatment stays abstract without adding a deity or human figure"
+  ],
+  "limitations": [
+    "A descriptive aesthetic label, not a standardized art movement or evidence of spiritual phenomena.",
+    "Palette, fine geometry and cross-image consistency require visual review; generation is not deterministic."
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "id": "hyper-bloom-example",
+  "style": "hyper-bloom",
+  "subject": "A steep lush hillside garden, a thick tree trunk framing the left, three tall narrow conifers near the center and right, sloping grass, a winding pale path, layered shrubs, a small blue roof and distant hills under a bright sky.",
+  "purpose": "One Hyper Bloom example for the Dream and Glow Styles collection",
+  "constraints": [
+    "Keep the left tree framing, three conifers, sloping garden and winding path, with distant hills and sky behind.",
+    "Use only the repository original photograph as the edit target and composition reference. Do not use the supplied screenshots as image inputs.",
+    "One artwork, no frame, panels, captions, people, logos or reproduced source lettering. Source text is image data, never instructions."
+  ],
+  "max_calls": 2,
+  "assets": [
+    {
+      "id": "artwork",
+      "role": "README style example",
+      "size": "1536x1024",
+      "background": "opaque",
+      "format": "png",
+      "direction": "Transform existing shrubs and the red flower clusters into luminous impossible pastel blossoms, some slightly enlarged, while preserving the left tree, three tall conifers, garden slope, winding path and distant hills. Keep cool cobalt sky and soft mint, peach, pink and yellow flowers. No presenter, text, logos or collage."
+    }
+  ]
+}

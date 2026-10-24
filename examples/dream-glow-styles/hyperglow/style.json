@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "id": "hyperglow",
+  "version": "1.0.0",
+  "label": "Hyperglow",
+  "traits": {
+    "medium": "high-energy spectral glow abstraction",
+    "palette": [
+      "#10143C",
+      "#44DDE4",
+      "#E085F5",
+      "#FF6DAB",
+      "#FFC56D"
+    ],
+    "texture": "intense luminous contours, broad spectral halos and smooth prismatic light streaks",
+    "composition": "use the source silhouette or value masses as the organizing structure and concentrate glow at selected boundaries",
+    "lighting": "saturated cyan, pink and amber radiance with preserved dark negative space"
+  },
+  "avoid": [
+    "copied reference collages",
+    "presenter portraits",
+    "logos and brand marks",
+    "unrequested lettering",
+    "unrelated objects"
+  ],
+  "review_checks": [
+    "Spectral halos follow the source shapes",
+    "Bright contours are separated from dark negative space",
+    "Glow retains tonal structure instead of washing out the whole image"
+  ],
+  "limitations": [
+    "A raster light effect; no HDR luminance, emissive material, animation or calibrated spectral behavior is provided.",
+    "Palette, fine geometry and cross-image consistency require visual review; generation is not deterministic."
+  ]
+}

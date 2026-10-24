@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "id": "webcore",
+  "version": "1.0.0",
+  "label": "Webcore",
+  "traits": {
+    "medium": "early-web-inspired raster collage aesthetic",
+    "palette": [
+      "#1E45CA",
+      "#9668DB",
+      "#F0A1D1",
+      "#A9DCEC",
+      "#E9EEF7"
+    ],
+    "texture": "selective pixel dithering, low-resolution mesh patterns, chrome-like edge accents and sparse glossy four-point glints",
+    "composition": "organize the source scene with playful layered graphic accents while keeping one main image and a readable focal hierarchy",
+    "lighting": "bright synthetic blue and pink highlights with a restrained nostalgic screen glow"
+  },
+  "avoid": [
+    "copied reference collages",
+    "presenter portraits",
+    "logos and brand marks",
+    "unrequested lettering",
+    "unrelated objects"
+  ],
+  "review_checks": [
+    "The source architecture and framing remain recognizable",
+    "Dither and mesh effects are localized",
+    "Decorative accents support the image without pretending to be functional UI"
+  ],
+  "limitations": [
+    "A static bitmap aesthetic; it is not a functional website, UI implementation, exact pixel grid or guaranteed readable text.",
+    "Palette, fine geometry and cross-image consistency require visual review; generation is not deterministic."
+  ]
+}
