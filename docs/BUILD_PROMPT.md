@@ -40,7 +40,6 @@ art-skill/
   tests/test_contracts.py
   docs/
     recipe-format.md
-    research-evidence.json
     validation.md
 ```
 

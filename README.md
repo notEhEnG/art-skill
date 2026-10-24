@@ -309,7 +309,6 @@ Keep the canonical skill under `skills/art-skill/`; project-local copies are ins
 ## Evidence and changelog
 
 - [Validation record](docs/validation.md): completed checks and outstanding smoke tests.
-- [Research evidence](docs/research-evidence.json): dated source observations and supporting links; historical counts are snapshots.
 - [Changelog](CHANGELOG.md): dated changes and unreleased work.
 - [Workflow ideas](docs/art-ideas.md): postcard sets, seasonal scenes, wallpaper pairs and place-inspired texture packs.
 

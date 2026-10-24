@@ -6,6 +6,7 @@ Changes are recorded by date. Entries do not imply a tagged GitHub Release.
 
 ### Changed
 
+- Remove the historical research snapshot and its documentation links.
 - Clarify `$skill-installer` invocation and terminal clone/setup steps; refresh build-prompt counts and separate current validation from historical records.
 - Roll back failed or interrupted project installations across requested hosts, preserving existing content and reporting incomplete cleanup.
 - Put installation, first use, host invocation and action examples before the README gallery.
