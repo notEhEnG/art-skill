@@ -3,6 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](#install-by-host)
 [![Tests](https://github.com/notEhEnG/art-skill/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/notEhEnG/art-skill/actions/workflows/tests.yml)
+[![GitHub Release](https://img.shields.io/github/v/release/notEhEnG/art-skill)](https://github.com/notEhEnG/art-skill/releases/latest)
 
 Reusable art direction for turning briefs and photographs into raster artwork and visual asset packs with an AI agent.
 
@@ -12,7 +13,7 @@ For developers and creators who want reusable styles, bounded image batches and 
 
 ## Contents
 
-[Install](#quick-install) · [First run](#first-run-60-second-setup) · [Hosts](#install-by-host) · [Actions](#actions) · [Gallery](#gallery) · [Recipes](#recipes) · [Roadmap](#known-gaps-and-roadmap) · [Troubleshooting](#troubleshooting) · [Contributing](#contributing) · [Evidence and changelog](#evidence-and-changelog)
+[Install](#quick-install) · [First run](#first-run-60-second-setup) · [Hosts](#install-by-host) · [Actions](#actions) · [Gallery](#gallery) · [Recipes](#recipes) · [Roadmap](#known-gaps-and-roadmap) · [Troubleshooting](#troubleshooting) · [Contributing](#contributing) · [Releases](#releases) · [Evidence and changelog](#evidence-and-changelog)
 
 ## Quick install
 
@@ -305,6 +306,18 @@ To add your own recipe, start with [the recipe format](docs/recipe-format.md):
 4. Add the example to the relevant collection, then update this README and the [style catalog](skills/art-skill/references/styles.md).
 
 Keep the canonical skill under `skills/art-skill/`; project-local copies are installation outputs. Keep source photographs and existing reviewed images unchanged. See [visual acceptance guidance](skills/art-skill/references/quality.md).
+
+## Releases
+
+The first versioned release is [v0.1.0](https://github.com/notEhEnG/art-skill/releases/tag/v0.1.0). Download the [installable skill ZIP](https://github.com/notEhEnG/art-skill/releases/download/v0.1.0/art-skill-v0.1.0.zip) and [SHA-256 checksums](https://github.com/notEhEnG/art-skill/releases/download/v0.1.0/SHA256SUMS.txt), or install this exact version through Codex chat:
+
+```text
+$skill-installer install the art-skill skill from https://github.com/notEhEnG/art-skill/tree/v0.1.0/skills/art-skill
+```
+
+The ZIP contains an `art-skill/` folder with the complete skill, all 34 recipes, the offline planner, license and version. For manual installation, copy that folder into your host's project skill directory listed in [Install by host](#install-by-host). The 52 example images are available in the repository and GitHub source archives; they are excluded from the smaller installable ZIP.
+
+See the [release notes](docs/releases/v0.1.0.md) for included features, verification and known gaps.
 
 ## Evidence and changelog
 

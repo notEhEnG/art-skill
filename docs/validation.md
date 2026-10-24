@@ -1,6 +1,16 @@
 # Validation record
 
-## Latest verification — 2026-10-24
+## Latest release verification — 2026-10-25
+
+- The `v0.1.0` installable ZIP contains 44 files, including all 34 canonical recipes, references, planner, UI metadata, license and version.
+- ZIP integrity and every archived file were checked against their source bytes. After extraction, the packaged planner successfully planned the sample brief with each of the 34 recipes without generating images.
+- A SHA-256 checksum file accompanies the installable ZIP. The smaller ZIP excludes the example gallery; full repository source archives retain it.
+- All 14 helper contract tests passed locally with Python 3.14 on Windows. The release uses the existing four-configuration CI workflow for Windows/Linux and Python 3.10/3.14.
+- README local links and navigation anchors were checked, including the versioned release notes. No new images were generated.
+
+See [v0.1.0 release notes](releases/v0.1.0.md) for installation and known gaps.
+
+## Previous verification — 2026-10-24
 
 Current inventory: **34 recipes, 52 reviewed artwork files and four original photographs**. Older dated sections below describe the catalog and tests that existed during those runs.
 

@@ -1,8 +1,10 @@
 # Changelog
 
-Changes are recorded by date. Entries do not imply a tagged GitHub Release.
+Published versions link to their GitHub Releases. Earlier dated entries record development milestones.
 
-## Unreleased
+## [0.1.0](https://github.com/notEhEnG/art-skill/releases/tag/v0.1.0) — 2026-10-25
+
+First public release: 34 art-direction recipes, 52 reviewed repository examples, offline pack planning and project-local installation for Codex, Claude Code and Cursor.
 
 ### Changed
 
@@ -16,6 +18,7 @@ Changes are recorded by date. Entries do not imply a tagged GitHub Release.
 
 ### Added
 
+- A versioned installable skill ZIP, SHA-256 checksums and [release notes](docs/releases/v0.1.0.md).
 - A first-run prompt with expected output files, troubleshooting, contribution guidance and a known-gaps checklist.
 - License, Python and live test-workflow badges, contents navigation and direct evidence links.
 - A GitHub Actions workflow for the helper contract tests on Windows and Linux with Python 3.10 and 3.14.
