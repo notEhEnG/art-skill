@@ -94,7 +94,7 @@ class ContractTests(unittest.TestCase):
     def test_failed_copy_rolls_back_partial_and_completed_copies(self):
         for failed_agent in ("codex", "claude"):
             with self.subTest(failed_agent=failed_agent), tempfile.TemporaryDirectory() as folder:
-                project = Path(folder)
+                project = Path(folder).resolve()
                 keep = project / ".claude/skills/existing-skill/keep.txt"
                 keep.parent.mkdir(parents=True)
                 keep.write_text("keep", encoding="utf-8")
@@ -122,7 +122,7 @@ class ContractTests(unittest.TestCase):
 
     def test_target_created_after_preflight_is_preserved_during_rollback(self):
         with tempfile.TemporaryDirectory() as folder:
-            project = Path(folder)
+            project = Path(folder).resolve()
             keep = project / ".claude/skills/art-skill/keep.txt"
             real_destinations = installer.destinations
 
