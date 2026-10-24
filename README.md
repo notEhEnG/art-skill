@@ -1,353 +1,309 @@
 # Art Skill
 
-An art-direction skill for Codex and other AI agents, with reusable styles and slash-command workflows for images and visual asset packs.
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](#install-by-host)
+[![Tests](https://github.com/notEhEnG/art-skill/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/notEhEnG/art-skill/actions/workflows/tests.yml)
 
-**Status:** usable skill with tested offline planning and installation, 34 bundled recipes, and 52 visually reviewed photo-to-style examples. Cross-host slash-menu discovery, a same-style multi-asset pack and cutout transparency still need smoke tests.
+Reusable art direction for turning briefs and photographs into raster artwork and visual asset packs with an AI agent.
+
+For developers and creators who want reusable styles, bounded image batches and reviewable outputs in Codex, Claude Code or Cursor.
+
+**Status:** 34 bundled recipes and 52 visually reviewed photo-to-style examples; offline planning and project installation are tested. See the [known gaps and roadmap](#known-gaps-and-roadmap) for checks still pending.
+
+## Contents
+
+[Install](#quick-install) · [First run](#first-run-60-second-setup) · [Hosts](#install-by-host) · [Actions](#actions) · [Gallery](#gallery) · [Recipes](#recipes) · [Roadmap](#known-gaps-and-roadmap) · [Troubleshooting](#troubleshooting) · [Contributing](#contributing) · [Evidence and changelog](#evidence-and-changelog)
 
 ## Quick install
 
-Copy this into Codex:
+Paste this into Codex chat:
 
 ```text
-Hey Codex, please install this skill for me: https://github.com/notEhEnG/art-skill
+Hey Codex, please install this skill for me: https://github.com/notEhEnG/art-skill/tree/main/skills/art-skill
 ```
 
-The installable skill is in [`skills/art-skill`](https://github.com/notEhEnG/art-skill/tree/main/skills/art-skill). Codex's skill installer supports GitHub repositories; if a newly installed skill does not appear, restart Codex. [Official installation guidance](https://learn.chatgpt.com/docs/build-skills).
-
-After installation, try `$art-skill styles`. See the invocation and manual project installation options below.
-
-## Six featured styles
-
-One generated example per core style, paired with its original photo. Click an artwork for its prompt, recipe and review notes, or an original to view the source photograph.
-
-### ASCII & Pixels — Building and Rainbow
-
-| Original photo | Generated example |
-| --- | --- |
-| [<img src="examples/photo-variants/originals/building-rainbow.jpg" alt="Original photograph: Building and Rainbow" width="360">](examples/photo-variants/originals/building-rainbow.jpg) | [<img src="examples/photo-variants/building-rainbow/ascii-pixels/artwork.png" alt="ASCII & Pixels: Building and Rainbow" width="360">](examples/photo-variants/building-rainbow/ascii-pixels/README.md) |
-
-### Sketch & Scribble — Sunset Bay
-
-| Original photo | Generated example |
-| --- | --- |
-| [<img src="examples/photo-variants/originals/sunset-bay.jpg" alt="Original photograph: Sunset Bay" width="360">](examples/photo-variants/originals/sunset-bay.jpg) | [<img src="examples/photo-variants/sunset-bay/sketch-scribble/artwork.png" alt="Sketch & Scribble: Sunset Bay" width="360">](examples/photo-variants/sunset-bay/sketch-scribble/README.md) |
-
-### Digital Impressionism — Hillside Garden
-
-| Original photo | Generated example |
-| --- | --- |
-| [<img src="examples/photo-variants/originals/hillside-garden.jpg" alt="Original photograph: Hillside Garden" width="360">](examples/photo-variants/originals/hillside-garden.jpg) | [<img src="examples/photo-variants/hillside-garden/digital-impressionism/artwork.png" alt="Digital Impressionism: Hillside Garden" width="360">](examples/photo-variants/hillside-garden/digital-impressionism/README.md) |
-
-### Lo-fi Film Imagery — Sunset Bay
-
-| Original photo | Generated example |
-| --- | --- |
-| [<img src="examples/photo-variants/originals/sunset-bay.jpg" alt="Original photograph: Sunset Bay" width="360">](examples/photo-variants/originals/sunset-bay.jpg) | [<img src="examples/photo-variants/sunset-bay/lofi-film/artwork.png" alt="Lo-fi Film Imagery: Sunset Bay" width="360">](examples/photo-variants/sunset-bay/lofi-film/README.md) |
-
-### Generative Flow — Cumulus Clouds
-
-| Original photo | Generated example |
-| --- | --- |
-| [<img src="examples/photo-variants/originals/cumulus-clouds.jpg" alt="Original photograph: Cumulus Clouds" width="360">](examples/photo-variants/originals/cumulus-clouds.jpg) | [<img src="examples/photo-variants/cumulus-clouds/generative-flow/artwork.png" alt="Generative Flow: Cumulus Clouds" width="360">](examples/photo-variants/cumulus-clouds/generative-flow/README.md) |
-
-### Off-white Minimalism — Building and Rainbow
-
-| Original photo | Generated example |
-| --- | --- |
-| [<img src="examples/photo-variants/originals/building-rainbow.jpg" alt="Original photograph: Building and Rainbow" width="360">](examples/photo-variants/originals/building-rainbow.jpg) | [<img src="examples/photo-variants/building-rainbow/off-white/artwork.png" alt="Off-white Minimalism: Building and Rainbow" width="360">](examples/photo-variants/building-rainbow/off-white/README.md) |
-
-## Twelve additional styles
-
-One example for each of these twelve recipes, using the same four original photos. Every artwork is paired with the exact photograph used to generate it. Click an artwork for its prompt, recipe and recorded review.
-
-### Watercolor Wash — Sunset Bay
-
-| Original photo | Generated example |
-| --- | --- |
-| [<img src="examples/photo-variants/originals/sunset-bay.jpg" alt="Original photograph: Sunset Bay" width="360">](examples/photo-variants/originals/sunset-bay.jpg) | [<img src="examples/expanded-styles/watercolor-wash/artwork.png" alt="Watercolor Wash: Sunset Bay" width="360">](examples/expanded-styles/watercolor-wash/README.md) |
-
-### Gouache Poster — Hillside Garden
-
-| Original photo | Generated example |
-| --- | --- |
-| [<img src="examples/photo-variants/originals/hillside-garden.jpg" alt="Original photograph: Hillside Garden" width="360">](examples/photo-variants/originals/hillside-garden.jpg) | [<img src="examples/expanded-styles/gouache-poster/artwork.png" alt="Gouache Poster: Hillside Garden" width="360">](examples/expanded-styles/gouache-poster/README.md) |
-
-### Linocut — Hillside Garden
-
-| Original photo | Generated example |
-| --- | --- |
-| [<img src="examples/photo-variants/originals/hillside-garden.jpg" alt="Original photograph: Hillside Garden" width="360">](examples/photo-variants/originals/hillside-garden.jpg) | [<img src="examples/expanded-styles/linocut/artwork.png" alt="Linocut: Hillside Garden" width="360">](examples/expanded-styles/linocut/README.md) |
-
-### Risograph — Building and Rainbow
-
-| Original photo | Generated example |
-| --- | --- |
-| [<img src="examples/photo-variants/originals/building-rainbow.jpg" alt="Original photograph: Building and Rainbow" width="360">](examples/photo-variants/originals/building-rainbow.jpg) | [<img src="examples/expanded-styles/risograph/artwork.png" alt="Risograph: Building and Rainbow" width="360">](examples/expanded-styles/risograph/README.md) |
-
-### Stained Glass — Cumulus Clouds
-
-| Original photo | Generated example |
-| --- | --- |
-| [<img src="examples/photo-variants/originals/cumulus-clouds.jpg" alt="Original photograph: Cumulus Clouds" width="360">](examples/photo-variants/originals/cumulus-clouds.jpg) | [<img src="examples/expanded-styles/stained-glass/artwork.png" alt="Stained Glass: Cumulus Clouds" width="360">](examples/expanded-styles/stained-glass/README.md) |
-
-### Cyanotype — Hillside Garden
-
-| Original photo | Generated example |
-| --- | --- |
-| [<img src="examples/photo-variants/originals/hillside-garden.jpg" alt="Original photograph: Hillside Garden" width="360">](examples/photo-variants/originals/hillside-garden.jpg) | [<img src="examples/expanded-styles/cyanotype/artwork.png" alt="Cyanotype: Hillside Garden" width="360">](examples/expanded-styles/cyanotype/README.md) |
-
-### Clay Diorama — Building and Rainbow
-
-| Original photo | Generated example |
-| --- | --- |
-| [<img src="examples/photo-variants/originals/building-rainbow.jpg" alt="Original photograph: Building and Rainbow" width="360">](examples/photo-variants/originals/building-rainbow.jpg) | [<img src="examples/expanded-styles/clay-diorama/artwork.png" alt="Clay Diorama: Building and Rainbow" width="360">](examples/expanded-styles/clay-diorama/README.md) |
-
-### Felt Collage — Hillside Garden
-
-| Original photo | Generated example |
-| --- | --- |
-| [<img src="examples/photo-variants/originals/hillside-garden.jpg" alt="Original photograph: Hillside Garden" width="360">](examples/photo-variants/originals/hillside-garden.jpg) | [<img src="examples/expanded-styles/felt-collage/artwork.png" alt="Felt Collage: Hillside Garden" width="360">](examples/expanded-styles/felt-collage/README.md) |
-
-### Embroidery — Cumulus Clouds
-
-| Original photo | Generated example |
-| --- | --- |
-| [<img src="examples/photo-variants/originals/cumulus-clouds.jpg" alt="Original photograph: Cumulus Clouds" width="360">](examples/photo-variants/originals/cumulus-clouds.jpg) | [<img src="examples/expanded-styles/embroidery/artwork.png" alt="Embroidery: Cumulus Clouds" width="360">](examples/expanded-styles/embroidery/README.md) |
-
-### Ink Wash — Cumulus Clouds
-
-| Original photo | Generated example |
-| --- | --- |
-| [<img src="examples/photo-variants/originals/cumulus-clouds.jpg" alt="Original photograph: Cumulus Clouds" width="360">](examples/photo-variants/originals/cumulus-clouds.jpg) | [<img src="examples/expanded-styles/ink-wash/artwork.png" alt="Ink Wash: Cumulus Clouds" width="360">](examples/expanded-styles/ink-wash/README.md) |
-
-### Geometric Facets — Sunset Bay
-
-| Original photo | Generated example |
-| --- | --- |
-| [<img src="examples/photo-variants/originals/sunset-bay.jpg" alt="Original photograph: Sunset Bay" width="360">](examples/photo-variants/originals/sunset-bay.jpg) | [<img src="examples/expanded-styles/geometric-facets/artwork.png" alt="Geometric Facets: Sunset Bay" width="360">](examples/expanded-styles/geometric-facets/README.md) |
-
-### Ceramic Mosaic — Sunset Bay
-
-| Original photo | Generated example |
-| --- | --- |
-| [<img src="examples/photo-variants/originals/sunset-bay.jpg" alt="Original photograph: Sunset Bay" width="360">](examples/photo-variants/originals/sunset-bay.jpg) | [<img src="examples/expanded-styles/ceramic-mosaic/artwork.png" alt="Ceramic Mosaic: Sunset Bay" width="360">](examples/expanded-styles/ceramic-mosaic/README.md) |
-
-More examples: [four photos in all six core styles](examples/photo-variants/README.md) · [twelve additional styles](examples/expanded-styles/README.md) · [all 34 recipes](skills/art-skill/references/styles.md).
-
-## Optical and material styles
-
-9 more recipes using the original repository photos. [Browse the collection](examples/optical-material-styles/README.md) for prompts, recipes and recorded reviews.
-
-### X-Ray Transparency — Building Rainbow
-
-| Original photo | Generated example |
-| --- | --- |
-| [<img src="examples/photo-variants/originals/building-rainbow.jpg" alt="Original building rainbow photograph" width="360">](examples/photo-variants/originals/building-rainbow.jpg) | [<img src="examples/optical-material-styles/x-ray-transparency/artwork.png" alt="X-Ray Transparency generated example" width="360">](examples/optical-material-styles/x-ray-transparency/README.md) |
-
-### Macro Microscopy — Hillside Garden
-
-| Original photo | Generated example |
-| --- | --- |
-| [<img src="examples/photo-variants/originals/hillside-garden.jpg" alt="Original hillside garden photograph" width="360">](examples/photo-variants/originals/hillside-garden.jpg) | [<img src="examples/optical-material-styles/macro-microscopy/artwork.png" alt="Macro Microscopy generated example" width="360">](examples/optical-material-styles/macro-microscopy/README.md) |
-
-### Technical Schematic — Building Rainbow
-
-| Original photo | Generated example |
-| --- | --- |
-| [<img src="examples/photo-variants/originals/building-rainbow.jpg" alt="Original building rainbow photograph" width="360">](examples/photo-variants/originals/building-rainbow.jpg) | [<img src="examples/optical-material-styles/technical-schematic/artwork.png" alt="Technical Schematic generated example" width="360">](examples/optical-material-styles/technical-schematic/README.md) |
-
-### Thermal Infrared — Sunset Bay
-
-| Original photo | Generated example |
-| --- | --- |
-| [<img src="examples/photo-variants/originals/sunset-bay.jpg" alt="Original sunset bay photograph" width="360">](examples/photo-variants/originals/sunset-bay.jpg) | [<img src="examples/optical-material-styles/thermal-infrared/artwork.png" alt="Thermal Infrared generated example" width="360">](examples/optical-material-styles/thermal-infrared/README.md) |
-
-### Gel-Lit — Building Rainbow
-
-| Original photo | Generated example |
-| --- | --- |
-| [<img src="examples/photo-variants/originals/building-rainbow.jpg" alt="Original building rainbow photograph" width="360">](examples/photo-variants/originals/building-rainbow.jpg) | [<img src="examples/optical-material-styles/gel-lit/artwork.png" alt="Gel-Lit generated example" width="360">](examples/optical-material-styles/gel-lit/README.md) |
-
-### Chiaroscuro — Cumulus Clouds
-
-| Original photo | Generated example |
-| --- | --- |
-| [<img src="examples/photo-variants/originals/cumulus-clouds.jpg" alt="Original cumulus clouds photograph" width="360">](examples/photo-variants/originals/cumulus-clouds.jpg) | [<img src="examples/optical-material-styles/chiaroscuro/artwork.png" alt="Chiaroscuro generated example" width="360">](examples/optical-material-styles/chiaroscuro/README.md) |
-
-### Aquatic Caustics — Sunset Bay
-
-| Original photo | Generated example |
-| --- | --- |
-| [<img src="examples/photo-variants/originals/sunset-bay.jpg" alt="Original sunset bay photograph" width="360">](examples/photo-variants/originals/sunset-bay.jpg) | [<img src="examples/optical-material-styles/aquatic-caustics/artwork.png" alt="Aquatic Caustics generated example" width="360">](examples/optical-material-styles/aquatic-caustics/README.md) |
-
-### Chrome Futurism — Building Rainbow
-
-| Original photo | Generated example |
-| --- | --- |
-| [<img src="examples/photo-variants/originals/building-rainbow.jpg" alt="Original building rainbow photograph" width="360">](examples/photo-variants/originals/building-rainbow.jpg) | [<img src="examples/optical-material-styles/chrome-futurism/artwork.png" alt="Chrome Futurism generated example" width="360">](examples/optical-material-styles/chrome-futurism/README.md) |
-
-### Wabi-Sabi — Hillside Garden
-
-| Original photo | Generated example |
-| --- | --- |
-| [<img src="examples/photo-variants/originals/hillside-garden.jpg" alt="Original hillside garden photograph" width="360">](examples/photo-variants/originals/hillside-garden.jpg) | [<img src="examples/optical-material-styles/wabi-sabi/artwork.png" alt="Wabi-Sabi generated example" width="360">](examples/optical-material-styles/wabi-sabi/README.md) |
-
-## Dream and glow styles
-
-7 more recipes using the original repository photos. [Browse the collection](examples/dream-glow-styles/README.md) for prompts, recipes and recorded reviews.
-
-### Hyper Bloom — Hillside Garden
-
-| Original photo | Generated example |
-| --- | --- |
-| [<img src="examples/photo-variants/originals/hillside-garden.jpg" alt="Original hillside garden photograph" width="360">](examples/photo-variants/originals/hillside-garden.jpg) | [<img src="examples/dream-glow-styles/hyper-bloom/artwork.png" alt="Hyper Bloom generated example" width="360">](examples/dream-glow-styles/hyper-bloom/README.md) |
-
-### Retro Glow — Sunset Bay
-
-| Original photo | Generated example |
-| --- | --- |
-| [<img src="examples/photo-variants/originals/sunset-bay.jpg" alt="Original sunset bay photograph" width="360">](examples/photo-variants/originals/sunset-bay.jpg) | [<img src="examples/dream-glow-styles/retro-glow/artwork.png" alt="Retro Glow generated example" width="360">](examples/dream-glow-styles/retro-glow/README.md) |
-
-### Hyperglow — Cumulus Clouds
-
-| Original photo | Generated example |
-| --- | --- |
-| [<img src="examples/photo-variants/originals/cumulus-clouds.jpg" alt="Original cumulus clouds photograph" width="360">](examples/photo-variants/originals/cumulus-clouds.jpg) | [<img src="examples/dream-glow-styles/hyperglow/artwork.png" alt="Hyperglow generated example" width="360">](examples/dream-glow-styles/hyperglow/README.md) |
-
-### Modern Gradient — Sunset Bay
-
-| Original photo | Generated example |
-| --- | --- |
-| [<img src="examples/photo-variants/originals/sunset-bay.jpg" alt="Original sunset bay photograph" width="360">](examples/photo-variants/originals/sunset-bay.jpg) | [<img src="examples/dream-glow-styles/modern-gradient/artwork.png" alt="Modern Gradient generated example" width="360">](examples/dream-glow-styles/modern-gradient/README.md) |
-
-### Ethereal Core — Hillside Garden
-
-| Original photo | Generated example |
-| --- | --- |
-| [<img src="examples/photo-variants/originals/hillside-garden.jpg" alt="Original hillside garden photograph" width="360">](examples/photo-variants/originals/hillside-garden.jpg) | [<img src="examples/dream-glow-styles/ethereal-core/artwork.png" alt="Ethereal Core generated example" width="360">](examples/dream-glow-styles/ethereal-core/README.md) |
-
-### Xpiritualism — Cumulus Clouds
-
-| Original photo | Generated example |
-| --- | --- |
-| [<img src="examples/photo-variants/originals/cumulus-clouds.jpg" alt="Original cumulus clouds photograph" width="360">](examples/photo-variants/originals/cumulus-clouds.jpg) | [<img src="examples/dream-glow-styles/xpiritualism/artwork.png" alt="Xpiritualism generated example" width="360">](examples/dream-glow-styles/xpiritualism/README.md) |
-
-### Webcore — Building Rainbow
-
-| Original photo | Generated example |
-| --- | --- |
-| [<img src="examples/photo-variants/originals/building-rainbow.jpg" alt="Original building rainbow photograph" width="360">](examples/photo-variants/originals/building-rainbow.jpg) | [<img src="examples/dream-glow-styles/webcore/artwork.png" alt="Webcore generated example" width="360">](examples/dream-glow-styles/webcore/README.md) |
-
-## Start in a project
-
-Requires Python 3.10+ for the helpers. They use only the standard library.
-
-From this repository, install the full skill into an existing project:
+Then browse the available styles:
 
 ```text
-python tools/install.py --project /path/to/project --agent codex --dry-run
+$art-skill styles
+```
+
+The installable package is [`skills/art-skill`](skills/art-skill). For project-local copies or another host, use [Install by host](#install-by-host).
+
+## First run: 60-second setup
+
+After installation, send this in **agent chat**, not a terminal:
+
+```text
+$art-skill make one landscape sunset bay in watercolor-wash, with no people or lettering. Save the image as artwork.png and the brief, recipe, plan and review manifest in output/art-skill/first-run.
+```
+
+The agent reads the recipe, generates one image with its available image tool, reviews it and saves the result. Expected files after a successful run:
+
+```text
+output/art-skill/first-run/
+  artwork.png       generated image at its native dimensions
+  brief.json        subject, purpose and constraints
+  style.json        frozen recipe
+  plan.json         offline generation plan
+  manifest.json     actual prompt, dimensions, hashes and review notes
+```
+
+Allow about a minute to choose and send the brief. Generation time depends on the host and can take several minutes. [See a reviewed watercolor sunset example](examples/expanded-styles/watercolor-wash/README.md).
+
+If no image backend is available, the agent saves the brief, prompts and a `requires_backend` plan instead. Installation alone does not provide image generation.
+
+## Install by host
+
+| Host | Install | Invoke in agent chat | Image backend |
+| --- | --- | --- | --- |
+| Codex | Quick-install prompt above, or `--agent codex` below | `$art-skill styles` | Built-in image tool when available in your session |
+| Claude Code | Project installer with `--agent claude` | `/art-skill styles` | Requires a separately configured image tool or provider |
+| Cursor | Project installer with `--agent cursor` | `/art-skill styles` | Requires a separately configured image tool or provider |
+
+From a checkout of this repository, run the matching command in your terminal. **Python 3.10+** is required for these helpers; they use only the standard library. Replace `/path/to/project` with an existing project folder, and quote paths containing spaces.
+
+```text
 python tools/install.py --project /path/to/project --agent codex
+python tools/install.py --project /path/to/project --agent claude
+python tools/install.py --project /path/to/project --agent cursor
 ```
 
-On Windows, quote a project path with spaces. Replace `/path/to/project` with the actual existing folder. The installer refuses an existing `art-skill` skill rather than replacing it.
+Choose the command for your host. Add `--dry-run` to preview destinations, or repeat `--agent` to install for multiple hosts. The installer copies the complete skill and refuses to overwrite an existing installation. Codex project copies go into `.agents/skills/art-skill/`; Claude Code uses `.claude/skills/art-skill/`; Cursor uses `.cursor/skills/art-skill/`.
 
-For another host, use `--agent claude` or `--agent cursor`; repeat `--agent` to install for multiple hosts.
+Host syntax: [OpenAI skills](https://learn.chatgpt.com/docs/build-skills), [Claude Code skills](https://code.claude.com/docs/en/skills), [Cursor skills](https://cursor.com/help/customization/skills). [Host support and testing limits](skills/art-skill/references/hosts.md).
 
-## Invoke the skill
+## Actions
 
-- Codex: `$art-skill styles` or CLI/IDE `/skills` then select it. In the desktop app, enabled skills appear in the `/` menu; verify the exact displayed alias locally.
-- Claude Code / Cursor: `/art-skill styles`.
-- Natural language: “Use Art Skill to make a digital impressionist image pack for a rainy reading room.”
+These are arguments to the skill, not standalone shell commands. The examples use Codex syntax; replace `$art-skill` with `/art-skill` in Claude Code or Cursor.
 
-The actions are `help`, `styles`, `brief`, `make`, `pack`, `remix`, `inspect`, and `export`. They are arguments to the skill, not separate global commands.
+| Action | Result | One-line example |
+| --- | --- | --- |
+| `help` | Explain actions and host invocation | `$art-skill help` |
+| `styles` | Show recipes and practical limits | `$art-skill styles` |
+| `brief` | Save a brief and plan without generating images | `$art-skill brief a four-image rainy reading-room pack in digital-impressionism` |
+| `make` | Generate and review one image | `$art-skill make a sunlit desk in sketch-scribble, no people or text` |
+| `pack` | Generate a set with a shared style and anchor | `$art-skill pack four views of a quiet garden in felt-collage` |
+| `remix` | Restyle a supplied image while preserving stated details | `$art-skill remix this attached photo in watercolor-wash; preserve its composition` |
+| `inspect` | Review existing outputs without generating images | `$art-skill inspect output/art-skill/first-run` |
+| `export` | Package reviewed native files and a manifest | `$art-skill export output/art-skill/first-run as a ZIP` |
 
-Official invocation sources: [OpenAI skills](https://learn.chatgpt.com/docs/build-skills), [OpenAI desktop slash menu](https://learn.chatgpt.com/docs/reference/slash-commands), [Claude Code skills](https://code.claude.com/docs/en/skills), [Cursor skills](https://cursor.com/help/customization/skills).
+Attach a photo when using the remix example. Natural language also works: “Use Art Skill to make one clay-diorama image of a reading nook.” See the [command contract](skills/art-skill/references/commands.md) and [pack contract](skills/art-skill/references/pack-contract.md).
 
-Skill installation and image-tool availability are separate. Codex uses its available built-in image workflow. Claude Code and Cursor need a separately configured image backend. Without one, the skill produces prompts and a `requires_backend` plan. This repository does not bundle an API client or make network requests.
+## Gallery
 
-## Preview the example without generating images
+The examples use these four unchanged original photographs. Click an original to view it; expand a collection for style thumbnails. Each artwork links to its exact source, prompt, recipe and review notes on the full example page.
 
-```text
-python skills/art-skill/scripts/plan_pack.py examples/rainy-reading-room.brief.json
-python skills/art-skill/scripts/plan_pack.py examples/rainy-reading-room.brief.json --out output/plan.json
-python -m unittest discover -s tests -v
-```
+| Building and Rainbow | Hillside Garden | Cumulus Clouds | Sunset Bay |
+| --- | --- | --- | --- |
+| [<img src="examples/photo-variants/originals/building-rainbow.jpg" alt="Original photograph: Building and Rainbow" width="150">](examples/photo-variants/originals/building-rainbow.jpg) | [<img src="examples/photo-variants/originals/hillside-garden.jpg" alt="Original photograph: Hillside Garden" width="150">](examples/photo-variants/originals/hillside-garden.jpg) | [<img src="examples/photo-variants/originals/cumulus-clouds.jpg" alt="Original photograph: Cumulus Clouds" width="150">](examples/photo-variants/originals/cumulus-clouds.jpg) | [<img src="examples/photo-variants/originals/sunset-bay.jpg" alt="Original photograph: Sunset Bay" width="150">](examples/photo-variants/originals/sunset-bay.jpg) |
 
-The sample requests four assets: landscape anchor, square cover, portrait composition and transparent mug/book vignette. Its six-call cap includes up to two repairs. Every derivative references the same anchor. The planner refuses unsupported combinations such as transparent JPEG and never overwrites an existing plan.
+<details>
+<summary>Core styles — 6 recipes</summary>
+
+[Full collection](examples/photo-variants/README.md)
+
+<table>
+<tr>
+<td width="33%" align="center"><a href="examples/photo-variants/building-rainbow/ascii-pixels/README.md"><img src="examples/photo-variants/building-rainbow/ascii-pixels/artwork.png" alt="ASCII & Pixels generated example" height="150"><br>ASCII & Pixels</a></td>
+<td width="33%" align="center"><a href="examples/photo-variants/sunset-bay/sketch-scribble/README.md"><img src="examples/photo-variants/sunset-bay/sketch-scribble/artwork.png" alt="Sketch & Scribble generated example" height="150"><br>Sketch & Scribble</a></td>
+<td width="33%" align="center"><a href="examples/photo-variants/hillside-garden/digital-impressionism/README.md"><img src="examples/photo-variants/hillside-garden/digital-impressionism/artwork.png" alt="Digital Impressionism generated example" height="150"><br>Digital Impressionism</a></td>
+</tr>
+<tr>
+<td width="33%" align="center"><a href="examples/photo-variants/sunset-bay/lofi-film/README.md"><img src="examples/photo-variants/sunset-bay/lofi-film/artwork.png" alt="Lo-fi Film Imagery generated example" height="150"><br>Lo-fi Film Imagery</a></td>
+<td width="33%" align="center"><a href="examples/photo-variants/cumulus-clouds/generative-flow/README.md"><img src="examples/photo-variants/cumulus-clouds/generative-flow/artwork.png" alt="Generative Flow generated example" height="150"><br>Generative Flow</a></td>
+<td width="33%" align="center"><a href="examples/photo-variants/building-rainbow/off-white/README.md"><img src="examples/photo-variants/building-rainbow/off-white/artwork.png" alt="Off-white Minimalism generated example" height="150"><br>Off-white Minimalism</a></td>
+</tr>
+</table>
+
+</details>
+
+<details>
+<summary>Additional styles — 12 recipes</summary>
+
+[Full collection](examples/expanded-styles/README.md)
+
+<table>
+<tr>
+<td width="33%" align="center"><a href="examples/expanded-styles/watercolor-wash/README.md"><img src="examples/expanded-styles/watercolor-wash/artwork.png" alt="Watercolor Wash generated example" height="150"><br>Watercolor Wash</a></td>
+<td width="33%" align="center"><a href="examples/expanded-styles/gouache-poster/README.md"><img src="examples/expanded-styles/gouache-poster/artwork.png" alt="Gouache Poster generated example" height="150"><br>Gouache Poster</a></td>
+<td width="33%" align="center"><a href="examples/expanded-styles/linocut/README.md"><img src="examples/expanded-styles/linocut/artwork.png" alt="Linocut generated example" height="150"><br>Linocut</a></td>
+</tr>
+<tr>
+<td width="33%" align="center"><a href="examples/expanded-styles/risograph/README.md"><img src="examples/expanded-styles/risograph/artwork.png" alt="Risograph generated example" height="150"><br>Risograph</a></td>
+<td width="33%" align="center"><a href="examples/expanded-styles/stained-glass/README.md"><img src="examples/expanded-styles/stained-glass/artwork.png" alt="Stained Glass generated example" height="150"><br>Stained Glass</a></td>
+<td width="33%" align="center"><a href="examples/expanded-styles/cyanotype/README.md"><img src="examples/expanded-styles/cyanotype/artwork.png" alt="Cyanotype generated example" height="150"><br>Cyanotype</a></td>
+</tr>
+<tr>
+<td width="33%" align="center"><a href="examples/expanded-styles/clay-diorama/README.md"><img src="examples/expanded-styles/clay-diorama/artwork.png" alt="Clay Diorama generated example" height="150"><br>Clay Diorama</a></td>
+<td width="33%" align="center"><a href="examples/expanded-styles/felt-collage/README.md"><img src="examples/expanded-styles/felt-collage/artwork.png" alt="Felt Collage generated example" height="150"><br>Felt Collage</a></td>
+<td width="33%" align="center"><a href="examples/expanded-styles/embroidery/README.md"><img src="examples/expanded-styles/embroidery/artwork.png" alt="Embroidery generated example" height="150"><br>Embroidery</a></td>
+</tr>
+<tr>
+<td width="33%" align="center"><a href="examples/expanded-styles/ink-wash/README.md"><img src="examples/expanded-styles/ink-wash/artwork.png" alt="Ink Wash generated example" height="150"><br>Ink Wash</a></td>
+<td width="33%" align="center"><a href="examples/expanded-styles/geometric-facets/README.md"><img src="examples/expanded-styles/geometric-facets/artwork.png" alt="Geometric Facets generated example" height="150"><br>Geometric Facets</a></td>
+<td width="33%" align="center"><a href="examples/expanded-styles/ceramic-mosaic/README.md"><img src="examples/expanded-styles/ceramic-mosaic/artwork.png" alt="Ceramic Mosaic generated example" height="150"><br>Ceramic Mosaic</a></td>
+</tr>
+</table>
+
+</details>
+
+<details>
+<summary>Optical and material styles — 9 recipes</summary>
+
+[Full collection](examples/optical-material-styles/README.md)
+
+<table>
+<tr>
+<td width="33%" align="center"><a href="examples/optical-material-styles/x-ray-transparency/README.md"><img src="examples/optical-material-styles/x-ray-transparency/artwork.png" alt="X-Ray Transparency generated example" height="150"><br>X-Ray Transparency</a></td>
+<td width="33%" align="center"><a href="examples/optical-material-styles/macro-microscopy/README.md"><img src="examples/optical-material-styles/macro-microscopy/artwork.png" alt="Macro Microscopy generated example" height="150"><br>Macro Microscopy</a></td>
+<td width="33%" align="center"><a href="examples/optical-material-styles/technical-schematic/README.md"><img src="examples/optical-material-styles/technical-schematic/artwork.png" alt="Technical Schematic generated example" height="150"><br>Technical Schematic</a></td>
+</tr>
+<tr>
+<td width="33%" align="center"><a href="examples/optical-material-styles/thermal-infrared/README.md"><img src="examples/optical-material-styles/thermal-infrared/artwork.png" alt="Thermal Infrared generated example" height="150"><br>Thermal Infrared</a></td>
+<td width="33%" align="center"><a href="examples/optical-material-styles/gel-lit/README.md"><img src="examples/optical-material-styles/gel-lit/artwork.png" alt="Gel-Lit generated example" height="150"><br>Gel-Lit</a></td>
+<td width="33%" align="center"><a href="examples/optical-material-styles/chiaroscuro/README.md"><img src="examples/optical-material-styles/chiaroscuro/artwork.png" alt="Chiaroscuro generated example" height="150"><br>Chiaroscuro</a></td>
+</tr>
+<tr>
+<td width="33%" align="center"><a href="examples/optical-material-styles/aquatic-caustics/README.md"><img src="examples/optical-material-styles/aquatic-caustics/artwork.png" alt="Aquatic Caustics generated example" height="150"><br>Aquatic Caustics</a></td>
+<td width="33%" align="center"><a href="examples/optical-material-styles/chrome-futurism/README.md"><img src="examples/optical-material-styles/chrome-futurism/artwork.png" alt="Chrome Futurism generated example" height="150"><br>Chrome Futurism</a></td>
+<td width="33%" align="center"><a href="examples/optical-material-styles/wabi-sabi/README.md"><img src="examples/optical-material-styles/wabi-sabi/artwork.png" alt="Wabi-Sabi generated example" height="150"><br>Wabi-Sabi</a></td>
+</tr>
+</table>
+
+</details>
+
+<details>
+<summary>Dream and glow styles — 7 recipes</summary>
+
+[Full collection](examples/dream-glow-styles/README.md)
+
+<table>
+<tr>
+<td width="33%" align="center"><a href="examples/dream-glow-styles/hyper-bloom/README.md"><img src="examples/dream-glow-styles/hyper-bloom/artwork.png" alt="Hyper Bloom generated example" height="150"><br>Hyper Bloom</a></td>
+<td width="33%" align="center"><a href="examples/dream-glow-styles/retro-glow/README.md"><img src="examples/dream-glow-styles/retro-glow/artwork.png" alt="Retro Glow generated example" height="150"><br>Retro Glow</a></td>
+<td width="33%" align="center"><a href="examples/dream-glow-styles/hyperglow/README.md"><img src="examples/dream-glow-styles/hyperglow/artwork.png" alt="Hyperglow generated example" height="150"><br>Hyperglow</a></td>
+</tr>
+<tr>
+<td width="33%" align="center"><a href="examples/dream-glow-styles/modern-gradient/README.md"><img src="examples/dream-glow-styles/modern-gradient/artwork.png" alt="Modern Gradient generated example" height="150"><br>Modern Gradient</a></td>
+<td width="33%" align="center"><a href="examples/dream-glow-styles/ethereal-core/README.md"><img src="examples/dream-glow-styles/ethereal-core/artwork.png" alt="Ethereal Core generated example" height="150"><br>Ethereal Core</a></td>
+<td width="33%" align="center"><a href="examples/dream-glow-styles/xpiritualism/README.md"><img src="examples/dream-glow-styles/xpiritualism/artwork.png" alt="Xpiritualism generated example" height="150"><br>Xpiritualism</a></td>
+</tr>
+<tr>
+<td width="33%" align="center"><a href="examples/dream-glow-styles/webcore/README.md"><img src="examples/dream-glow-styles/webcore/artwork.png" alt="Webcore generated example" height="150"><br>Webcore</a></td>
+</tr>
+</table>
+
+</details>
+
+Macro Microscopy is an intentional detail study. Other recipes may simplify or abstract the scene; each example records its preservation choices and limitations. The core collection includes all 24 source-photo variants, while the thumbnails above show one example per recipe.
 
 ## Recipes
 
-| ID | Direction | Practical limit |
+Choose an exact ID with `make`, `remix` or `pack`. All 34 directions are available as recipes. Their palettes and textures are prompt guidance; the linked files contain full review checks and limitations.
+
+### Core styles
+
+| Recipe ID | Direction | Practical limit |
 | --- | --- | --- |
-| `ascii-pixels` | Pixel blocks and glyph-like stippling | Raster aesthetic; no exact ASCII/grid guarantee |
-| `sketch-scribble` | Gestural pencil/ink on paper | Strokes can change during edits |
-| `digital-impressionism` | Broken-color strokes and warm/cool light | Visual consistency needs review |
-| `lofi-film` | Soft focus, restrained grain and light leaks | Aesthetic, not calibrated film simulation |
-| `generative-flow` | Layered contours and filaments | Raster art, not executable seeded code |
-| `off-white` | Warm neutral still life and empty space | Artwork, not a functional website |
-| `watercolor-wash` | Watercolor Wash | Paper and pigment behavior are visual approximations, not a physical watercolor simulation. |
-| `gouache-poster` | Gouache Poster | A poster aesthetic does not supply print layouts or guarantee exact typography. |
-| `linocut` | Linocut | Raster art only; no cutting template, separated plates or carve-ready geometry is supplied. |
-| `risograph` | Risograph | No actual spot-color separations, calibrated inks or press-ready print files are generated. |
-| `stained-glass` | Stained Glass | No fabrication pattern, cut lines or structurally validated glazing design is supplied. |
-| `cyanotype` | Cyanotype | This is an image aesthetic, not a real photographic exposure or calibrated cyanotype process. |
-| `clay-diorama` | Clay Diorama | Raster visualization only; no 3D model, mesh, construction plan or physically accurate material is supplied. |
-| `felt-collage` | Felt Collage | No fabric cutting template or stitch pattern is supplied. |
-| `embroidery` | Embroidery | No machine embroidery file, thread specification or repeatable stitch geometry is generated. |
-| `ink-wash` | Ink Wash | Wash edges and tonal detail may drift during edits; physical ink diffusion is not simulated. |
-| `geometric-facets` | Geometric Facets | Raster illustration only; no vector paths or exact polygon topology is supplied. |
-| `ceramic-mosaic` | Ceramic Mosaic | No tile schedule, fabrication pattern, seamless texture or exact tessellation is supplied. |
-| `aquatic-caustics` | Aquatic Caustics: water-refraction and caustic-light-inspired image | Refraction and caustics are visual approximations; no physically validated optical simulation or seamless water texture is supplied. |
-| `chiaroscuro` | Chiaroscuro: dramatic light-and-shadow tonal image | Fine shadow details may be deliberately lost; this is an artistic tonal treatment rather than recovered photographic information. |
-| `chrome-futurism` | Chrome Futurism: contemporary liquid-chrome speculative material image | A contemporary chrome interpretation, not an art-historical reconstruction or a usable 3D material. |
-| `gel-lit` | Gel-Lit: colored-gel studio-lighting-inspired architectural image | A lighting aesthetic; it does not specify a calibrated light rig, product color accuracy or a physical miniature. |
-| `macro-microscopy` | Macro Microscopy: microscopy-inspired botanical macro illustration | Cell-like structures are imagined; the image cannot identify species, demonstrate biological anatomy or substitute for microscopy. |
-| `technical-schematic` | Technical Schematic: architectural technical-drawing-inspired raster plate | An illustrative raster plate, not CAD, a dimensioned drawing, a buildable blueprint or verified engineering documentation. |
-| `thermal-infrared` | Thermal Infrared: false-color thermal-imaging-inspired landscape | False colors are artistic choices; ordinary photographs do not establish temperature, emissivity or measured infrared radiation. |
-| `wabi-sabi` | Wabi-Sabi: quiet weathered-material landscape interpretation | A broad visual interpretation of weathering and restraint; it does not represent the full cultural or philosophical meaning of wabi-sabi. |
-| `x-ray-transparency` | X-Ray Transparency: editorial radiograph-inspired translucent material study | Invented interior layers are artistic; this is not a real X-ray, inspection result or accurate structural disclosure. |
-| `ethereal-core` | Ethereal Core: dreamlike luminous woodland landscape | Atmospheric fantasy treatment; it cannot restore hidden detail and does not certify a photographic location or physical lighting conditions. |
-| `hyper-bloom` | Hyper Bloom: surreal luminous botanical landscape | Flower forms and colors are imagined; this is not a botanical record or a guarantee of realistic plant morphology. |
-| `hyperglow` | Hyperglow: high-energy spectral glow abstraction | A raster light effect; no HDR luminance, emissive material, animation or calibrated spectral behavior is provided. |
-| `modern-gradient` | Modern Gradient: contemporary soft-grain gradient abstraction | The scene is intentionally abstracted; no exact color profile, banding-free display guarantee or vector gradient mesh is supplied. |
-| `retro-glow` | Retro Glow: retro-fantasy airbrushed landscape with star-filter highlights | A nostalgic illustration aesthetic, not a calibrated film process or an exact reconstruction of any historical advertisement. |
-| `webcore` | Webcore: early-web-inspired raster collage aesthetic | A static bitmap aesthetic; it is not a functional website, UI implementation, exact pixel grid or guaranteed readable text. |
-| `xpiritualism` | Xpiritualism: speculative luminous-particle and veil abstraction | A descriptive aesthetic label, not a standardized art movement or evidence of spiritual phenomena. |
+| [`ascii-pixels`](skills/art-skill/assets/styles/ascii-pixels.json) | Pixel blocks and glyph-like stippling. | Raster aesthetic; no exact ASCII or pixel-grid guarantee. |
+| [`sketch-scribble`](skills/art-skill/assets/styles/sketch-scribble.json) | Gestural pencil and ink with sparse color accents. | Strokes and fine geometry can change during edits. |
+| [`digital-impressionism`](skills/art-skill/assets/styles/digital-impressionism.json) | Broken-color brushwork with warm light and cool shadows. | Brushwork and consistency across images need visual review. |
+| [`lofi-film`](skills/art-skill/assets/styles/lofi-film.json) | Soft focus, restrained grain and subtle light leaks. | An analog mood, not calibrated film simulation. |
+| [`generative-flow`](skills/art-skill/assets/styles/generative-flow.json) | Layered contours, flowing filaments and open space. | Raster art; no executable algorithm or reproducible seed. |
+| [`off-white`](skills/art-skill/assets/styles/off-white.json) | Warm neutrals, subtle material texture and spare composition. | Artwork; no functional website or UI contrast guarantee. |
 
-The recipes are original descriptions of broad visual traits. No presenter images, video collages, artist works or brand marks are included. The gallery includes four user-provided reference photographs and their generated artwork. Source names are descriptive; the supplied files and visible credits are preserved.
+### Additional styles
 
-## More art ideas
+| Recipe ID | Direction | Practical limit |
+| --- | --- | --- |
+| [`watercolor-wash`](skills/art-skill/assets/styles/watercolor-wash.json) | Translucent pigment washes with visible paper and soft edges. | Paper and pigment are visual approximations, not a physical simulation. |
+| [`gouache-poster`](skills/art-skill/assets/styles/gouache-poster.json) | Opaque matte color shapes with bold light-dark separation. | A poster aesthetic; no print layout or exact typography. |
+| [`linocut`](skills/art-skill/assets/styles/linocut.json) | Carved-looking silhouettes and directional relief-print hatching. | Raster art; no cutting template or separated printing plates. |
+| [`risograph`](skills/art-skill/assets/styles/risograph.json) | Limited spot-color-like layers, grain and offset edges. | No calibrated inks, color separations or press-ready files. |
+| [`stained-glass`](skills/art-skill/assets/styles/stained-glass.json) | Jewel-colored translucent panes with dark leading. | No fabrication pattern or structurally validated glazing design. |
+| [`cyanotype`](skills/art-skill/assets/styles/cyanotype.json) | Deep blue and pale-paper tones with botanical print texture. | An image aesthetic, not a photographic exposure process. |
+| [`clay-diorama`](skills/art-skill/assets/styles/clay-diorama.json) | Rounded clay miniatures with handmade surface marks. | No 3D model, construction plan or physically accurate material. |
+| [`felt-collage`](skills/art-skill/assets/styles/felt-collage.json) | Layered colored felt with fibrous edges and shallow shadows. | No fabric cutting template or stitch pattern. |
+| [`embroidery`](skills/art-skill/assets/styles/embroidery.json) | Thread-like contours and directional stitches on woven fabric. | No machine embroidery file or repeatable stitch geometry. |
+| [`ink-wash`](skills/art-skill/assets/styles/ink-wash.json) | Restrained grayscale washes, expressive edges and blank paper. | Tonal detail may drift; physical ink diffusion is not simulated. |
+| [`geometric-facets`](skills/art-skill/assets/styles/geometric-facets.json) | Flat polygon-like color planes with a clear shape hierarchy. | Raster art; no vector paths or exact polygon topology. |
+| [`ceramic-mosaic`](skills/art-skill/assets/styles/ceramic-mosaic.json) | Irregular tile-like shapes, visible grout and glazed highlights. | No tile schedule, fabrication pattern or exact tessellation. |
 
-The twelve additional directions are now bundled recipes with live examples: **watercolor wash, gouache poster, linocut, risograph, stained glass, cyanotype, clay diorama, felt collage, embroidery, ink wash, geometric facets, and ceramic mosaic**.
+### Optical and material styles
 
-[See the added styles and four asset-pack workflow ideas](docs/art-ideas.md). All 34 recipes are available now; the workflow ideas describe ways to use them. Same-style pack consistency still needs a separate smoke test.
+| Recipe ID | Direction | Practical limit |
+| --- | --- | --- |
+| [`x-ray-transparency`](skills/art-skill/assets/styles/x-ray-transparency.json) | Translucent shells, ghosted edges and layered inner forms. | Invented layers; not a real X-ray or structural inspection. |
+| [`macro-microscopy`](skills/art-skill/assets/styles/macro-microscopy.json) | Enlarged botanical details with translucent cell-like chambers. | May change framing; imagined structures are not biological evidence. |
+| [`technical-schematic`](skills/art-skill/assets/styles/technical-schematic.json) | Fine construction lines, sparse guides and blueprint contrast. | Illustrative raster plate; not CAD or verified engineering documentation. |
+| [`thermal-infrared`](skills/art-skill/assets/styles/thermal-infrared.json) | False-color zones with soft halos and warm-cool separation. | Artistic colors convey no measured temperature or infrared radiation. |
+| [`gel-lit`](skills/art-skill/assets/styles/gel-lit.json) | Cool and warm colored light across clear surface planes. | No calibrated lighting rig or product color-accuracy guarantee. |
+| [`chiaroscuro`](skills/art-skill/assets/styles/chiaroscuro.json) | Selective raking light and rich, compressed shadow masses. | Fine shadow detail may be deliberately lost. |
+| [`aquatic-caustics`](skills/art-skill/assets/styles/aquatic-caustics.json) | Liquid refraction and interlacing water-light patterns. | No physically validated optics or seamless water texture. |
+| [`chrome-futurism`](skills/art-skill/assets/styles/chrome-futurism.json) | Reflective silver shells with restrained iridescent highlights. | Contemporary chrome imagery; no usable 3D material. |
+| [`wabi-sabi`](skills/art-skill/assets/styles/wabi-sabi.json) | Muted earth tones, asymmetry and weathered natural surfaces. | A broad visual interpretation, not the full cultural philosophy. |
 
-## Repository map
+### Dream and glow styles
+
+| Recipe ID | Direction | Practical limit |
+| --- | --- | --- |
+| [`hyper-bloom`](skills/art-skill/assets/styles/hyper-bloom.json) | Surreal luminous flowers, translucent petals and glowing pollen. | Imagined blooms are not a botanical record. |
+| [`retro-glow`](skills/art-skill/assets/styles/retro-glow.json) | Nostalgic airbrush gradients and sparse star-filter glints. | An illustration aesthetic, not a calibrated film process. |
+| [`hyperglow`](skills/art-skill/assets/styles/hyperglow.json) | Spectral contours, saturated halos and prismatic light trails. | No HDR luminance, emissive material or animation. |
+| [`modern-gradient`](skills/art-skill/assets/styles/modern-gradient.json) | Broad feathered color fields with subtle, uniform grain. | Intentional abstraction; no exact color profile or vector mesh. |
+| [`ethereal-core`](skills/art-skill/assets/styles/ethereal-core.json) | Delicate mist, soft halation and luminous woodland light. | Atmospheric fantasy; hidden photographic detail is not recovered. |
+| [`xpiritualism`](skills/art-skill/assets/styles/xpiritualism.json) | Gauzy light veils, fine particles and suspended filaments. | A descriptive aesthetic label, not an established movement or spiritual evidence. |
+| [`webcore`](skills/art-skill/assets/styles/webcore.json) | Early-web dithering, mesh patterns, glossy accents and glints. | A static bitmap; no functional UI or exact pixel grid. |
+
+## Known gaps and roadmap
+
+- [x] Offline planning and project-local installation contract tests.
+- [x] One visually reviewed example per recipe, with 52 examples across four source photos.
+- [ ] Interactive skill discovery and invocation smoke tests in each host/version.
+- [ ] A same-style multi-asset pack that verifies shared-anchor consistency.
+- [ ] A cutout demo that verifies edge quality and actual transparent pixels.
+- [ ] An agent-invoked ZIP/export smoke test across the intended hosts.
+
+The existing galleries are independent style studies. They do not establish consistency across a same-style pack or prove every host can generate images. [Validation details](docs/validation.md).
+
+## Troubleshooting
+
+| Problem | What to try |
+| --- | --- |
+| Skill does not appear in Codex | Restart Codex. For a project install, check `.agents/skills/art-skill/SKILL.md` in the project you opened. |
+| A slash menu does not list the skill | Use the explicit invocation in the host table. In Codex, type `$art-skill help`; natural-language invocation is also available. Interactive menu coverage remains on the roadmap. |
+| A brief is saved but no image appears | Check whether the session has an image tool. A `requires_backend` plan means generation could not run; configure a provider for hosts that need one. |
+| Installer reports an existing target | Keep the installed copy or choose a different project. The helper deliberately refuses to overwrite it. |
+| Planner rejects a style, path or format | Use an exact recipe ID, a quoted existing input path, and PNG or WebP for transparent assets. [Pack contract](skills/art-skill/references/pack-contract.md). |
+
+To check the helpers without generating artwork, run these terminal commands from the repository checkout:
 
 ```text
-skills/art-skill/
-  SKILL.md
-  agents/openai.yaml
-  assets/styles/                  34 JSON recipes
-  scripts/plan_pack.py            offline planning
-  references/                    commands, hosts, contracts, visual checks
-examples/
-  rainy-reading-room.brief.json
-  rainy-reading-room.plan.json    actual planner output; no artwork
-  photo-variants/                 four originals × six styles, prompts and manifests
-    originals/                    unchanged photos with descriptive filenames
-  expanded-styles/                twelve more recipes, one live example each
-  dream-glow-styles/             recipes with reviewed original-photo examples
-  optical-material-styles/       recipes with reviewed original-photo examples
-tools/install.py
-tests/test_contracts.py
-docs/research-evidence.json
-docs/recipe-format.md
-docs/art-ideas.md                  twelve added styles and four pack ideas
-docs/validation.md
-LICENSE
+python skills/art-skill/scripts/plan_pack.py examples/rainy-reading-room.brief.json
+python -m unittest discover -s tests -v
 ```
 
-Keep one canonical skill under `skills/`; project copies are installation outputs. A later plugin or MCP adapter can distribute the workflow or supply tools without changing its pack contract.
+The sample plans four assets with a six-call cap, including two repair slots. Planning makes no image calls. [Tests](tests/test_contracts.py) cover recipe planning, budgets, shared-anchor dependencies, filenames, format compatibility, installation copies and overwrite protection.
 
-MIT license covers this original starter's code and instructions. It does not establish rights in third-party references or future generated outputs.
+## Contributing
+
+To add your own recipe, start with [the recipe format](docs/recipe-format.md):
+
+1. Add `skills/art-skill/assets/styles/<id>.json` with original trait descriptions, concrete review checks and practical limits.
+2. Run the offline planner with the new ID and run the helper tests.
+3. Generate and visually review at least one example before describing the recipe as tested. Save its source link, exact prompt, recipe lock, native dimensions, hashes and review notes.
+4. Add the example to the relevant collection, then update this README and the [style catalog](skills/art-skill/references/styles.md).
+
+Keep the canonical skill under `skills/art-skill/`; project-local copies are installation outputs. Keep source photographs and existing reviewed images unchanged. See [visual acceptance guidance](skills/art-skill/references/quality.md).
+
+## Evidence and changelog
+
+- [Validation record](docs/validation.md): completed checks and outstanding smoke tests.
+- [Research evidence](docs/research-evidence.json): dated source observations and supporting links; historical counts are snapshots.
+- [Changelog](CHANGELOG.md): dated changes and unreleased work.
+- [Workflow ideas](docs/art-ideas.md): postcard sets, seasonal scenes, wallpaper pairs and place-inspired texture packs.
+
+## License
+
+The [MIT license](LICENSE) covers this repository's original code and instructions. It does not establish rights in source photographs or generated outputs. The four source photographs are preserved unchanged.

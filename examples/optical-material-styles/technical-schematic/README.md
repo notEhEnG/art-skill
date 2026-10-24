@@ -1,10 +1,10 @@
-# Technical Schematic — building rainbow
+# Technical Schematic — Building and Rainbow
 
 One reviewed example of the `technical-schematic` recipe.
 
 | Original photo | Generated example |
 | --- | --- |
-| [<img src="../../photo-variants/originals/building-rainbow.jpg" alt="Original building rainbow photograph" width="360">](../../photo-variants/originals/building-rainbow.jpg) | [<img src="artwork.png" alt="Technical Schematic generated example" width="360">](artwork.png) |
+| [<img src="../../photo-variants/originals/building-rainbow.jpg" alt="Original Building and Rainbow photograph" width="360">](../../photo-variants/originals/building-rainbow.jpg) | [<img src="artwork.png" alt="Technical Schematic generated example" width="360">](artwork.png) |
 
 Fine ivory construction lines, diagonal hatching and unlabeled guides on navy create a blueprint-like architectural plate. The facade, windows, roof railings and cloud position remain legible, with no invented dimensions or annotation text.
 

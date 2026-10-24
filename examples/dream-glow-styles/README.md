@@ -42,7 +42,7 @@
 
 | Original photo | Generated example |
 | --- | --- |
-| [<img src="../photo-variants/originals/building-rainbow.jpg" alt="Original building rainbow photograph" width="360">](../photo-variants/originals/building-rainbow.jpg) | [<img src="webcore/artwork.png" alt="Webcore example" width="360">](webcore/README.md) |
+| [<img src="../photo-variants/originals/building-rainbow.jpg" alt="Original Building and Rainbow photograph" width="360">](../photo-variants/originals/building-rainbow.jpg) | [<img src="webcore/artwork.png" alt="Webcore example" width="360">](webcore/README.md) |
 
 Each result is an independent style study using its linked source photo. These examples do not test consistency across a same-style asset pack.
 

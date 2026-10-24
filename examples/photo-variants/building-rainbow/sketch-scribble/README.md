@@ -1,8 +1,8 @@
-# Building and rainbow — Sketch & Scribble
+# Building and Rainbow — Sketch & Scribble
 
 Source: [building-rainbow.jpg](../../originals/building-rainbow.jpg). One independent style interpretation of that photograph.
 
-![Generated building and rainbow in Sketch & Scribble](artwork.png)
+![Generated Building and Rainbow in Sketch & Scribble](artwork.png)
 
 Visible paper, varied pencil/ink lines and gestural hatching distinguish the drawing from the source photo. Upward viewpoint, diagonal facade, window rhythm, small cloud and rainbow motif remain recognizable.
 

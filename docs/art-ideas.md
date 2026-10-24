@@ -1,6 +1,6 @@
 # Additional styles and workflow ideas
 
-Art Skill now bundles **18 recipes**. Each of the twelve added styles below has one live, visually reviewed example, alongside the existing 24-image gallery. Use the exact ID with `remix`, `make` or `pack`; the IDs are style arguments, not new slash commands. [Browse all twelve generated examples](../examples/expanded-styles/README.md).
+Art Skill includes **34 recipes** across core, additional, optical/material and dream/glow collections. This page covers the twelve additional styles and four ways to build asset packs. Each style listed here has a visually reviewed example. Use the exact ID with `remix`, `make` or `pack`; the IDs are style arguments, not new slash commands. [Browse all twelve generated examples](../examples/expanded-styles/README.md).
 
 ## Twelve additional styles
 

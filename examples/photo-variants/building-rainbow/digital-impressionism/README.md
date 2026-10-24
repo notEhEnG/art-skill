@@ -1,8 +1,8 @@
-# Building and rainbow — Digital Impressionism
+# Building and Rainbow — Digital Impressionism
 
 Source: [building-rainbow.jpg](../../originals/building-rainbow.jpg). One independent style interpretation of that photograph.
 
-![Generated building and rainbow in Digital Impressionism](artwork.png)
+![Generated Building and Rainbow in Digital Impressionism](artwork.png)
 
 Short layered broken-color brushwork replaces photographic detail while retaining the broad composition. Upward viewpoint, diagonal facade, window rhythm, small cloud and rainbow motif remain recognizable.
 

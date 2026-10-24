@@ -1,8 +1,8 @@
-# Building and rainbow — Off-white Minimalism
+# Building and Rainbow — Off-white Minimalism
 
 Source: [building-rainbow.jpg](../../originals/building-rainbow.jpg). One independent style interpretation of that photograph.
 
-![Generated building and rainbow in Off-white Minimalism](artwork.png)
+![Generated Building and Rainbow in Off-white Minimalism](artwork.png)
 
 Matte paper/plaster forms, warm ivory and greige values, and shallow cast shadows reinterpret the subject. Upward viewpoint, diagonal facade, window rhythm, small cloud and rainbow motif remain recognizable.
 

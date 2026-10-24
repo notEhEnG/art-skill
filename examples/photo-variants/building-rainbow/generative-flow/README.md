@@ -1,8 +1,8 @@
-# Building and rainbow — Generative Flow
+# Building and Rainbow — Generative Flow
 
 Source: [building-rainbow.jpg](../../originals/building-rainbow.jpg). One independent style interpretation of that photograph.
 
-![Generated building and rainbow in Generative Flow](artwork.png)
+![Generated Building and Rainbow in Generative Flow](artwork.png)
 
 Blue flowing filaments on ivory follow the original scene rhythms; density varies with the source detail. Upward viewpoint, diagonal facade, window rhythm, small cloud and rainbow motif remain recognizable.
 

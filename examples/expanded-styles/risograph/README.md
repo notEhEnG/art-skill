@@ -1,4 +1,4 @@
-# Risograph — building rainbow
+# Risograph — Building and Rainbow
 
 One reviewed example of the bundled `risograph` recipe. Source: [building-rainbow.jpg](../../photo-variants/originals/building-rainbow.jpg).
 
@@ -14,7 +14,7 @@ Native PNG: 1112 × 1415. One built-in image call; zero repairs. Model identity 
 
 ## Original reference
 
-<img src="../../photo-variants/originals/building-rainbow.jpg" alt="Original building rainbow photograph" width="480">
+<img src="../../photo-variants/originals/building-rainbow.jpg" alt="Original Building and Rainbow photograph" width="480">
 
 ## Practical limits
 

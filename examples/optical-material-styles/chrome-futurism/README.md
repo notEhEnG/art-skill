@@ -1,10 +1,10 @@
-# Chrome Futurism — building rainbow
+# Chrome Futurism — Building and Rainbow
 
 One reviewed example of the `chrome-futurism` recipe.
 
 | Original photo | Generated example |
 | --- | --- |
-| [<img src="../../photo-variants/originals/building-rainbow.jpg" alt="Original building rainbow photograph" width="360">](../../photo-variants/originals/building-rainbow.jpg) | [<img src="artwork.png" alt="Chrome Futurism generated example" width="360">](artwork.png) |
+| [<img src="../../photo-variants/originals/building-rainbow.jpg" alt="Original Building and Rainbow photograph" width="360">](../../photo-variants/originals/building-rainbow.jpg) | [<img src="artwork.png" alt="Chrome Futurism generated example" width="360">](artwork.png) |
 
 Reflective silver facade panels, metallic pipes and restrained blue-lilac reflections provide a chrome material treatment. The diagonal building, windows, rooftop railings, cloud and rainbow remain recognizable; no unrelated chrome objects were added.
 

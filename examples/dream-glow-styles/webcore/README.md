@@ -1,10 +1,10 @@
-# Webcore — building rainbow
+# Webcore — Building and Rainbow
 
 One reviewed example of the `webcore` recipe.
 
 | Original photo | Generated example |
 | --- | --- |
-| [<img src="../../photo-variants/originals/building-rainbow.jpg" alt="Original building rainbow photograph" width="360">](../../photo-variants/originals/building-rainbow.jpg) | [<img src="artwork.png" alt="Webcore generated example" width="360">](artwork.png) |
+| [<img src="../../photo-variants/originals/building-rainbow.jpg" alt="Original Building and Rainbow photograph" width="360">](../../photo-variants/originals/building-rainbow.jpg) | [<img src="artwork.png" alt="Webcore generated example" width="360">](artwork.png) |
 
 Cobalt and pink dithering, wireframe arcs, tiled facade accents and a few four-point glints establish an early-web raster aesthetic. The building's diagonal facade, windows, railings, cloud and rainbow remain visible; there are no browser panels or fake interface text.
 

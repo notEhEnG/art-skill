@@ -1,8 +1,8 @@
-# Building and rainbow — ASCII & Pixels
+# Building and Rainbow — ASCII & Pixels
 
 Source: [building-rainbow.jpg](../../originals/building-rainbow.jpg). One independent style interpretation of that photograph.
 
-![Generated building and rainbow in ASCII & Pixels](artwork.png)
+![Generated Building and Rainbow in ASCII & Pixels](artwork.png)
 
 Intentional pixel clusters and dot texture; the main subject silhouette remains readable. Upward viewpoint, diagonal facade, window rhythm, small cloud and rainbow motif remain recognizable.
 

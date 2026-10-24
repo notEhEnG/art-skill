@@ -1,10 +1,10 @@
-# Gel-Lit — building rainbow
+# Gel-Lit — Building and Rainbow
 
 One reviewed example of the `gel-lit` recipe.
 
 | Original photo | Generated example |
 | --- | --- |
-| [<img src="../../photo-variants/originals/building-rainbow.jpg" alt="Original building rainbow photograph" width="360">](../../photo-variants/originals/building-rainbow.jpg) | [<img src="artwork.png" alt="Gel-Lit generated example" width="360">](artwork.png) |
+| [<img src="../../photo-variants/originals/building-rainbow.jpg" alt="Original Building and Rainbow photograph" width="360">](../../photo-variants/originals/building-rainbow.jpg) | [<img src="artwork.png" alt="Gel-Lit generated example" width="360">](artwork.png) |
 
 Cyan light across the facade contrasts with coral illumination along roof surfaces, window trims and clouds. The original architectural viewpoint, railing rhythm and rainbow remain readable against the deep blue sky.
 

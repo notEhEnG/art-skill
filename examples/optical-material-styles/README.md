@@ -6,7 +6,7 @@
 
 | Original photo | Generated example |
 | --- | --- |
-| [<img src="../photo-variants/originals/building-rainbow.jpg" alt="Original building rainbow photograph" width="360">](../photo-variants/originals/building-rainbow.jpg) | [<img src="x-ray-transparency/artwork.png" alt="X-Ray Transparency example" width="360">](x-ray-transparency/README.md) |
+| [<img src="../photo-variants/originals/building-rainbow.jpg" alt="Original Building and Rainbow photograph" width="360">](../photo-variants/originals/building-rainbow.jpg) | [<img src="x-ray-transparency/artwork.png" alt="X-Ray Transparency example" width="360">](x-ray-transparency/README.md) |
 
 ## Macro Microscopy
 
@@ -18,7 +18,7 @@
 
 | Original photo | Generated example |
 | --- | --- |
-| [<img src="../photo-variants/originals/building-rainbow.jpg" alt="Original building rainbow photograph" width="360">](../photo-variants/originals/building-rainbow.jpg) | [<img src="technical-schematic/artwork.png" alt="Technical Schematic example" width="360">](technical-schematic/README.md) |
+| [<img src="../photo-variants/originals/building-rainbow.jpg" alt="Original Building and Rainbow photograph" width="360">](../photo-variants/originals/building-rainbow.jpg) | [<img src="technical-schematic/artwork.png" alt="Technical Schematic example" width="360">](technical-schematic/README.md) |
 
 ## Thermal Infrared
 
@@ -30,7 +30,7 @@
 
 | Original photo | Generated example |
 | --- | --- |
-| [<img src="../photo-variants/originals/building-rainbow.jpg" alt="Original building rainbow photograph" width="360">](../photo-variants/originals/building-rainbow.jpg) | [<img src="gel-lit/artwork.png" alt="Gel-Lit example" width="360">](gel-lit/README.md) |
+| [<img src="../photo-variants/originals/building-rainbow.jpg" alt="Original Building and Rainbow photograph" width="360">](../photo-variants/originals/building-rainbow.jpg) | [<img src="gel-lit/artwork.png" alt="Gel-Lit example" width="360">](gel-lit/README.md) |
 
 ## Chiaroscuro
 
@@ -48,7 +48,7 @@
 
 | Original photo | Generated example |
 | --- | --- |
-| [<img src="../photo-variants/originals/building-rainbow.jpg" alt="Original building rainbow photograph" width="360">](../photo-variants/originals/building-rainbow.jpg) | [<img src="chrome-futurism/artwork.png" alt="Chrome Futurism example" width="360">](chrome-futurism/README.md) |
+| [<img src="../photo-variants/originals/building-rainbow.jpg" alt="Original Building and Rainbow photograph" width="360">](../photo-variants/originals/building-rainbow.jpg) | [<img src="chrome-futurism/artwork.png" alt="Chrome Futurism example" width="360">](chrome-futurism/README.md) |
 
 ## Wabi-Sabi
 

@@ -1,8 +1,8 @@
-# Building and rainbow — Lo-fi Film Imagery
+# Building and Rainbow — Lo-fi Film Imagery
 
 Source: [building-rainbow.jpg](../../originals/building-rainbow.jpg). One independent style interpretation of that photograph.
 
-![Generated building and rainbow in Lo-fi Film Imagery](artwork.png)
+![Generated Building and Rainbow in Lo-fi Film Imagery](artwork.png)
 
 Photographic-looking materials, restrained grain, gentle vignette and a subtle warm edge leak. Upward viewpoint, diagonal facade, window rhythm, small cloud and rainbow motif remain recognizable.
 

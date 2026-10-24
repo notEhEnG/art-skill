@@ -1,10 +1,10 @@
-# X-Ray Transparency — building rainbow
+# X-Ray Transparency — Building and Rainbow
 
 One reviewed example of the `x-ray-transparency` recipe.
 
 | Original photo | Generated example |
 | --- | --- |
-| [<img src="../../photo-variants/originals/building-rainbow.jpg" alt="Original building rainbow photograph" width="360">](../../photo-variants/originals/building-rainbow.jpg) | [<img src="artwork.png" alt="X-Ray Transparency generated example" width="360">](artwork.png) |
+| [<img src="../../photo-variants/originals/building-rainbow.jpg" alt="Original Building and Rainbow photograph" width="360">](../../photo-variants/originals/building-rainbow.jpg) | [<img src="artwork.png" alt="X-Ray Transparency generated example" width="360">](artwork.png) |
 
 Overlapping translucent blue facade planes and ghosted roof structures establish the radiograph-inspired treatment. The upward view, diagonal roofline, red-edged window rhythm, cloud and rainbow remain recognizable; no added lettering is visible.
 

@@ -4,7 +4,7 @@ This gallery contains **24 generated images**: each of the four supplied photogr
 
 | Photo set | Original photograph | Final images | Actual calls |
 | --- | --- | ---: | ---: |
-| [Building and rainbow](building-rainbow/README.md) | [building-rainbow.jpg](originals/building-rainbow.jpg) | 6 | 6 |
+| [Building and Rainbow](building-rainbow/README.md) | [building-rainbow.jpg](originals/building-rainbow.jpg) | 6 | 6 |
 | [Hillside garden](hillside-garden/README.md) | [hillside-garden.jpg](originals/hillside-garden.jpg) | 6 | 6 |
 | [Sunset bay](sunset-bay/README.md) | [sunset-bay.jpg](originals/sunset-bay.jpg) | 6 | 6 |
 | [Towering cumulus](cumulus-clouds/README.md) | [cumulus-clouds.jpg](originals/cumulus-clouds.jpg) | 6 | 6 |

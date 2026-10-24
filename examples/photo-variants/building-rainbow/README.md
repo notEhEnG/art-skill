@@ -1,10 +1,10 @@
-# Building and rainbow: six styles
+# Building and Rainbow: six styles
 
 Source: [building-rainbow.jpg](../originals/building-rainbow.jpg). These six images each use this original photo directly; scenes are kept separate.
 
 ## Original photograph
 
-<img src="../originals/building-rainbow.jpg" alt="Original photograph: building and rainbow" width="480">
+<img src="../originals/building-rainbow.jpg" alt="Original photograph: Building and Rainbow" width="480">
 
 ## Six generated styles
 
