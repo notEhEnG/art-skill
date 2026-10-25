@@ -1,5 +1,12 @@
 # Validation record
 
+## v0.2.0 release packaging — 2026-10-25
+
+- The v0.2.0 installable ZIP contains 44 files, including all 34 canonical recipes and `VERSION` set to `0.2.0`.
+- ZIP integrity and every archived file were checked against their source bytes. After extraction, the packaged planner successfully planned the sample brief with each of the 34 recipes without generating images.
+- A SHA-256 checksum file accompanies the ZIP. README release links and local documentation links were checked, and all 14 helper contract tests passed locally on Windows.
+- Recipe prompts and runtime behavior are unchanged from v0.1.0. The source review below remains applicable; its unresolved issues are listed in the [v0.2.0 release notes](releases/v0.2.0.md#known-issues).
+
 ## Latest source verification — 2026-10-25
 
 The [post-release review](verification-2026-10-25.md) inspected published commit `ec9f2296b9a1a9b9664347864419a155e60174b0` and ran the helper tests, isolated Codex installer, project dry-run and repeated planner command. All 14 helper tests passed; installation destinations and saved-plan overwrite protection behaved as documented.

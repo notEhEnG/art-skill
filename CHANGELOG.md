@@ -2,16 +2,25 @@
 
 Published versions link to their GitHub Releases. Earlier dated entries record development milestones.
 
-## [0.1.0](https://github.com/notEhEnG/art-skill/releases/tag/v0.1.0) — 2026-10-25
+## [0.2.0](https://github.com/notEhEnG/art-skill/releases/tag/v0.2.0) — 2026-10-25
 
-First public release: 34 art-direction recipes, 52 reviewed repository examples, offline pack planning and project-local installation for Codex, Claude Code and Cursor.
+Documentation and verification release. The catalog remains at 34 recipes and 52 reviewed examples; recipe prompts and runtime behavior are unchanged from v0.1.0.
 
-### Post-release verification — 2026-10-25
+### Added
 
 - Documented [source-level review results](docs/verification-2026-10-25.md) for the published release. All 14 helper tests, the isolated Codex installer smoke test and the project installer dry-run passed.
 - Confirmed that saved-plan parent directories are created automatically and a repeated write exits with code 2 while preserving the existing plan.
 - Recorded unresolved recipe issues: all 12 additional recipes contain example-scene instructions, and 18 recipes include a `real people` avoidance rule that can conflict with portrait requests. These findings have not been fixed or tested through new image generation.
-- Recorded remaining documentation synchronization and original-photo provenance gaps. The v0.1.0 tag and download assets are unchanged.
+- Recorded remaining documentation synchronization and original-photo provenance gaps.
+- Published a versioned v0.2.0 installable ZIP, SHA-256 checksums and [release notes](docs/releases/v0.2.0.md). The v0.1.0 tag and download assets remain available unchanged.
+
+### Changed
+
+- Updated the package version and README download and pinned-install links to v0.2.0.
+
+## [0.1.0](https://github.com/notEhEnG/art-skill/releases/tag/v0.1.0) — 2026-10-25
+
+First public release: 34 art-direction recipes, 52 reviewed repository examples, offline pack planning and project-local installation for Codex, Claude Code and Cursor.
 
 ### Changed
 

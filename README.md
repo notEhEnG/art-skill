@@ -309,15 +309,15 @@ Keep the canonical skill under `skills/art-skill/`; project-local copies are ins
 
 ## Releases
 
-The first versioned release is [v0.1.0](https://github.com/notEhEnG/art-skill/releases/tag/v0.1.0). Download the [installable skill ZIP](https://github.com/notEhEnG/art-skill/releases/download/v0.1.0/art-skill-v0.1.0.zip) and [SHA-256 checksums](https://github.com/notEhEnG/art-skill/releases/download/v0.1.0/SHA256SUMS.txt), or install this exact version through Codex chat:
+The latest release is [v0.2.0](https://github.com/notEhEnG/art-skill/releases/tag/v0.2.0). Download the [installable skill ZIP](https://github.com/notEhEnG/art-skill/releases/download/v0.2.0/art-skill-v0.2.0.zip) and [SHA-256 checksums](https://github.com/notEhEnG/art-skill/releases/download/v0.2.0/SHA256SUMS.txt), or install this exact version through Codex chat:
 
 ```text
-$skill-installer install the art-skill skill from https://github.com/notEhEnG/art-skill/tree/v0.1.0/skills/art-skill
+$skill-installer install the art-skill skill from https://github.com/notEhEnG/art-skill/tree/v0.2.0/skills/art-skill
 ```
 
 The ZIP contains an `art-skill/` folder with the complete skill, all 34 recipes, the offline planner, license and version. For manual installation, copy that folder into your host's project skill directory listed in [Install by host](#install-by-host). The 52 example images are available in the repository and GitHub source archives; they are excluded from the smaller installable ZIP.
 
-See the [release notes](docs/releases/v0.1.0.md) for included features, verification and known gaps.
+See the [release notes](docs/releases/v0.2.0.md) for changes, verification and known issues. The [v0.1.0 release](https://github.com/notEhEnG/art-skill/releases/tag/v0.1.0) remains available.
 
 ## Evidence and changelog
 
