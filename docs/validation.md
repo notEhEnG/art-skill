@@ -1,6 +1,12 @@
 # Validation record
 
-## Latest release verification — 2026-10-25
+## Latest source verification — 2026-10-25
+
+The [post-release review](verification-2026-10-25.md) inspected published commit `ec9f2296b9a1a9b9664347864419a155e60174b0` and ran the helper tests, isolated Codex installer, project dry-run and repeated planner command. All 14 helper tests passed; installation destinations and saved-plan overwrite protection behaved as documented.
+
+The review also confirmed unresolved scene-specific recipe instructions and portrait-avoidance conflicts. README/catalog synchronization and original-photo rights remain unverified. No new images were generated, and these issues were not fixed during verification. See the [release's known issues](releases/v0.1.0.md#known-issues).
+
+## Release packaging verification — 2026-10-25
 
 - The `v0.1.0` installable ZIP contains 44 files, including all 34 canonical recipes, references, planner, UI metadata, license and version.
 - ZIP integrity and every archived file were checked against their source bytes. After extraction, the packaged planner successfully planned the sample brief with each of the 34 recipes without generating images.
